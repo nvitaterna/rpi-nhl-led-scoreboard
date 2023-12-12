@@ -1,5 +1,5 @@
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
-import { Game } from '../game';
+import { NHLGame } from '../game';
 import { LogoRenderer } from './logo-renderer';
 import { PeriodRenderer } from './period-renderer';
 import { Renderer } from './renderer';
@@ -15,7 +15,7 @@ export class GameRenderer extends Renderer {
 
   constructor(
     protected matrix: LedMatrixInstance,
-    private game: Game,
+    private game: NHLGame,
     private homeLogo: Buffer,
     private awayLogo: Buffer,
   ) {
@@ -29,6 +29,11 @@ export class GameRenderer extends Renderer {
   }
 
   public update(): void {
+    this.timeRenderer.setTime(this.game.getTime());
+    this.periodRenderer.setPeriod(this.game.getPeriod());
+    this.scoreRenderer.setHome(this.game.getHomeScore());
+    this.scoreRenderer.setAway(this.game.getAwayScore());
+
     this.homeLogoRenderer.update();
     this.awayLogoRenderer.update();
     this.periodRenderer.update();

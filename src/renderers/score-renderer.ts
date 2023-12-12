@@ -46,7 +46,7 @@ export class ScoreRenderer extends Renderer {
       this.boundingBox.y1,
     );
 
-    const score = `${this.homeScore}${this.awayScore}`;
+    const score = `${this.awayScore}${this.homeScore}`;
 
     // draw the score
     this.matrix

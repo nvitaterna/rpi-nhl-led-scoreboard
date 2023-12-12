@@ -21,13 +21,17 @@ export interface Game {
   tvBroadcasts: TvBroadcast[];
   gameState: string;
   gameScheduleState: string;
-  awayTeam: Team;
-  homeTeam: Team;
+  awayTeam: AwayTeam;
+  homeTeam: AwayTeam;
   gameCenterLink: string;
+  clock?: Clock;
   neutralSite: boolean;
   venueTimezone: string;
-  ticketsLink: string;
-  teamLeaders: TeamLeader[];
+  period?: number;
+  periodDescriptor?: PeriodDescriptor;
+  goals?: Goal[];
+  ticketsLink?: string;
+  teamLeaders?: TeamLeader[];
 }
 
 export interface TeamLeader {
@@ -39,13 +43,43 @@ export interface TeamLeader {
   value: number;
 }
 
-export interface Team {
+export interface Goal {
+  period: number;
+  periodDescriptor: PeriodDescriptor;
+  timeInPeriod: string;
+  playerId: number;
+  name: Venue;
+  mugshot: string;
+  teamAbbrev: string;
+  goalsToDate: number;
+  awayScore: number;
+  homeScore: number;
+  strength: string;
+  highlightClip: number;
+  highlightClipFr?: number;
+}
+
+export interface PeriodDescriptor {
+  number: number;
+  periodType: string;
+}
+
+export interface Clock {
+  timeRemaining: string;
+  secondsRemaining: number;
+  running: boolean;
+  inIntermission: boolean;
+}
+
+export interface AwayTeam {
   id: number;
-  name: LocalizedName;
+  name: Venue;
   abbrev: string;
-  record: string;
+  score?: number;
+  sog?: number;
   logo: string;
-  odds: Odd[];
+  record?: string;
+  odds?: Odd[];
 }
 
 export interface Odd {

@@ -1,4 +1,4 @@
-export class Game {
+export class NHLGame {
   constructor(
     private homeTeam: string,
     private awayTeam: string,

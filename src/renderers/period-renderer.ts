@@ -34,15 +34,13 @@ export class PeriodRenderer extends Renderer {
       period = `${this.period}ND`;
     } else if (this.period === 3) {
       period = `${this.period}RD`;
+    } else if (this.period >= 4) {
+      period = `OT${this.period - 3}`;
     }
 
     // draw the period
     this.matrix
-      .fgColor({
-        r: 235,
-        g: 235,
-        b: 235,
-      })
+      .fgColor(0xffffff)
       .font(PERIOD_FONT.font)
       .drawText(period, this.boundingBox.x0, this.boundingBox.y0);
   }

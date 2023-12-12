@@ -1,5 +1,6 @@
 import path from 'path';
 import { Font, FontInstance } from '@nvitaterna/rpi-led-matrix';
+import { ASSETS_DIR } from '../constants';
 
 type FontName = 'small' | 'score';
 
@@ -36,7 +37,7 @@ const rawFonts: RawFont[] = [
 export const fonts: MappedFont[] = rawFonts.map((rawFont) => {
   const font = new Font(
     rawFont.file,
-    path.join(process.cwd(), `assets/fonts/${rawFont.file}.bdf`),
+    path.join(ASSETS_DIR, `fonts/${rawFont.file}.bdf`),
   );
 
   return {

@@ -1,34 +1,84 @@
-import { mapBuffers } from './logo/map-buffers';
 import { GameRenderer } from './renderers/game-renderer';
-import { matrix } from './matrix/matrix';
-import { Game } from './game';
+
+import { NHLGame } from './game';
+import { bootstrap } from './bootstrap';
+
+import { getScores } from './nhl-api/nhl-api';
+import { LogoStore } from './logo/logo-store';
+
+const teamToFind = 'TOR';
 
 const main = async () => {
-  // map buffers
-  console.log('mapping buffers');
-  const teamsWithLogoBuffers = await mapBuffers();
+  const { matrix, logos } = await bootstrap();
 
-  const homeTeam = teamsWithLogoBuffers.find((team) => team.code === 'TOR')!;
-  const awayTeam = teamsWithLogoBuffers.find((team) => team.code === 'MTL')!;
+  matrix.brightness(50);
 
-  console.log('starting game');
-  const game = new Game(homeTeam?.name, awayTeam?.name, 0, 0, '20:00', 1);
+  let lastPull = new Date().getTime();
+  let lastNHLData = await getScores('2023-12-11');
 
-  console.log('starting game renderer');
-  const gameRenderer = new GameRenderer(
-    matrix,
-    game,
-    homeTeam.logoBuffer,
-    awayTeam.logoBuffer,
+  let gameStats = lastNHLData.games.find((game) => {
+    return (
+      game.awayTeam.abbrev === teamToFind || game.homeTeam.abbrev === teamToFind
+    );
+  });
+
+  if (!gameStats) {
+    throw new Error(`Could not find game for ${teamToFind}`);
+  }
+
+  const logoStore = new LogoStore(logos);
+
+  const game = new NHLGame(
+    gameStats.homeTeam.name.default,
+    gameStats.awayTeam.name.default,
+    gameStats.homeTeam.score || 0,
+    gameStats.awayTeam.score || 0,
+    gameStats.clock?.timeRemaining || '20:00',
+    gameStats.period || 1,
   );
 
-  matrix.clear().brightness(75);
+  const homeLogo = logoStore.getLogoBuffer(gameStats.homeTeam.abbrev);
+  const awayLogo = logoStore.getLogoBuffer(gameStats.awayTeam.abbrev);
 
-  gameRenderer.update();
+  if (!homeLogo || !awayLogo) {
+    throw new Error('Could not find logo');
+  }
 
-  matrix.sync();
+  const gameRenderer = new GameRenderer(matrix, game, homeLogo, awayLogo);
 
-  await new Promise((resolve) => setTimeout(resolve, 10000000));
+  const loop = async () => {
+    gameStats = lastNHLData.games.find((game) => {
+      return (
+        game.awayTeam.abbrev === teamToFind ||
+        game.homeTeam.abbrev === teamToFind
+      );
+    });
+
+    if (!gameStats) {
+      throw new Error(`Could not find game for ${teamToFind}`);
+    }
+
+    // re-fetch nhl data every second
+    const now = new Date().getTime();
+    if (now - lastPull > 1000) {
+      lastPull = now;
+      const nhlData = await getScores('2023-12-11');
+      lastNHLData = nhlData;
+    }
+
+    game.updatePeriod(gameStats.period || 1);
+    game.updateTime(gameStats.clock?.timeRemaining || '20:00');
+    game.updateScore(
+      gameStats.homeTeam.score || 0,
+      gameStats.awayTeam.score || 0,
+    );
+
+    gameRenderer.update();
+
+    matrix.sync();
+  };
+
+  setInterval(loop, 100);
 };
 
 main();
