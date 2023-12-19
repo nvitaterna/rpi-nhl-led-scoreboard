@@ -1,10 +1,10 @@
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
-import { NHLGame } from '../game';
 import { LogoRenderer } from './logo-renderer';
 import { PeriodRenderer } from './period-renderer';
 import { Renderer } from './renderer';
 import { ScoreRenderer } from './score-renderer';
 import { TimeRenderer } from './time-renderer';
+import { NhlGame } from '../nhl-game/nhl-game';
 
 export class GameRenderer extends Renderer {
   private homeLogoRenderer: LogoRenderer;
@@ -15,9 +15,9 @@ export class GameRenderer extends Renderer {
 
   constructor(
     protected matrix: LedMatrixInstance,
-    private game: NHLGame,
-    private homeLogo: Buffer,
-    private awayLogo: Buffer,
+    private game: NhlGame,
+    homeLogo: Buffer,
+    awayLogo: Buffer,
   ) {
     super(matrix);
 
@@ -28,11 +28,15 @@ export class GameRenderer extends Renderer {
     this.scoreRenderer = new ScoreRenderer(matrix);
   }
 
+  setGame(game: NhlGame) {
+    this.game = game;
+  }
+
   public update(): void {
-    this.timeRenderer.setTime(this.game.getTime());
-    this.periodRenderer.setPeriod(this.game.getPeriod());
-    this.scoreRenderer.setHome(this.game.getHomeScore());
-    this.scoreRenderer.setAway(this.game.getAwayScore());
+    this.timeRenderer.setTime(this.game.clock.getTime());
+    this.periodRenderer.setPeriod(this.game.clock.getPeriod());
+    this.scoreRenderer.setHome(this.game.homeTeam.score);
+    this.scoreRenderer.setAway(this.game.awayTeam.score);
 
     this.homeLogoRenderer.update();
     this.awayLogoRenderer.update();

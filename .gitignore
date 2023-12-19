@@ -1,3 +1,4 @@
 dist
 node_modules
-assets/teams.json
+assets/team-logos.json
+assets/team-data.json

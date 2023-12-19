@@ -1,7 +1,7 @@
 import { ScoreResponse } from './types/score-response';
 import { StandingsResponse } from './types/standings-response';
 
-const BASE_URL = 'https://api-web.nhle.com/v1';
+export const BASE_URL = 'https://api-web.nhle.com/v1';
 
 export const getScores = async (date: string): Promise<ScoreResponse> => {
   const response = await fetch(`${BASE_URL}/score/${date}`);

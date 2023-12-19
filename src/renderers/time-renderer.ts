@@ -15,7 +15,7 @@ export class TimeRenderer extends Renderer {
   boundingBox = {
     x0: this.matrix.width() / 2 - (3 + FONT_WIDTH * 4) / 2 + 1,
     y0: Y_OFFSET,
-    x1: this.matrix.width() / 2 - (3 + FONT_WIDTH * 4) / 2 + FONT_WIDTH * 4,
+    x1: this.matrix.width() / 2 - (FONT_WIDTH * 4) / 2 + FONT_WIDTH * 4,
     y1: FONT_HEIGHT - 1 + Y_OFFSET,
   };
 

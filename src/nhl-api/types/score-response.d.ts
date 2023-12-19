@@ -1,5 +1,7 @@
 import { LocalizedName } from './localized-name';
 
+export type GameState = 'FUT' | 'LIVE' | 'PRE' | 'FUT';
+
 export interface ScoreResponse {
   prevDate: string;
   currentDate: string;
@@ -19,7 +21,7 @@ export interface Game {
   easternUTCOffset: string;
   venueUTCOffset: string;
   tvBroadcasts: TvBroadcast[];
-  gameState: string;
+  gameState: GameState;
   gameScheduleState: string;
   awayTeam: AwayTeam;
   homeTeam: AwayTeam;
