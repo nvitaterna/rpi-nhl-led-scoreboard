@@ -2,7 +2,7 @@ import path from 'path';
 import { Font, FontInstance } from '@nvitaterna/rpi-led-matrix';
 import { ASSETS_DIR } from '../constants';
 
-type FontName = 'small' | 'score';
+type FontName = 'small' | 'small-2' | 'score';
 
 interface RawFont {
   width: number;
@@ -25,6 +25,12 @@ const rawFonts: RawFont[] = [
     height: 6,
     file: '4x6',
     name: 'small',
+  },
+  {
+    width: 5,
+    height: 7,
+    file: '5x7',
+    name: 'small-2',
   },
   {
     width: 6,

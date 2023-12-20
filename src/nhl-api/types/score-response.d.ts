@@ -1,6 +1,6 @@
+import { Team } from '../../team/team';
+import { GameState } from './game-state';
 import { LocalizedName } from './localized-name';
-
-export type GameState = 'FUT' | 'LIVE' | 'PRE' | 'FUT';
 
 export interface ScoreResponse {
   prevDate: string;
@@ -23,8 +23,8 @@ export interface Game {
   tvBroadcasts: TvBroadcast[];
   gameState: GameState;
   gameScheduleState: string;
-  awayTeam: AwayTeam;
-  homeTeam: AwayTeam;
+  awayTeam: Team;
+  homeTeam: Team;
   gameCenterLink: string;
   clock?: Clock;
   neutralSite: boolean;
@@ -71,17 +71,6 @@ export interface Clock {
   secondsRemaining: number;
   running: boolean;
   inIntermission: boolean;
-}
-
-export interface AwayTeam {
-  id: number;
-  name: Venue;
-  abbrev: string;
-  score?: number;
-  sog?: number;
-  logo: string;
-  record?: string;
-  odds?: Odd[];
 }
 
 export interface Odd {

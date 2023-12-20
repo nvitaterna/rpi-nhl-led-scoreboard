@@ -1,17 +1,14 @@
-import { getFont } from '../fonts/fonts';
+import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
 import { Renderer } from './renderer';
-
+import { getFont } from '../fonts/fonts';
 const TIME_FONT = getFont('small');
 
 const FONT_WIDTH = TIME_FONT.width;
 const FONT_HEIGHT = TIME_FONT.height;
 
-const Y_OFFSET = 6;
+const Y_OFFSET = 7 + 4;
 
-export class TimeRenderer extends Renderer {
-  private minutes = 20;
-  private seconds = 0;
-
+export class ScheduledTimeRenderer extends Renderer {
   boundingBox = {
     x0: this.matrix.width() / 2 - (3 + FONT_WIDTH * 4) / 2 + 1,
     y0: Y_OFFSET,
@@ -19,10 +16,11 @@ export class TimeRenderer extends Renderer {
     y1: FONT_HEIGHT - 1 + Y_OFFSET,
   };
 
-  setTime(time: string) {
-    const [minutes, seconds] = time.split(':');
-    this.minutes = parseInt(minutes);
-    this.seconds = parseInt(seconds);
+  constructor(
+    protected matrix: LedMatrixInstance,
+    private gameDate: Date,
+  ) {
+    super(matrix);
   }
 
   public update() {
@@ -34,20 +32,20 @@ export class TimeRenderer extends Renderer {
       this.boundingBox.y1,
     );
 
-    // draw the minutes
+    // draw the hour
     this.matrix
       .font(TIME_FONT.font)
       .drawText(
-        this.minutes.toString().padStart(2, '0'),
+        this.gameDate.getHours().toString().padStart(2, '0'),
         this.boundingBox.x0,
         this.boundingBox.y0,
       );
 
-    // draw the seconds
+    // draw the minutes
     this.matrix
       .font(TIME_FONT.font)
       .drawText(
-        this.seconds.toString().padStart(2, '0'),
+        this.gameDate.getMinutes().toString().padStart(2, '0'),
         this.boundingBox.x0 + FONT_WIDTH * 2 + 2,
         this.boundingBox.y0,
       );
