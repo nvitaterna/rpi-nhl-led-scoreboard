@@ -2,8 +2,8 @@ import { getSchedule } from '../nhl-api/nhl-api';
 import { ScheduleResponse } from '../nhl-api/types/schedule-response';
 import { getCurrentDate } from '../utils/date';
 
-// set throttle to 1h in ms
-const THROTTLE = 1000 * 60 * 60;
+// set throttle to 10 min in ms
+const THROTTLE = 10 * 60 * 1000;
 
 export class ScheduleFetcher {
   private lastFetched: Date = new Date(0);

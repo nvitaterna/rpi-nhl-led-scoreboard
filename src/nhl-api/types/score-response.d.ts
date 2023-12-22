@@ -63,7 +63,7 @@ export interface Goal {
 
 export interface PeriodDescriptor {
   number: number;
-  periodType: string;
+  periodType: 'REG' | 'OT' | 'SO';
 }
 
 export interface Clock {

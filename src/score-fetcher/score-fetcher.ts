@@ -12,11 +12,11 @@ export class ScoreFetcher {
 
   constructor() {}
 
-  private async fetchScores() {
+  private async fetchScores(throttle = THROTTLE) {
     // fetch max via throttle
     const now = new Date();
 
-    if (now.getTime() - this.lastFetched.getTime() <= THROTTLE) {
+    if (now.getTime() - this.lastFetched.getTime() <= throttle) {
       return;
     }
 
@@ -29,7 +29,7 @@ export class ScoreFetcher {
     return this.scores;
   }
 
-  public loop() {
-    this.fetchScores();
+  public loop(throttle?: number) {
+    this.fetchScores(throttle);
   }
 }

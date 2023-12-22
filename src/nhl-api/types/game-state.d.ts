@@ -1,1 +1,1 @@
-export type GameState = 'FUT' | 'LIVE' | 'PRE' | 'FUT';
+export type GameState = 'FUT' | 'LIVE' | 'PRE' | 'FINAL' | 'OFF';

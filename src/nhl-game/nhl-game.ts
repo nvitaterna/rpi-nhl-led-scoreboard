@@ -1,4 +1,6 @@
 import { Clock } from '../clock/clock';
+import { GameState } from '../nhl-api/types/game-state';
+import { PeriodDescriptor } from '../nhl-api/types/score-response';
 import { Team } from '../team/team';
 
 // live - game is in progress
@@ -6,11 +8,9 @@ import { Team } from '../team/team';
 // pre - pre game
 // fut - future game
 
-export type GameStatus = 'LIVE' | 'OFF' | 'PRE' | 'FUT';
-
 export class NhlGame {
   public clock = new Clock();
-  public status = 'OFF';
+  public status: GameState = 'OFF';
 
   constructor(
     public readonly id: number,
@@ -18,7 +18,7 @@ export class NhlGame {
     public awayTeam: Team,
   ) {}
 
-  updatePeriod(period: number) {
+  updatePeriod(period: PeriodDescriptor) {
     this.clock.setPeriod(period);
   }
 
@@ -45,7 +45,7 @@ export class NhlGame {
     this.clock.running = running;
   }
 
-  updateGameStatus(status: GameStatus) {
+  updateGameStatus(status: GameState) {
     this.status = status;
   }
 

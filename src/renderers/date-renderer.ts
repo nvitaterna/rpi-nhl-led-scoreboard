@@ -33,7 +33,9 @@ export class DateRenderer extends Renderer {
     if (this.gameTime.toDateString() === today.toDateString()) {
       return 'Today';
     } else if (this.gameTime.getDay() - today.getDay() < 7) {
-      return this.gameTime.toLocaleDateString('en-US', { weekday: 'short' });
+      return this.gameTime.toLocaleDateString('en-US', {
+        weekday: 'short',
+      });
     } else {
       return this.gameTime.toLocaleDateString('en-US', {
         month: 'short',

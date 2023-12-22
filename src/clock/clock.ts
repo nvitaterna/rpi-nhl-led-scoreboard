@@ -1,3 +1,4 @@
+import { PeriodDescriptor } from '../nhl-api/types/score-response';
 import { parseMinutesSeconds } from '../utils/time';
 
 export class Clock {
@@ -5,9 +6,12 @@ export class Clock {
 
   private stopClockAt: number | null = null;
 
-  running = false;
+  period: PeriodDescriptor = {
+    number: 1,
+    periodType: 'REG',
+  };
 
-  period = 1;
+  running = false;
 
   private timeLastDecrement = new Date().getTime();
 
@@ -30,7 +34,7 @@ export class Clock {
     return `${minutes}:${seconds}`;
   }
 
-  setPeriod(period: number) {
+  setPeriod(period: PeriodDescriptor) {
     this.period = period;
   }
 
