@@ -37,13 +37,12 @@ export class PeriodRenderer extends Renderer {
     if (this.period.number === 2) {
       period = `${this.period.number}ND`;
     } else if (this.period.number === 3) {
-      period = `${this.period}RD`;
+      period = `${this.period.number}RD`;
     } else if (this.period.periodType === 'SO') {
       period = 'SO';
     } else if (this.period.number >= 4) {
       period = `${this.period.periodType}${this.period.number - 3}`;
     }
-
     // draw the period
     // center based on string length
     this.matrix
