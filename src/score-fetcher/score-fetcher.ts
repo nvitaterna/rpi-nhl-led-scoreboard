@@ -22,7 +22,11 @@ export class ScoreFetcher {
 
     this.lastFetched = now;
 
-    this.scores = await getScores(getCurrentDate());
+    try {
+      this.scores = await getScores(getCurrentDate());
+    } catch (e) {
+      console.error('Error fetching scores.');
+    }
   }
 
   public getScores() {

@@ -25,7 +25,11 @@ export class ScheduleFetcher {
     const currentDate = getCurrentDate();
 
     // get schedule in timezone
-    this.schedule = await getSchedule(currentDate, this.teamAbbrev);
+    try {
+      this.schedule = await getSchedule(currentDate, this.teamAbbrev);
+    } catch (e) {
+      console.error('Error fetching schedule.');
+    }
   }
 
   public getSchedule() {
