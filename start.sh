@@ -1,0 +1,1 @@
+sudo /home/nico/.nvm/versions/node/v20.10.0/bin/node dist/main.js
