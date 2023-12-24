@@ -19,6 +19,8 @@ export class FinalGameRenderer extends Renderer {
   ) {
     super(matrix);
 
+    matrix.clear();
+
     this.homeLogoRenderer = new LogoRenderer(matrix, homeLogo, true);
     this.awayLogoRenderer = new LogoRenderer(matrix, awayLogo, false);
     this.scoreRenderer = new ScoreRenderer(matrix);

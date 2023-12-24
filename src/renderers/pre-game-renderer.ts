@@ -18,6 +18,8 @@ export class PreGameRenderer extends Renderer {
   ) {
     super(matrix);
 
+    matrix.clear();
+
     this.homeLogoRenderer = new LogoRenderer(matrix, homeLogo, true);
     this.awayLogoRenderer = new LogoRenderer(matrix, awayLogo, false);
     this.scheduledTimeRenderer = new ScheduledTimeRenderer(matrix, gameTime);
