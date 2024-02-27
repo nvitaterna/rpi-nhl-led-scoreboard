@@ -45,3 +45,18 @@ export const getSchedule = async (
   const data = await response.json();
   return data;
 };
+
+export const fetchSchedule = async (
+  teamAbbrev: string,
+): Promise<ScheduleResponse> => {
+  const response = await fetch(`${BASE_URL}/club-schedule/${teamAbbrev}/now`);
+
+  if (response.status >= 400) {
+    console.error(await response.text());
+    throw new Error('Bad response from server for schedule');
+  }
+
+  const data = await response.json();
+
+  return data;
+};

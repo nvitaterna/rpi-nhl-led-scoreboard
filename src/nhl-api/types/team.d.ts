@@ -1,3 +1,7 @@
+export interface Venue {
+  default: string;
+}
+
 export interface Team {
   id: number;
   name: Venue;
@@ -6,7 +10,6 @@ export interface Team {
   sog?: number;
   logo: string;
   record?: string;
-  odds?: Odd[];
   hotelLink?: string;
   hotelDesc?: string;
   score?: number;

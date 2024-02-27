@@ -1,5 +1,7 @@
-import { Team } from '../../team/team';
+import { Team } from './team';
 import { GameState } from './game-state';
+
+type PeriodType = 'REG' | 'OT' | 'SO';
 
 export interface ScheduleResponse {
   previousSeason: number;
@@ -67,11 +69,11 @@ export interface FirstInitial {
 }
 
 export interface GameOutcome {
-  lastPeriodType: string;
+  lastPeriodType: PeriodType;
 }
 
 export interface PeriodDescriptor {
-  periodType?: string;
+  periodType?: PeriodType;
 }
 
 export interface PlaceName {
