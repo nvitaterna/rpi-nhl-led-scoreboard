@@ -4,30 +4,42 @@
   "description": "NHL Led Scoreboard written in typescript",
   "main": "index.js",
   "license": "MIT",
-  "type": "module",
   "scripts": {
+    "dev": "ts-node src/main.ts | pino-pretty",
     "start": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
     "prebuild": "npm run lint && npm run format",
     "build": "tsc",
     "lint": "eslint . --ext .ts --ext .mts",
-    "test": "vitest",
+    "test": "vitest --run",
+    "coverage": "vitest run --coverage",
     "prettier": "prettier --config .prettierrc --write ."
   },
   "devDependencies": {
-    "@types/node": "^20.12.4",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "@typescript-eslint/parser": "^7.5.0",
-    "eslint": "^8.57.0",
+    "@types/better-sqlite3": "^7.6.9",
+    "@types/node": "^20.12.7",
+    "@types/node-persist": "^3.1.8",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "@vitest/coverage-v8": "^1.5.0",
+    "eslint": "^9.0.0",
     "eslint-plugin-prettier": "^5.1.3",
     "msw": "^2.2.13",
+    "pino-pretty": "^11.0.0",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.3",
-    "vitest": "^1.4.0"
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0"
   },
   "dependencies": {
     "@nvitaterna/rpi-led-matrix": "^1.16.0",
-    "sharp": "^0.33.3"
+    "better-sqlite3": "^9.5.0",
+    "dotenv": "^16.4.5",
+    "kysely": "^0.27.3",
+    "node-persist": "^4.0.1",
+    "pino": "^8.20.0",
+    "sharp": "^0.33.3",
+    "timezones-list": "^3.0.3",
+    "zod": "^3.22.4"
   }
 }

@@ -1,4 +1,5 @@
 dist
 node_modules
-assets/team-logos.json
-assets/team-data.json
+coverage
+.env
+yarn-error.log
