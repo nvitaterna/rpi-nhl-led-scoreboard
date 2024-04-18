@@ -19,6 +19,7 @@ export interface BoxScoreResponse {
   awayTeam: Team;
   homeTeam: Team;
   clock: Clock;
+  gameOutcome?: RegGameOutcome | OTGameOutcome | SOGameOutcome;
 }
 
 export interface Clock {
@@ -31,4 +32,17 @@ export interface Clock {
 export interface PeriodDescriptor {
   number: number;
   periodType: string;
+}
+
+export interface RegGameOutcome {
+  lastPeriodType: 'REG';
+}
+
+export interface OTGameOutcome {
+  lastPeriodType: 'OT';
+  otPeriods: number;
+}
+
+export interface SOGameOutcome {
+  lastPeriodType: 'SO';
 }

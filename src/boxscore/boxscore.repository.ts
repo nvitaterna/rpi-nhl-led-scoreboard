@@ -10,4 +10,8 @@ export class BoxscoreRepository {
   async set(boxscore: BoxscoreData) {
     this.boxscore = boxscore;
   }
+
+  async clear() {
+    this.boxscore = null;
+  }
 }

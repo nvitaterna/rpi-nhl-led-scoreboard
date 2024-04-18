@@ -16,4 +16,8 @@ export class BoxscoreService {
 
     await this.boxscoreRepository.set(boxscore);
   }
+
+  async clear() {
+    await this.boxscoreRepository.clear();
+  }
 }

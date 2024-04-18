@@ -15,6 +15,8 @@ import { PrefsRepository } from './prefs/prefs.repository';
 import { PrefsService } from './prefs/prefs.service';
 import { BoxscoreRepository } from './boxscore/boxscore.repository';
 import { BoxscoreService } from './boxscore/boxscore.service';
+import { DataLoop } from './data-loop';
+import { BoxscoreUpdater } from './boxscore/boxscore.updater';
 
 export type App = {
   configService: ConfigService;
@@ -24,6 +26,7 @@ export type App = {
   prefsService: PrefsService;
   boxscoreService: BoxscoreService;
   loggerService: LoggerService;
+  boxscoreUpdater: BoxscoreUpdater;
 };
 
 export const main = async (requireBootstrap = false) => {
@@ -31,9 +34,10 @@ export const main = async (requireBootstrap = false) => {
 
   const storage = await initStorage();
 
-  const nhlApi = new NhlApi();
-
   const configService = new ConfigService();
+  const loggerService = new LoggerService(configService);
+
+  const nhlApi = new NhlApi(loggerService);
 
   const teamRepository = new TeamRepository(db);
   const gameRepository = new GameRepository(db);
@@ -41,7 +45,6 @@ export const main = async (requireBootstrap = false) => {
   const prefsRepository = new PrefsRepository(storage);
   const boxscoreRepository = new BoxscoreRepository();
 
-  const loggerService = new LoggerService(configService);
   const teamService = new TeamService(teamRepository, nhlApi);
   const prefsService = new PrefsService(prefsRepository, teamService);
   const gameService = new GameService(
@@ -57,6 +60,12 @@ export const main = async (requireBootstrap = false) => {
   );
   const boxscoreService = new BoxscoreService(boxscoreRepository, nhlApi);
 
+  const boxscoreUpdater = new BoxscoreUpdater(
+    boxscoreService,
+    gameService,
+    loggerService,
+  );
+
   const app: App = {
     configService,
     teamService,
@@ -65,6 +74,7 @@ export const main = async (requireBootstrap = false) => {
     prefsService,
     boxscoreService,
     loggerService,
+    boxscoreUpdater,
   };
 
   if (requireBootstrap) {
@@ -80,18 +90,11 @@ export const main = async (requireBootstrap = false) => {
   const team = await prefsService.getTeam();
   loggerService.info(`team: ${team}`);
 
-  const liveGame = await gameService.getActiveGame();
+  const dataLoop = new DataLoop(app);
 
-  if (liveGame) {
-    loggerService.info(liveGame, 'live game');
-    await app.boxscoreService.fetchBoxscore(liveGame.id);
-    const boxscore = await app.boxscoreService.get();
-    loggerService.info(boxscore, 'boxscore');
-  } else {
-    loggerService.info('no live game');
-  }
+  dataLoop.start();
 
   return app;
 };
 
-main().then((app) => app.loggerService.info('done'));
+main();
