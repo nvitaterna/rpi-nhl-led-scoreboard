@@ -19,7 +19,8 @@ export class DataLoop {
     this.loopInterval = null;
   }
 
-  private async loop() {
-    await this.app.boxscoreUpdater.update();
+  async loop() {
+    this.app.gameUpdater.update();
+    this.app.boxscoreUpdater.update();
   }
 }

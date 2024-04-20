@@ -17,6 +17,7 @@ import { BoxscoreRepository } from './boxscore/boxscore.repository';
 import { BoxscoreService } from './boxscore/boxscore.service';
 import { DataLoop } from './data-loop';
 import { BoxscoreUpdater } from './boxscore/boxscore.updater';
+import { GameUpdater } from './game/game.updater';
 
 export type App = {
   configService: ConfigService;
@@ -27,6 +28,7 @@ export type App = {
   boxscoreService: BoxscoreService;
   loggerService: LoggerService;
   boxscoreUpdater: BoxscoreUpdater;
+  gameUpdater: GameUpdater;
 };
 
 export const main = async (requireBootstrap = false) => {
@@ -36,6 +38,8 @@ export const main = async (requireBootstrap = false) => {
 
   const configService = new ConfigService();
   const loggerService = new LoggerService(configService);
+
+  const logger = loggerService.child('main');
 
   const nhlApi = new NhlApi(loggerService);
 
@@ -66,6 +70,8 @@ export const main = async (requireBootstrap = false) => {
     loggerService,
   );
 
+  const gameUpdater = new GameUpdater(gameService, teamService, prefsService);
+
   const app: App = {
     configService,
     teamService,
@@ -75,20 +81,21 @@ export const main = async (requireBootstrap = false) => {
     boxscoreService,
     loggerService,
     boxscoreUpdater,
+    gameUpdater,
   };
 
   if (requireBootstrap) {
-    loggerService.info('bootstrapping application data');
+    logger.info('bootstrapping application data');
     await bootstrap(app);
   }
 
-  loggerService.info(configService.appConfig);
+  logger.info(configService.appConfig);
 
   const timezone = await prefsService.getTimezone();
-  loggerService.info(`timezone: ${timezone}`);
+  logger.info(`timezone: ${timezone}`);
 
   const team = await prefsService.getTeam();
-  loggerService.info(`team: ${team}`);
+  logger.info(`team: ${team}`);
 
   const dataLoop = new DataLoop(app);
 

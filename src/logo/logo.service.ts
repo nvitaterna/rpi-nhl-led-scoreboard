@@ -3,15 +3,19 @@ import { svgToBuffer } from './logo.utils';
 import { LogoRepository } from './logo.repository';
 import { LogoData } from './logo.schema';
 import { LoggerService } from '../logger/logger.service';
+import { Logger } from 'pino';
 
 const LOGO_SIZE = 32;
 
 export class LogoService {
+  private logger: Logger;
   constructor(
     private logoRepository: LogoRepository,
     private teamService: TeamService,
-    private loggerService: LoggerService,
-  ) {}
+    loggerService: LoggerService,
+  ) {
+    this.logger = loggerService.child('logo.service');
+  }
 
   async bootstrap() {
     const teams = await this.teamService.getAll();
@@ -23,7 +27,7 @@ export class LogoService {
 
       const svg = await response.text();
 
-      this.loggerService.info(
+      this.logger.info(
         {
           team,
         },

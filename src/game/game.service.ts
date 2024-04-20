@@ -1,5 +1,6 @@
 import { NhlApi } from '../nhl-api/nhl-api';
 import { PrefsService } from '../prefs/prefs.service';
+import { TeamData } from '../team/team.schema';
 import { TeamService } from '../team/team.service';
 import { GameRepository } from './game.repository';
 import { GameData } from './game.schema';
@@ -24,13 +25,17 @@ export class GameService {
     const teams = await this.teamService.getAll();
 
     for (const team of teams) {
-      const games = await this.nhlApi.fetchGames(team.abbrev);
-
-      await this.gameRepository.upsertMany(games);
+      await this.bootstrapGamesForTeam(team.abbrev);
 
       // wait 250ms between each team to avoid rate limiting
       await new Promise((resolve) => setTimeout(resolve, 250));
     }
+  }
+
+  async bootstrapGamesForTeam(abbrev: string) {
+    const games = await this.nhlApi.fetchGames(abbrev);
+
+    await this.gameRepository.upsertMany(games);
   }
 
   async getActiveGame() {

@@ -5,19 +5,24 @@ import { GameType, gameSchema } from '../game/game.schema';
 import { TeamData, teamSchema } from '../team/team.schema';
 import { BoxscoreData, boxscoreSchema } from '../boxscore/boxscore.schema';
 import { LoggerService } from '../logger/logger.service';
+import { Logger } from 'pino';
 
 const NHL_API_BASE_URL = 'https://api-web.nhle.com/v1';
 
 export class NhlApi {
   private baseUrl = NHL_API_BASE_URL;
 
-  constructor(private loggerService: LoggerService) {}
+  private logger: Logger;
+
+  constructor(loggerService: LoggerService) {
+    this.logger = loggerService.child('nhl-api');
+  }
 
   async fetchTeams(): Promise<TeamData[]> {
     const response = await fetch(`${this.baseUrl}/standings/now`);
 
     if (response.status >= 400) {
-      this.loggerService.error(await response.text());
+      this.logger.error(await response.text());
       throw new Error('Bad response from server for fetchTeams.');
     }
 
@@ -38,7 +43,7 @@ export class NhlApi {
     );
 
     if (response.status >= 400) {
-      this.loggerService.error(await response.text());
+      this.logger.error(await response.text());
       throw new Error('Bad response from server for fetchGames.');
     }
 
@@ -61,7 +66,7 @@ export class NhlApi {
     );
 
     if (response.status >= 400) {
-      this.loggerService.error(await response.text());
+      this.logger.error(await response.text());
       throw new Error('Bad response from server for fetchBoxscore.');
     }
 
@@ -76,10 +81,10 @@ export class NhlApi {
       status: this.parseGameState(game.gameState),
       awayScore: game.awayTeam.score,
       homeScore: game.homeTeam.score,
-      period: game.periodDescriptor.number,
-      periodType: this.parsePeriodType(game.periodDescriptor.periodType),
-      minutes: this.parseTimeRemaining(game.clock.timeRemaining).minutes,
-      seconds: this.parseTimeRemaining(game.clock.timeRemaining).seconds,
+      period: game.periodDescriptor?.number,
+      periodType: this.parsePeriodType(game.periodDescriptor?.periodType),
+      minutes: this.parseTimeRemaining(game.clock?.timeRemaining).minutes,
+      seconds: this.parseTimeRemaining(game.clock?.timeRemaining).seconds,
     });
   }
 
@@ -96,7 +101,7 @@ export class NhlApi {
       case 3:
         return 'PLAYOFF';
       default:
-        this.loggerService.error('Unknown game type:', type);
+        this.logger.error('Unknown game type:', type);
         return 'REGULAR';
     }
   }
@@ -122,7 +127,7 @@ export class NhlApi {
         break;
       default:
         status = 'UPCOMING';
-        this.loggerService.error('Unknown game state', rawGameState);
+        this.logger.error('Unknown game state', rawGameState);
         break;
     }
 
@@ -148,14 +153,17 @@ export class NhlApi {
         break;
       default:
         periodType = 'REGULAR';
-        this.loggerService.error('Unknown period type', rawPeriodType);
+        this.logger.error('Unknown period type', rawPeriodType);
         break;
     }
 
     return periodType;
   }
 
-  parseTimeRemaining(timeRemaining: string) {
+  parseTimeRemaining(timeRemaining?: string) {
+    if (!timeRemaining) {
+      return { minutes: null, seconds: null };
+    }
     const [minutes, seconds] = timeRemaining.split(':').map(Number);
 
     return { minutes, seconds };
