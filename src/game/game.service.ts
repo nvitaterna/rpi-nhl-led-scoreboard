@@ -1,6 +1,6 @@
-import { NhlApi } from '../nhl-api/nhl-api';
-import { PrefsService } from '../prefs/prefs.service';
-import { TeamService } from '../team/team.service';
+import { NhlApi } from '@/nhl-api/nhl-api';
+import { PrefsService } from '@/prefs/prefs.service';
+import { TeamService } from '@/team/team.service';
 import { GameRepository } from './game.repository';
 
 export class GameService {

@@ -1,7 +1,7 @@
 import { Logger } from 'pino';
-import { GameService } from '../game/game.service';
-import { LoggerService } from '../logger/logger.service';
-import { Updateable } from '../updateable/updateable';
+import { GameService } from '@/game/game.service';
+import { LoggerService } from '@/logger/logger.service';
+import { Updateable } from '@/updateable/updateable';
 import { BoxscoreService } from './boxscore.service';
 
 const DEFAULT_BOXSCORE_UPDATE_INTERVAl = 5000;

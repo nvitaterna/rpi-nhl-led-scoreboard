@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { TeamRepository } from './team.repository';
-import { Db } from '../db/database';
+import { Db } from '@/db/database';
 
 const teams = [
   {

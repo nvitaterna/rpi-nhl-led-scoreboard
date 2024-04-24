@@ -5,15 +5,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node src/main.ts | pino-pretty",
+    "dev": "tsx src/main.ts | pino-pretty",
     "start": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
+    "format": "prettier --write .",
     "prebuild": "npm run lint && npm run format",
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "lint": "eslint src",
     "test": "vitest --run",
-    "coverage": "vitest run --coverage",
-    "prettier": "prettier --config .prettierrc --write ."
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@eslint/js": "^9.1.1",
@@ -28,7 +28,8 @@
     "msw": "^2.2.14",
     "pino-pretty": "^11.0.0",
     "prettier": "^3.2.5",
-    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.8",
+    "tsx": "^4.7.2",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.7.1",
     "vitest": "^1.5.1"

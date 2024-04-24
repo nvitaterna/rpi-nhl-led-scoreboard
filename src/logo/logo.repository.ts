@@ -1,4 +1,4 @@
-import { Db } from '../db/database';
+import { Db } from '@/db/database';
 import { LogoData } from './logo.schema';
 
 export class LogoRepository {

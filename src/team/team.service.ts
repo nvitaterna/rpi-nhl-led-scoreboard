@@ -1,4 +1,4 @@
-import { NhlApi } from '../nhl-api/nhl-api';
+import { NhlApi } from '@/nhl-api/nhl-api';
 import { TeamRepository } from './team.repository';
 
 export class TeamService {

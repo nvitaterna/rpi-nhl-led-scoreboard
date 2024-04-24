@@ -1,5 +1,5 @@
 import pino from 'pino';
-import { ConfigService } from '../config/config.service';
+import { ConfigService } from '@/config/config.service';
 
 export class LoggerService {
   logger: pino.Logger<never>;

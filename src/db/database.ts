@@ -1,9 +1,9 @@
 import { Kysely, SqliteDialect } from 'kysely';
-import { TeamTable } from '../team/team.table';
+import { TeamTable } from '@/team/team.table';
 import SQLite from 'better-sqlite3';
-import { GameTable } from '../game/game.table';
+import { GameTable } from '@/game/game.table';
 import path from 'path';
-import { LogoTable } from '../logo/logo.table';
+import { LogoTable } from '@/logo/logo.table';
 
 export interface Database {
   team: TeamTable;

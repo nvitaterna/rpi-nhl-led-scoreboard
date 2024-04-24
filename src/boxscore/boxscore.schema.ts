@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { gameSchema } from '../game/game.schema';
+import { gameSchema } from '@/game/game.schema';
 
 export const boxscoreSchema = gameSchema.extend({
   status: z.enum(['LIVE', 'FINAL', 'UPCOMING']).nullable().default(null),

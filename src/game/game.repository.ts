@@ -1,4 +1,4 @@
-import { Db } from '../db/database';
+import { Db } from '@/db/database';
 import { Game } from './game.table';
 
 export class GameRepository {

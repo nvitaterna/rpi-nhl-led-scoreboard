@@ -1,15 +1,13 @@
-import type { App } from './main';
-
-export class DataLoop {
+export abstract class Loopable {
   private loopInterval: NodeJS.Timeout | null = null;
 
-  constructor(private app: App) {}
+  constructor(private loopMs: number) {}
 
   public start() {
     if (this.loopInterval !== null) {
       this.stop();
     }
-    this.loopInterval = setInterval(() => this.loop(), 100);
+    this.loopInterval = setInterval(() => this.loop(), this.loopMs);
   }
 
   public stop() {
@@ -19,8 +17,5 @@ export class DataLoop {
     this.loopInterval = null;
   }
 
-  async loop() {
-    this.app.gameUpdater.update();
-    this.app.boxscoreUpdater.update();
-  }
+  protected abstract loop(): Promise<void> | void;
 }

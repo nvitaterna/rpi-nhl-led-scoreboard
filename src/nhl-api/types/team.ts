@@ -10,7 +10,6 @@ export interface Team {
   record?: string;
   hotelLink?: string;
   hotelDesc?: string;
-  score?: number;
   airlineLink?: string;
   airlineDesc?: string;
   radioLink?: string;

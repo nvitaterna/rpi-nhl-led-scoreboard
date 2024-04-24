@@ -1,10 +1,10 @@
 import { describe, expect, it, vi } from 'vitest';
 import { GameRepository } from './game.repository';
 import { GameService } from './game.service';
-import { db } from '../db/database';
-import { NhlApi } from '../nhl-api/nhl-api';
+import { db } from '@/db/database';
+import { NhlApi } from '@/nhl-api/nhl-api';
 import { Game } from './game.table';
-import { TeamRepository } from '../team/team.repository';
+import { TeamRepository } from '@/team/team.repository';
 
 const games: Game[] = [
   {
@@ -30,7 +30,7 @@ const games: Game[] = [
   },
 ];
 
-vi.mock('../db/database', () => {
+vi.mock('@/db/database', () => {
   const db = {
     selectFrom: () => db,
     selectAll: () => db,
@@ -55,14 +55,14 @@ vi.mock('./game.repository', () => {
   return { GameRepository };
 });
 
-vi.mock('../team/team.repository', () => {
+vi.mock('@/team/team.repository', () => {
   const TeamRepository = vi.fn();
   TeamRepository.prototype.getAllTeams = vi.fn();
 
   return { TeamRepository };
 });
 
-vi.mock('../nhl-api/nhl-api', () => {
+vi.mock('@/nhl-api/nhl-api', () => {
   const NhlApi = vi.fn();
   NhlApi.prototype.fetchGames = vi.fn();
 

@@ -1,23 +1,23 @@
-import { bootstrap } from './bootstrap';
-import { db } from './db/database';
-import { GameRepository } from './game/game.repository';
-import { GameService } from './game/game.service';
-import { LogoRepository } from './logo/logo.repository';
-import { LogoService } from './logo/logo.service';
-import { NhlApi } from './nhl-api/nhl-api';
-import { migrate } from './run-migrations';
-import { TeamRepository } from './team/team.repository';
-import { TeamService } from './team/team.service';
-import { LoggerService } from './logger/logger.service';
-import { ConfigService } from './config/config.service';
-import { initStorage } from './storage/storage';
-import { PrefsRepository } from './prefs/prefs.repository';
-import { PrefsService } from './prefs/prefs.service';
-import { BoxscoreRepository } from './boxscore/boxscore.repository';
-import { BoxscoreService } from './boxscore/boxscore.service';
-import { DataLoop } from './data-loop';
-import { BoxscoreUpdater } from './boxscore/boxscore.updater';
-import { GameUpdater } from './game/game.updater';
+import { bootstrap } from '@/bootstrap';
+import { db } from '@/db/database';
+import { GameRepository } from '@/game/game.repository';
+import { GameService } from '@/game/game.service';
+import { LogoRepository } from '@/logo/logo.repository';
+import { LogoService } from '@/logo/logo.service';
+import { NhlApi } from '@/nhl-api/nhl-api';
+import { migrate } from '@/run-migrations';
+import { TeamRepository } from '@/team/team.repository';
+import { TeamService } from '@/team/team.service';
+import { LoggerService } from '@/logger/logger.service';
+import { ConfigService } from '@/config/config.service';
+import { initStorage } from '@/storage/storage';
+import { PrefsRepository } from '@/prefs/prefs.repository';
+import { PrefsService } from '@/prefs/prefs.service';
+import { BoxscoreRepository } from '@/boxscore/boxscore.repository';
+import { BoxscoreService } from '@/boxscore/boxscore.service';
+import { DataLoop } from '@/data-loop/data-loop';
+import { BoxscoreUpdater } from '@/boxscore/boxscore.updater';
+import { GameUpdater } from '@/game/game.updater';
 
 export type App = {
   configService: ConfigService;
@@ -106,4 +106,4 @@ export const main = async () => {
   return app;
 };
 
-main(true);
+main();

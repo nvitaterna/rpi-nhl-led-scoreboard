@@ -1,4 +1,4 @@
-import { Db } from '../db/database';
+import { Db } from '@/db/database';
 import { Team } from './team.table';
 
 export class TeamRepository {

@@ -976,10 +976,7 @@
         "startTimeUTC": "2024-04-11T23:00:00Z",
         "easternUTCOffset": "-04:00",
         "venueUTCOffset": "-04:00",
-        "tvBroadcasts": [
-          "SNO",
-          "MSGSN2"
-        ],
+        "tvBroadcasts": ["SNO", "MSGSN2"],
         "gameState": "LIVE",
         "gameScheduleState": "OK",
         "awayTeam": {

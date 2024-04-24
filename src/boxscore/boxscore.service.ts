@@ -1,4 +1,4 @@
-import { NhlApi } from '../nhl-api/nhl-api';
+import { NhlApi } from '@/nhl-api/nhl-api';
 import { BoxscoreRepository } from './boxscore.repository';
 
 export class BoxscoreService {

@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from 'vitest';
 import { TeamRepository } from './team.repository';
 import { TeamService } from './team.service';
-import { db } from '../db/database';
-import { NhlApi } from '../nhl-api/nhl-api';
+import { db } from '@/db/database';
+import { NhlApi } from '@/nhl-api/nhl-api';
 import { Team } from './team.table';
 
 const teams: Team[] = [
@@ -23,7 +23,7 @@ const teams: Team[] = [
   },
 ];
 
-vi.mock('../db/database', () => {
+vi.mock('@/db/database', () => {
   const db = {
     selectFrom: () => db,
     selectAll: () => db,
@@ -48,7 +48,7 @@ vi.mock('./team.repository', () => {
   return { TeamRepository };
 });
 
-vi.mock('../nhl-api/nhl-api', () => {
+vi.mock('@/nhl-api/nhl-api', () => {
   const NhlApi = vi.fn();
   NhlApi.prototype.fetchTeams = vi.fn();
 

@@ -1,6 +1,6 @@
-import { PrefsService } from '../prefs/prefs.service';
-import { TeamService } from '../team/team.service';
-import { Updateable } from '../updateable/updateable';
+import { PrefsService } from '@/prefs/prefs.service';
+import { TeamService } from '@/team/team.service';
+import { Updateable } from '@/updateable/updateable';
 import { GameService } from './game.service';
 
 // default should be 6 hours

@@ -1,8 +1,8 @@
-import { TeamService } from '../team/team.service';
+import { TeamService } from '@/team/team.service';
 import { svgToBuffer } from './logo.utils';
 import { LogoRepository } from './logo.repository';
 import { LogoData } from './logo.schema';
-import { LoggerService } from '../logger/logger.service';
+import { LoggerService } from '@/logger/logger.service';
 import { Logger } from 'pino';
 
 const LOGO_SIZE = 32;

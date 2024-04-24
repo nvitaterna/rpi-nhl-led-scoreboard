@@ -1,10 +1,10 @@
 import { StandingsResponse } from './types/standings-response';
 import { BoxScoreResponse } from './types/boxscore-response';
 import { ScheduleResponse } from './types/schedule-response';
-import { GameType, gameSchema } from '../game/game.schema';
-import { TeamData, teamSchema } from '../team/team.schema';
-import { BoxscoreData, boxscoreSchema } from '../boxscore/boxscore.schema';
-import { LoggerService } from '../logger/logger.service';
+import { GameType, gameSchema } from '@/game/game.schema';
+import { TeamData, teamSchema } from '@/team/team.schema';
+import { BoxscoreData, boxscoreSchema } from '@/boxscore/boxscore.schema';
+import { LoggerService } from '@/logger/logger.service';
 import { Logger } from 'pino';
 
 const NHL_API_BASE_URL = 'https://api-web.nhle.com/v1';

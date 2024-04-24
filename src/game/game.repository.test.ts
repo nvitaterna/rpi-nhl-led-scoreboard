@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { GameRepository } from './game.repository';
-import { Db } from '../db/database';
+import { Db } from '@/db/database';
 import { Game } from './game.table';
 
 const games: Game[] = [

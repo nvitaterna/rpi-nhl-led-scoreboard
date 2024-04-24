@@ -1,4 +1,4 @@
-import { TeamService } from '../team/team.service';
+import { TeamService } from '@/team/team.service';
 import { PrefsRepository } from './prefs.repository';
 import { teamSchema, timezoneSchema } from './prefs.schema';
 
