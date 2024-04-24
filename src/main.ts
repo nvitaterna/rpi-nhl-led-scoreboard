@@ -104,4 +104,4 @@ export const main = async (requireBootstrap = false) => {
   return app;
 };
 
-main();
+main(true);
