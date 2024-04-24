@@ -1,9 +1,7 @@
 import { NhlApi } from '../nhl-api/nhl-api';
 import { PrefsService } from '../prefs/prefs.service';
-import { TeamData } from '../team/team.schema';
 import { TeamService } from '../team/team.service';
 import { GameRepository } from './game.repository';
-import { GameData } from './game.schema';
 
 export class GameService {
   constructor(

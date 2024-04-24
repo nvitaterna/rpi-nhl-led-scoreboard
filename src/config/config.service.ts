@@ -16,6 +16,7 @@ const configEnvSchema = z.object({
     .number()
     .pipe(z.union([z.literal(16), z.literal(32), z.literal(64)])),
   PWM: z.enum(['true', 'false']).transform((value) => value === 'true'),
+  BOOTSTRAP: z.enum(['true', 'false']).transform((value) => value === 'true'),
 });
 
 export class ConfigService {
@@ -30,6 +31,7 @@ export class ConfigService {
       env: this.env.NODE_ENV,
       port: this.env.PORT,
       logLevel: this.env.LOG_LEVEL,
+      bootstrap: this.env.BOOTSTRAP,
     };
   }
 

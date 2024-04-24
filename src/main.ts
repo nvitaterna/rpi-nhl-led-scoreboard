@@ -31,13 +31,15 @@ export type App = {
   gameUpdater: GameUpdater;
 };
 
-export const main = async (requireBootstrap = false) => {
+export const main = async () => {
   await migrate();
 
   const storage = await initStorage();
 
   const configService = new ConfigService();
   const loggerService = new LoggerService(configService);
+
+  const appConfig = configService.appConfig;
 
   const logger = loggerService.child('main');
 
@@ -84,7 +86,7 @@ export const main = async (requireBootstrap = false) => {
     gameUpdater,
   };
 
-  if (requireBootstrap) {
+  if (appConfig.bootstrap) {
     logger.info('bootstrapping application data');
     await bootstrap(app);
   }
