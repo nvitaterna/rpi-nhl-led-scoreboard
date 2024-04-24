@@ -15,7 +15,7 @@ const configEnvSchema = z.object({
   LED_COLS: z.coerce
     .number()
     .pipe(z.union([z.literal(16), z.literal(32), z.literal(64)])),
-  PWM: z.coerce.boolean(),
+  PWM: z.enum(['true', 'false']).transform((value) => value === 'true'),
 });
 
 export class ConfigService {
