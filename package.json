@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx src/main.ts | pino-pretty",
+    "build:watch": "tsc --project tsconfig.build.json --watch",
     "start": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
     "format": "prettier --write .",
