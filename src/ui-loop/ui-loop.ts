@@ -30,5 +30,7 @@ export class UiLoop extends Loopable {
     }
 
     this.liveGameScene.render();
+
+    this.matrix.sync();
   }
 }
