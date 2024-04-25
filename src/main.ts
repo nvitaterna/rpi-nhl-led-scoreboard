@@ -116,7 +116,7 @@ export const main = async () => {
   const matrix = Matrix(configService.matrixConfig);
 
   const dataLoop = new DataLoop(app);
-  const uiLoop = new UiLoop(app, matrix);
+  const uiLoop = new UiLoop(app, matrix, loggerService);
 
   dataLoop.start();
   uiLoop.start();
