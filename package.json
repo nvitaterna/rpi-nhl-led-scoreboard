@@ -10,7 +10,6 @@
     "start": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
     "format": "prettier --write .",
-    "prebuild": "npm run lint && npm run format",
     "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "lint": "eslint src --fix",
     "test": "vitest --run",
