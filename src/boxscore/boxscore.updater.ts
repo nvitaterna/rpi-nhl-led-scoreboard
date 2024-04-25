@@ -24,6 +24,8 @@ export class BoxscoreUpdater extends Updateable {
       return;
     }
 
+    this.beforeUpdate();
+
     const game = await this.gameService.getActiveGame();
 
     if (!game) {

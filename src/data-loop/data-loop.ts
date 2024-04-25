@@ -7,7 +7,8 @@ export class DataLoop extends Loopable {
   }
 
   async loop() {
-    this.app.gameUpdater.update();
-    this.app.boxscoreUpdater.update();
+    await this.app.gameUpdater.update();
+    await this.app.boxscoreUpdater.update();
+    await this.app.uiDataUpdater.update();
   }
 }

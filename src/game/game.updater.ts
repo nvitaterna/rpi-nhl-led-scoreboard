@@ -20,6 +20,8 @@ export class GameUpdater extends Updateable {
       return;
     }
 
+    this.beforeUpdate();
+
     const team = await this.prefsService.getTeam();
 
     if (!team) {

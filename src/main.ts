@@ -18,6 +18,11 @@ import { BoxscoreService } from '@/boxscore/boxscore.service';
 import { DataLoop } from '@/data-loop/data-loop';
 import { BoxscoreUpdater } from '@/boxscore/boxscore.updater';
 import { GameUpdater } from '@/game/game.updater';
+import { UiDataRepository } from './ui-data/ui-data.repository';
+import { UiDataService } from './ui-data/ui-data.service';
+import { UiDataUpdater } from './ui-data/ui-data.updater';
+import { UiLoop } from './ui-loop/ui-loop';
+import { Matrix } from './matrix/matrix';
 
 export type App = {
   configService: ConfigService;
@@ -25,10 +30,12 @@ export type App = {
   gameService: GameService;
   logoService: LogoService;
   prefsService: PrefsService;
+  uiDataService: UiDataService;
   boxscoreService: BoxscoreService;
   loggerService: LoggerService;
   boxscoreUpdater: BoxscoreUpdater;
   gameUpdater: GameUpdater;
+  uiDataUpdater: UiDataUpdater;
 };
 
 export const main = async () => {
@@ -50,6 +57,7 @@ export const main = async () => {
   const logoRepository = new LogoRepository(db);
   const prefsRepository = new PrefsRepository(storage);
   const boxscoreRepository = new BoxscoreRepository();
+  const uiDataRepository = new UiDataRepository();
 
   const teamService = new TeamService(teamRepository, nhlApi);
   const prefsService = new PrefsService(prefsRepository, teamService);
@@ -66,6 +74,8 @@ export const main = async () => {
   );
   const boxscoreService = new BoxscoreService(boxscoreRepository, nhlApi);
 
+  const uiDataService = new UiDataService(uiDataRepository, logoService);
+
   const boxscoreUpdater = new BoxscoreUpdater(
     boxscoreService,
     gameService,
@@ -74,16 +84,20 @@ export const main = async () => {
 
   const gameUpdater = new GameUpdater(gameService, teamService, prefsService);
 
+  const uiDataUpdater = new UiDataUpdater(uiDataService, boxscoreService);
+
   const app: App = {
     configService,
     teamService,
     gameService,
     logoService,
     prefsService,
+    uiDataService,
     boxscoreService,
     loggerService,
     boxscoreUpdater,
     gameUpdater,
+    uiDataUpdater,
   };
 
   if (appConfig.bootstrap) {
@@ -99,9 +113,13 @@ export const main = async () => {
   const team = await prefsService.getTeam();
   logger.info(`team: ${team}`);
 
+  const matrix = Matrix(configService.matrixConfig);
+
   const dataLoop = new DataLoop(app);
+  const uiLoop = new UiLoop(app, matrix);
 
   dataLoop.start();
+  uiLoop.start();
 
   return app;
 };

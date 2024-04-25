@@ -5,7 +5,7 @@ import { LogoData } from './logo.schema';
 import { LoggerService } from '@/logger/logger.service';
 import { Logger } from 'pino';
 
-const LOGO_SIZE = 32;
+export const LOGO_SIZE = 32;
 
 export class LogoService {
   private logger: Logger;
