@@ -19,5 +19,6 @@ export abstract class Updateable {
 
   protected afterUpdate() {
     this.lastUpdate = Date.now();
+    this.isUpdating = false;
   }
 }
