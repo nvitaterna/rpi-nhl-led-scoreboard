@@ -28,20 +28,9 @@ export class LiveGameScene {
     const font = getFont('small');
     const text = 'TEST';
 
-    // const lines = LayoutUtils.textToLines(font, 64, text);
-    // const glyphs = LayoutUtils.linesToMappedGlyphs(
-    //   lines,
-    //   font.height(),
-    //   matrix.width(),
-    //   matrix.height(),
-    //   HorizontalAlignment.Center,
-    // );
+    const centeredX = TextRenderer.getCenteredX(matrix, text, font);
 
-    // glyphs.map((glyph) => {
-    //   this.matrix.drawText(glyph.char, glyph.x, glyph.y);
-    // });
-
-    this.text = new TextRenderer(matrix, 0, 0, font, text);
+    this.text = new TextRenderer(matrix, centeredX, 0, font, text);
   }
 
   render() {
