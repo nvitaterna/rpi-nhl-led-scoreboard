@@ -37,6 +37,7 @@
   "dependencies": {
     "@nvitaterna/rpi-led-matrix": "^1.16.0",
     "better-sqlite3": "^9.5.0",
+    "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "kysely": "^0.27.3",
     "node-persist": "^4.0.1",

@@ -3,11 +3,13 @@ import { UiData } from './ui-data/ui-data.schema';
 import { LogoRenderer } from './logo.renderer';
 import { TextRenderer } from './text.renderer';
 import { getFont } from './font/fonts';
+import { formatDate } from 'date-fns';
 
 export class PreGameScene {
   private homeLogoRenderer: LogoRenderer;
   private awayLogoRenderer: LogoRenderer;
   private day: TextRenderer;
+  private time: TextRenderer;
 
   constructor(
     private matrix: LedMatrixInstance,
@@ -23,18 +25,24 @@ export class PreGameScene {
 
     const font = getFont('small');
 
-    const date = new Date(uiData.boxscore.startTimeUtc);
-
-    const dayNumber = date.getDay();
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    const dayName = days[dayNumber];
+    const dayOfWeek = formatDate(uiData.boxscore.startTimeUtc, 'EEE');
 
     this.day = new TextRenderer(
       matrix,
-      TextRenderer.getCenteredX(matrix, dayName, font),
-      0,
+      TextRenderer.getCenteredX(matrix, dayOfWeek, font),
+      font.height(),
       font,
-      dayName,
+      dayOfWeek,
+    );
+
+    const time = formatDate(uiData.boxscore.startTimeUtc, 'h:mma');
+
+    this.time = new TextRenderer(
+      matrix,
+      TextRenderer.getCenteredX(matrix, time, font),
+      font.height() * 2 + 1,
+      font,
+      time,
     );
   }
 
@@ -43,5 +51,6 @@ export class PreGameScene {
     this.awayLogoRenderer.render();
     this.homeLogoRenderer.render();
     this.day.render();
+    this.time.render();
   }
 }

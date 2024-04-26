@@ -1,4 +1,3 @@
-import { LiveGameScene } from '@/live-game.scene';
 import { LoggerService } from '@/logger/logger.service';
 import { Loopable } from '@/loopable/loopable';
 import { App } from '@/main';
@@ -9,9 +8,8 @@ import { Logger } from 'pino';
 export class UiLoop extends Loopable {
   private logger: Logger;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private scene: any = null;
-
-  private liveGameScene: LiveGameScene | null = null;
 
   constructor(
     private app: App,

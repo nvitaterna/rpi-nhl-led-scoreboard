@@ -6,6 +6,7 @@ import { TeamData, teamSchema } from '@/team/team.schema';
 import { BoxscoreData, boxscoreSchema } from '@/boxscore/boxscore.schema';
 import { LoggerService } from '@/logger/logger.service';
 import { Logger } from 'pino';
+import { GameState } from './types/game-state';
 
 const NHL_API_BASE_URL = 'https://api-web.nhle.com/v1';
 
@@ -106,7 +107,7 @@ export class NhlApi {
     }
   }
 
-  private parseGameState(rawGameState?: string): BoxscoreData['status'] {
+  private parseGameState(rawGameState?: GameState): BoxscoreData['status'] {
     if (!rawGameState) {
       return null;
     }
