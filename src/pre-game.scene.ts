@@ -2,19 +2,18 @@ import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
 import { UiData } from './ui-data/ui-data.schema';
 import { LogoRenderer } from './logo.renderer';
 import { TextRenderer } from './text.renderer';
-import { getFont } from './font/fonts';
+import { smallFont } from './font/fonts';
 import { formatDate } from 'date-fns';
+import { Renderer } from './renderer';
 
-export class PreGameScene {
+export class PreGameScene extends Renderer {
   private homeLogoRenderer: LogoRenderer;
   private awayLogoRenderer: LogoRenderer;
   private day: TextRenderer;
   private time: TextRenderer;
 
-  constructor(
-    private matrix: LedMatrixInstance,
-    uiData: UiData,
-  ) {
+  constructor(matrix: LedMatrixInstance, uiData: UiData) {
+    super(matrix);
     this.homeLogoRenderer = new LogoRenderer(matrix, uiData.homeTeamLogo, true);
 
     this.awayLogoRenderer = new LogoRenderer(
@@ -23,15 +22,13 @@ export class PreGameScene {
       false,
     );
 
-    const font = getFont('small');
-
     const dayOfWeek = formatDate(uiData.boxscore.startTimeUtc, 'EEE');
 
     this.day = new TextRenderer(
       matrix,
-      TextRenderer.getCenteredX(matrix, dayOfWeek, font),
-      font.height(),
-      font,
+      TextRenderer.getCenteredX(matrix, dayOfWeek, smallFont),
+      3,
+      smallFont,
       dayOfWeek,
     );
 
@@ -39,9 +36,9 @@ export class PreGameScene {
 
     this.time = new TextRenderer(
       matrix,
-      TextRenderer.getCenteredX(matrix, time, font),
-      font.height() * 2 + 1,
-      font,
+      TextRenderer.getCenteredX(matrix, time, smallFont),
+      smallFont.height() + 4,
+      smallFont,
       time,
     );
   }

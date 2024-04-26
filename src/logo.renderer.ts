@@ -1,7 +1,7 @@
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
 import { LOGO_SIZE } from './logo/logo.service';
 
-const LOGO_OFFSET = 12;
+const LOGO_OFFSET = 13;
 
 export class LogoRenderer {
   constructor(

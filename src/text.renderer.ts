@@ -5,13 +5,13 @@ import { FontInstance } from '@nvitaterna/rpi-led-matrix/dist/types';
 export class TextRenderer extends Renderer {
   constructor(
     matrix: LedMatrixInstance,
-    x: number,
-    y: number,
+    private x: number,
+    private y: number,
     private font: FontInstance,
     private text: string,
     private kerning?: number,
   ) {
-    super(matrix, x, y);
+    super(matrix);
   }
 
   render() {
