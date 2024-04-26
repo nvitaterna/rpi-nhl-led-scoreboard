@@ -2,11 +2,14 @@ import { LiveGameScene } from '@/live-game.scene';
 import { LoggerService } from '@/logger/logger.service';
 import { Loopable } from '@/loopable/loopable';
 import { App } from '@/main';
+import { PreGameScene } from '@/pre-game.scene';
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
 import { Logger } from 'pino';
 
 export class UiLoop extends Loopable {
   private logger: Logger;
+
+  private scene: any = null;
 
   private liveGameScene: LiveGameScene | null = null;
 
@@ -25,11 +28,12 @@ export class UiLoop extends Loopable {
       this.logger.debug('No UI data found');
       return;
     }
-    if (!this.liveGameScene) {
-      this.liveGameScene = new LiveGameScene(this.matrix, uiData);
+
+    if (!this.scene) {
+      this.scene = new PreGameScene(this.matrix, uiData);
     }
 
-    this.liveGameScene.render();
+    this.scene.render();
 
     this.matrix.sync();
   }
