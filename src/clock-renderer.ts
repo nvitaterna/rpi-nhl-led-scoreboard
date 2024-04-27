@@ -26,7 +26,7 @@ export class ClockRenderer extends Renderer {
       periodText = 'SO';
     }
 
-    const minutes = (uiData.boxscore.minutes || 20).toString().padStart(2, '0');
+    const minutes = (uiData.boxscore.minutes || 20).toString();
     const seconds = (uiData.boxscore.seconds || 0).toString().padStart(2, '0');
 
     const timeText = `${minutes}:${seconds}`;
