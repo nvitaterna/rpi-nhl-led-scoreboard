@@ -6,6 +6,7 @@ import { PreGameScene } from '@/scenes/pre-game.scene';
 import { Renderer } from '@/renderers/renderer';
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
 import { Logger } from 'pino';
+import { PostGameScene } from '@/scenes/post-game.scene';
 
 export class UiLoop extends Loopable {
   private logger: Logger;
@@ -33,6 +34,8 @@ export class UiLoop extends Loopable {
       this.scene = new LiveGameScene(this.matrix, uiData);
     } else if (uiData.boxscore.status === 'UPCOMING') {
       this.scene = new PreGameScene(this.matrix, uiData);
+    } else if (uiData.boxscore.status === 'FINAL') {
+      this.scene = new PostGameScene(this.matrix, uiData);
     }
 
     if (!this.scene) {
