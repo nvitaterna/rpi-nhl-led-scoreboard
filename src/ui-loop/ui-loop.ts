@@ -1,9 +1,9 @@
-import { LiveGameScene } from '@/live-game.scene';
+import { LiveGameScene } from '@/scenes/live-game.scene';
 import { LoggerService } from '@/logger/logger.service';
 import { Loopable } from '@/loopable/loopable';
 import { App } from '@/main';
-import { PreGameScene } from '@/pre-game.scene';
-import { Renderer } from '@/renderer';
+import { PreGameScene } from '@/scenes/pre-game.scene';
+import { Renderer } from '@/renderers/renderer';
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
 import { Logger } from 'pino';
 
@@ -28,6 +28,7 @@ export class UiLoop extends Loopable {
       return;
     }
 
+    // is it "bad" that scenes are recreated every loop?
     if (uiData.boxscore.status === 'LIVE') {
       this.scene = new LiveGameScene(this.matrix, uiData);
     } else if (uiData.boxscore.status === 'UPCOMING') {

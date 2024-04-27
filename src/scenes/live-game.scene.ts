@@ -1,8 +1,8 @@
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
-import { UiData } from './ui-data/ui-data.schema';
-import { LogoRenderer } from './logo.renderer';
-import { Renderer } from './renderer';
-import { ClockRenderer } from './clock-renderer';
+import { UiData } from '@/ui-data/ui-data.schema';
+import { LogoRenderer } from '@/renderers/logo.renderer';
+import { Renderer } from '@/renderers/renderer';
+import { ClockRenderer } from '@/renderers/clock.renderer';
 
 export class LiveGameScene extends Renderer {
   private homeLogoRenderer: LogoRenderer;

@@ -9,7 +9,6 @@ export class TextRenderer extends Renderer {
     private y: number,
     private font: FontInstance,
     private text: string,
-    private kerning?: number,
   ) {
     super(matrix);
   }

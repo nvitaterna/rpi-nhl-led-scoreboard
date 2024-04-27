@@ -15,3 +15,4 @@ export const boxscoreSchema = gameSchema.extend({
 });
 
 export type BoxscoreData = z.infer<typeof boxscoreSchema>;
+export type PeriodType = BoxscoreData['periodType'];

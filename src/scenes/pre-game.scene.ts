@@ -1,10 +1,10 @@
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
-import { UiData } from './ui-data/ui-data.schema';
-import { LogoRenderer } from './logo.renderer';
-import { TextRenderer } from './text.renderer';
-import { smallFont } from './font/fonts';
+import { UiData } from '@/ui-data/ui-data.schema';
+import { LogoRenderer } from '@/renderers/logo.renderer';
+import { TextRenderer } from '@/renderers/text.renderer';
+import { smallFont } from '@/font/fonts';
 import { formatDate } from 'date-fns';
-import { Renderer } from './renderer';
+import { Renderer } from '@/renderers/renderer';
 
 export class PreGameScene extends Renderer {
   private homeLogoRenderer: LogoRenderer;
