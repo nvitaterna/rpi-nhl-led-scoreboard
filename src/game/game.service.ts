@@ -59,8 +59,6 @@ export class GameService {
         .find((game) => game.startTimeUtc > new Date().getTime());
     }
 
-    liveGame = games.find((game) => game.id === 2023030122);
-
     return liveGame || null;
   }
 }
