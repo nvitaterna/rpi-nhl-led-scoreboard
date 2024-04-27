@@ -19,18 +19,18 @@ export class ScoreRenderer extends Renderer {
     const awayScore = (uiData.boxscore.awayScore ?? 0).toString();
 
     // center is 32
-    // home score needs to be 32 + dash width + 1px spacing
-    // away score needs to be 32 - dash width - 1px spacing - home score width
+    // home score needs to be 32 + dash width
+    // away score needs to be 32 - dash width - home score width
 
-    const homeScoreX = 32 + DASH_WIDTH + 2;
-    const awayScoreX = 32 - DASH_WIDTH - 2 - scoreFont.stringWidth(homeScore);
+    const homeScoreX = 32 + DASH_WIDTH;
+    const awayScoreX = 32 - DASH_WIDTH - scoreFont.stringWidth(homeScore);
 
     this.homeScoreRenderer = new TextRenderer(
       this.matrix,
       homeScoreX,
       0 + SCORE_OFFSET,
       scoreFont,
-      homeScore,
+      0,
     );
 
     this.awayScoreRenderer = new TextRenderer(
@@ -38,7 +38,7 @@ export class ScoreRenderer extends Renderer {
       awayScoreX,
       0 + SCORE_OFFSET,
       scoreFont,
-      awayScore,
+      0,
     );
 
     const dashCenterX = TextRenderer.getCenteredX(this.matrix, '-', scoreFont);
@@ -46,7 +46,7 @@ export class ScoreRenderer extends Renderer {
     this.dashRenderer = new TextRenderer(
       this.matrix,
       dashCenterX,
-      0 + SCORE_OFFSET,
+      0 + SCORE_OFFSET - 1,
       scoreFont,
       '-',
     );
