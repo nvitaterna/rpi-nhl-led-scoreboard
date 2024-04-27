@@ -1,8 +1,6 @@
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
 import { UiData } from './ui-data/ui-data.schema';
 import { LogoRenderer } from './logo.renderer';
-import { TextRenderer } from './text.renderer';
-import { smallFont } from './font/fonts';
 import { Renderer } from './renderer';
 import { ClockRenderer } from './clock-renderer';
 
@@ -10,7 +8,6 @@ export class LiveGameScene extends Renderer {
   private homeLogoRenderer: LogoRenderer;
   private awayLogoRenderer: LogoRenderer;
   private clockRenderer: ClockRenderer;
-  private text: TextRenderer;
 
   constructor(matrix: LedMatrixInstance, uiData: UiData) {
     super(matrix);
