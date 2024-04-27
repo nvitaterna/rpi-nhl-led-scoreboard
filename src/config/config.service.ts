@@ -17,6 +17,7 @@ const configEnvSchema = z.object({
     .pipe(z.union([z.literal(16), z.literal(32), z.literal(64)])),
   PWM: z.enum(['true', 'false']).transform((value) => value === 'true'),
   BOOTSTRAP: z.enum(['true', 'false']).transform((value) => value === 'true'),
+  BRIGHTNESS: z.coerce.number().min(0).max(100),
 });
 
 export class ConfigService {
@@ -40,6 +41,7 @@ export class ConfigService {
       rows: this.env.LED_ROWS,
       cols: this.env.LED_COLS,
       pwm: this.env.PWM,
+      brightness: this.env.BRIGHTNESS,
     };
   }
 }

@@ -74,7 +74,11 @@ export const main = async () => {
   );
   const boxscoreService = new BoxscoreService(boxscoreRepository, nhlApi);
 
-  const uiDataService = new UiDataService(uiDataRepository, logoService);
+  const uiDataService = new UiDataService(
+    uiDataRepository,
+    logoService,
+    prefsService,
+  );
 
   const boxscoreUpdater = new BoxscoreUpdater(
     boxscoreService,
@@ -116,7 +120,7 @@ export const main = async () => {
   const matrix = Matrix(configService.matrixConfig);
 
   const dataLoop = new DataLoop(app);
-  const uiLoop = new UiLoop(app, matrix);
+  const uiLoop = new UiLoop(app, matrix, loggerService);
 
   dataLoop.start();
   uiLoop.start();

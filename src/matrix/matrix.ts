@@ -21,5 +21,7 @@ export const Matrix = (matrixConfig: ConfigService['matrixConfig']) => {
     },
   );
 
+  matrix.brightness(matrixConfig.brightness);
+
   return matrix;
 };

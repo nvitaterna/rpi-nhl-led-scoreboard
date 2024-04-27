@@ -20,7 +20,6 @@ export class BoxscoreUpdater extends Updateable {
 
   public async update() {
     if (!(await this.shouldUpdate())) {
-      this.logger.debug('skipping update.');
       return;
     }
 

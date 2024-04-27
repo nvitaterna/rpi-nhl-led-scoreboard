@@ -1,14 +1,17 @@
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
-import { LOGO_SIZE } from './logo/logo.service';
+import { LOGO_SIZE } from '@/logo/logo.service';
+import { Renderer } from '@/renderers/renderer';
 
-const LOGO_OFFSET = 12;
+const LOGO_OFFSET = 13;
 
-export class LogoRenderer {
+export class LogoRenderer extends Renderer {
   constructor(
-    private matrix: LedMatrixInstance,
+    matrix: LedMatrixInstance,
     private logo: Buffer,
     private home: boolean,
-  ) {}
+  ) {
+    super(matrix);
+  }
 
   render() {
     const offset = this.home ? LOGO_SIZE + LOGO_OFFSET : -LOGO_OFFSET;

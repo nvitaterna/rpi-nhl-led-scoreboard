@@ -2,6 +2,7 @@ import { BoxscoreData } from '@/boxscore/boxscore.schema';
 import { UiDataRepository } from './ui-data.repository';
 import { UiData } from './ui-data.schema';
 import { LogoService } from '@/logo/logo.service';
+import { PrefsService } from '@/prefs/prefs.service';
 
 export class UiDataService {
   uiDataCache: UiData | null = null;
@@ -9,6 +10,7 @@ export class UiDataService {
   constructor(
     private uiDataRepository: UiDataRepository,
     private logoService: LogoService,
+    private prefsService: PrefsService,
   ) {}
 
   async get() {
@@ -30,10 +32,13 @@ export class UiDataService {
       throw new Error('Could not fetch logos');
     }
 
+    const timezone = await this.prefsService.getTimezone();
+
     this.uiDataCache = {
       boxscore,
       homeTeamLogo: homeTeamLogo.logo,
       awayTeamLogo: awayTeamLogo.logo,
+      timezone,
     };
 
     this.uiDataRepository.set(this.uiDataCache);

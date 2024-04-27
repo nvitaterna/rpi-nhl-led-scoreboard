@@ -1,0 +1,9 @@
+version: '3'
+services:
+  led-matrix:
+    image: rpi-nhl-led-matrix:testing
+    devices:
+      - '/dev/gpiomem:/dev/gpiomem'
+      - '/dev/mem:/dev/mem'
+    restart: unless-stopped
+    privileged: true
