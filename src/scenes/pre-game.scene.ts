@@ -3,7 +3,7 @@ import { UiData } from '@/ui-data/ui-data.schema';
 import { LogoRenderer } from '@/renderers/logo.renderer';
 import { TextRenderer } from '@/renderers/text.renderer';
 import { smallFont } from '@/font/fonts';
-import { differenceInDays, formatDate } from 'date-fns';
+import { differenceInCalendarDays, formatDate } from 'date-fns';
 import { Renderer } from '@/renderers/renderer';
 
 const TEXT_OFFSET = 6;
@@ -26,7 +26,9 @@ export class PreGameScene extends Renderer {
 
     let dayText = 'TODAY';
 
-    if (differenceInDays(uiData.boxscore.startTimeUtc, new Date()) > 0) {
+    if (
+      differenceInCalendarDays(uiData.boxscore.startTimeUtc, new Date()) > 0
+    ) {
       dayText = formatDate(uiData.boxscore.startTimeUtc, 'EEE');
     }
 
