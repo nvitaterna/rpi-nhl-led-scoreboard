@@ -3,8 +3,10 @@ import { UiData } from '@/ui-data/ui-data.schema';
 import { LogoRenderer } from '@/renderers/logo.renderer';
 import { TextRenderer } from '@/renderers/text.renderer';
 import { smallFont } from '@/font/fonts';
-import { differenceInCalendarDays, formatDate } from 'date-fns';
+import { formatDate } from 'date-fns';
 import { Renderer } from '@/renderers/renderer';
+import { differenceInCalendarDays } from '@/utils/date-fns';
+import { formatInTimeZone } from 'date-fns-tz';
 
 const TEXT_OFFSET = 6;
 
@@ -27,7 +29,11 @@ export class PreGameScene extends Renderer {
     let dayText = 'TODAY';
 
     if (
-      differenceInCalendarDays(uiData.boxscore.startTimeUtc, new Date()) > 0
+      differenceInCalendarDays(
+        uiData.boxscore.startTimeUtc,
+        new Date(),
+        uiData.timezone,
+      ) > 0
     ) {
       dayText = formatDate(uiData.boxscore.startTimeUtc, 'EEE');
     }
@@ -40,7 +46,11 @@ export class PreGameScene extends Renderer {
       dayText,
     );
 
-    const time = formatDate(uiData.boxscore.startTimeUtc, 'h:mma');
+    const time = formatInTimeZone(
+      uiData.boxscore.startTimeUtc,
+      uiData.timezone,
+      'h:mma',
+    );
 
     this.time = new TextRenderer(
       matrix,

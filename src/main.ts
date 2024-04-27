@@ -74,7 +74,11 @@ export const main = async () => {
   );
   const boxscoreService = new BoxscoreService(boxscoreRepository, nhlApi);
 
-  const uiDataService = new UiDataService(uiDataRepository, logoService);
+  const uiDataService = new UiDataService(
+    uiDataRepository,
+    logoService,
+    prefsService,
+  );
 
   const boxscoreUpdater = new BoxscoreUpdater(
     boxscoreService,
