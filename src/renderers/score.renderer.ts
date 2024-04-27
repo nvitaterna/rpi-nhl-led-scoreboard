@@ -22,8 +22,8 @@ export class ScoreRenderer extends Renderer {
     // home score needs to be 32 - dash width - 1px spacing - home score width
     // away score needs to be 32 + dash width + 1px spacing
 
-    const homeScoreX = 32 - DASH_WIDTH - 1 - scoreFont.stringWidth(homeScore);
-    const awayScoreX = 32 + DASH_WIDTH + 1;
+    const homeScoreX = 32 + DASH_WIDTH + 1;
+    const awayScoreX = 32 - DASH_WIDTH - 1 - scoreFont.stringWidth(homeScore);
 
     this.homeScoreRenderer = new TextRenderer(
       this.matrix,
