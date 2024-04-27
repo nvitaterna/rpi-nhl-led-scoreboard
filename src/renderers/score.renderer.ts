@@ -30,7 +30,7 @@ export class ScoreRenderer extends Renderer {
       homeScoreX,
       0 + SCORE_OFFSET,
       scoreFont,
-      0,
+      '0',
     );
 
     this.awayScoreRenderer = new TextRenderer(
@@ -38,7 +38,7 @@ export class ScoreRenderer extends Renderer {
       awayScoreX,
       0 + SCORE_OFFSET,
       scoreFont,
-      0,
+      '0',
     );
 
     const dashCenterX = TextRenderer.getCenteredX(this.matrix, '-', scoreFont);
