@@ -4,10 +4,12 @@ import { LogoRenderer } from './logo.renderer';
 import { TextRenderer } from './text.renderer';
 import { smallFont } from './font/fonts';
 import { Renderer } from './renderer';
+import { ClockRenderer } from './clock-renderer';
 
 export class LiveGameScene extends Renderer {
   private homeLogoRenderer: LogoRenderer;
   private awayLogoRenderer: LogoRenderer;
+  private clockRenderer: ClockRenderer;
   private text: TextRenderer;
 
   constructor(matrix: LedMatrixInstance, uiData: UiData) {
@@ -20,17 +22,14 @@ export class LiveGameScene extends Renderer {
       false,
     );
 
-    const text = 'TEST';
-
-    const centeredX = TextRenderer.getCenteredX(matrix, text, smallFont);
-
-    this.text = new TextRenderer(matrix, centeredX, 0, smallFont, text);
+    this.clockRenderer = new ClockRenderer(matrix, uiData);
   }
 
   render() {
     this.matrix.clear();
     this.awayLogoRenderer.render();
     this.homeLogoRenderer.render();
+    this.clockRenderer.render();
     this.text.render();
   }
 }
