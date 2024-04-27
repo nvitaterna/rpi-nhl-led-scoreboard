@@ -27,6 +27,5 @@ export class LiveGameScene extends Renderer {
     this.awayLogoRenderer.render();
     this.homeLogoRenderer.render();
     this.clockRenderer.render();
-    this.text.render();
   }
 }
