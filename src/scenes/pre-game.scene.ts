@@ -3,8 +3,10 @@ import { UiData } from '@/ui-data/ui-data.schema';
 import { LogoRenderer } from '@/renderers/logo.renderer';
 import { TextRenderer } from '@/renderers/text.renderer';
 import { smallFont } from '@/font/fonts';
-import { formatDate } from 'date-fns';
+import { differenceInDays, formatDate } from 'date-fns';
 import { Renderer } from '@/renderers/renderer';
+
+const TEXT_OFFSET = 6;
 
 export class PreGameScene extends Renderer {
   private homeLogoRenderer: LogoRenderer;
@@ -22,14 +24,18 @@ export class PreGameScene extends Renderer {
       false,
     );
 
-    const dayOfWeek = formatDate(uiData.boxscore.startTimeUtc, 'EEE');
+    let dayText = 'TODAY';
+
+    if (differenceInDays(uiData.boxscore.startTimeUtc, new Date()) > 0) {
+      dayText = formatDate(uiData.boxscore.startTimeUtc, 'EEE');
+    }
 
     this.day = new TextRenderer(
       matrix,
-      TextRenderer.getCenteredX(matrix, dayOfWeek, smallFont),
-      3,
+      TextRenderer.getCenteredX(matrix, dayText, smallFont),
+      TEXT_OFFSET,
       smallFont,
-      dayOfWeek,
+      dayText,
     );
 
     const time = formatDate(uiData.boxscore.startTimeUtc, 'h:mma');
@@ -37,7 +43,7 @@ export class PreGameScene extends Renderer {
     this.time = new TextRenderer(
       matrix,
       TextRenderer.getCenteredX(matrix, time, smallFont),
-      smallFont.height() + 4,
+      smallFont.height() + TEXT_OFFSET,
       smallFont,
       time,
     );
