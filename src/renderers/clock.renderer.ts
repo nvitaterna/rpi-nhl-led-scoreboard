@@ -6,7 +6,7 @@ import { smallFont } from '@/font/fonts';
 import { PeriodType } from '@/boxscore/boxscore.schema';
 
 const PERIOD_SUFFIXES = ['ST', 'ND', 'RD'];
-const CLOCK_OFFSET = 3;
+const CLOCK_OFFSET = 2;
 
 export class ClockRenderer extends Renderer {
   private periodRenderer: TextRenderer;

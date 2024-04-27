@@ -5,6 +5,7 @@ import { UiData } from '@/ui-data/ui-data.schema';
 import { scoreFont } from '@/font/fonts';
 
 const DASH_WIDTH = 4;
+const SCORE_OFFSET = 15;
 
 export class ScoreRenderer extends Renderer {
   private homeScoreRenderer: TextRenderer;
@@ -27,7 +28,7 @@ export class ScoreRenderer extends Renderer {
     this.homeScoreRenderer = new TextRenderer(
       this.matrix,
       homeScoreX,
-      0,
+      0 + SCORE_OFFSET,
       scoreFont,
       homeScore,
     );
@@ -35,7 +36,7 @@ export class ScoreRenderer extends Renderer {
     this.awayScoreRenderer = new TextRenderer(
       this.matrix,
       awayScoreX,
-      0,
+      0 + SCORE_OFFSET,
       scoreFont,
       awayScore,
     );
@@ -45,7 +46,7 @@ export class ScoreRenderer extends Renderer {
     this.dashRenderer = new TextRenderer(
       this.matrix,
       dashCenterX,
-      0,
+      0 + SCORE_OFFSET,
       scoreFont,
       '-',
     );
