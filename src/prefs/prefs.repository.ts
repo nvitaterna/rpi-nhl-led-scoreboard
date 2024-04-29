@@ -1,9 +1,5 @@
 import { LocalStorage } from 'node-persist';
-
-export interface PrefsData {
-  timezone: string;
-  team: string;
-}
+import { PrefsData } from './prefs.schema';
 
 export class PrefsRepository {
   constructor(private storage: LocalStorage) {}

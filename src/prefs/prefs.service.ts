@@ -45,4 +45,24 @@ export class PrefsService {
 
     return this.prefsRepository.setPref('team', team);
   }
+
+  async getBrightness() {
+    const brightness = await this.prefsRepository.getPref('brightness');
+
+    if (!brightness) {
+      await this.setBrightness(80);
+    }
+
+    return this.prefsRepository.getPref('brightness');
+  }
+
+  async setBrightness(brightness: number) {
+    const parsedBrightness = Math.round(brightness);
+
+    if (parsedBrightness < 0 || parsedBrightness > 100) {
+      throw new Error('Invalid brightness');
+    }
+
+    return this.prefsRepository.setPref('brightness', parsedBrightness);
+  }
 }

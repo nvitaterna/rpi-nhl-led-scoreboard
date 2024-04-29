@@ -13,3 +13,13 @@ export const timezoneSchema = z.string().refine(
 );
 
 export const teamSchema = z.string().length(3);
+
+export const brightnessSchema = z.number().int().min(0).max(100);
+
+export const prefsSchema = z.object({
+  timezone: timezoneSchema,
+  team: teamSchema,
+  brightness: brightnessSchema,
+});
+
+export type PrefsData = z.infer<typeof prefsSchema>;
