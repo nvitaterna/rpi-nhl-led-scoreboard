@@ -79,7 +79,7 @@ export class PreGameScene extends Renderer {
   }
 
   private getTimeText(startTimeUtc: number, timezone: string) {
-    return formatInTimeZone(startTimeUtc, timezone, 'h:mma');
+    return formatInTimeZone(startTimeUtc, timezone, 'h:mm');
   }
 
   update(uiData: UiData) {
@@ -109,6 +109,7 @@ export class PreGameScene extends Renderer {
       uiData.timezone,
       'a',
     );
+
     this.amPm.updateText(
       amPmText,
       TextRenderer.getCenteredX(this.matrix, amPmText, smallFont),
