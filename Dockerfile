@@ -1,4 +1,4 @@
-FROM arm32v6/node:20-bookworm
+FROM node:20-alpine
 
 WORKDIR /app
 
