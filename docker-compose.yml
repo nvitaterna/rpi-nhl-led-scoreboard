@@ -7,3 +7,5 @@ services:
       - '/dev/mem:/dev/mem'
     restart: unless-stopped
     privileged: true
+    volumes:
+      - ./.env:/app/.env

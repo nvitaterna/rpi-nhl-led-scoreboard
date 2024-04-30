@@ -1,0 +1,11 @@
+.vscode
+data/**
+dist
+node_modules
+.editorconfig
+.env
+.env.development
+.gitignore
+.prettierrc
+eslint.config.mjs
+README.md
