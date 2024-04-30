@@ -122,5 +122,6 @@ export class PreGameScene extends Renderer {
     this.homeLogoRenderer.render();
     this.day.render();
     this.time.render();
+    this.amPm.render();
   }
 }
