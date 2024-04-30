@@ -16,7 +16,7 @@ export const Matrix = (matrixConfig: ConfigService['matrixConfig']) => {
     },
     {
       ...LedMatrix.defaultRuntimeOptions(),
-      gpioSlowdown: 4,
+      gpioSlowdown: matrixConfig.gpioSlowdown,
       dropPrivileges: 0,
     },
   );

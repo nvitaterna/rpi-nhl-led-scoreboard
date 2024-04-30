@@ -17,6 +17,17 @@ const configEnvSchema = z.object({
     .pipe(z.union([z.literal(16), z.literal(32), z.literal(64)])),
   PWM: z.enum(['true', 'false']).transform((value) => value === 'true'),
   BOOTSTRAP: z.enum(['true', 'false']).transform((value) => value === 'true'),
+  GPIO_SLOWDOWN: z.coerce
+    .number()
+    .pipe(
+      z.union([
+        z.literal(0),
+        z.literal(1),
+        z.literal(2),
+        z.literal(3),
+        z.literal(4),
+      ]),
+    ),
 });
 
 export class ConfigService {
@@ -40,6 +51,7 @@ export class ConfigService {
       rows: this.env.LED_ROWS,
       cols: this.env.LED_COLS,
       pwm: this.env.PWM,
+      gpioSlowdown: this.env.GPIO_SLOWDOWN,
     };
   }
 }

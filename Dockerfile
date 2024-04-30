@@ -1,10 +1,16 @@
 FROM arm32v7/node:20-bookworm
 
-COPY . /app
-
 WORKDIR /app
 
+COPY package.json ./package.json
+
+COPY yarn.lock ./yarn.lock
+
 RUN yarn
+
+RUN mkdir ./data
+
+COPY ./src ./src
 
 RUN yarn build
 
