@@ -4,7 +4,7 @@ import { Loopable } from '@/loopable/loopable';
 import { App } from '@/main';
 import { PreGameScene } from '@/scenes/pre-game.scene';
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
-import { Logger, P } from 'pino';
+import { Logger } from 'pino';
 import { PostGameScene } from '@/scenes/post-game.scene';
 import { UiData } from '@/ui-data/ui-data.schema';
 
@@ -58,11 +58,14 @@ export class UiLoop extends Loopable {
 
     if (newScene) {
       this.scene = newScene;
-      this.scene.render();
     } else if (this.scene) {
       this.scene?.update(uiData);
+    }
+
+    if (this.scene) {
+      this.scene.render();
     } else {
-      this.logger.error('No scene found');
+      this.logger.debug('No scene to render');
     }
 
     this.matrix.sync();
