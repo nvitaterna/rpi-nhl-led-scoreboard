@@ -10,7 +10,13 @@ RUN yarn
 
 RUN mkdir ./data
 
+COPY assets ./assets
+
 COPY ./src ./src
+
+COPY tsconfig.json ./tsconfig.json
+
+COPY tsconfig.build.json ./tsconfig.build.json
 
 RUN yarn build
 
