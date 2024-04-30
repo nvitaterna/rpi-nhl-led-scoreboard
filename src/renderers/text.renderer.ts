@@ -13,6 +13,16 @@ export class TextRenderer extends Renderer {
     super(matrix);
   }
 
+  updateText(text: string, x?: number, y?: number) {
+    this.text = text;
+    if (x) {
+      this.x = x;
+    }
+    if (y) {
+      this.y = y;
+    }
+  }
+
   render() {
     this.matrix
       .fgColor(0xffffff)

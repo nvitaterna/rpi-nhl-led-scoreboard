@@ -71,6 +71,27 @@ export class ClockRenderer extends Renderer {
     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
   }
 
+  update(uiData: UiData) {
+    const periodText = this.getPeriodText(
+      uiData.boxscore.period ?? 1,
+      uiData.boxscore.periodType ?? 'REGULAR',
+    );
+    this.periodRenderer.updateText(
+      periodText,
+      TextRenderer.getCenteredX(this.matrix, periodText, smallFont),
+    );
+
+    const timeText = this.getTimeText(
+      uiData.boxscore.minutes ?? 20,
+      uiData.boxscore.seconds ?? 0,
+    );
+
+    this.timeRenderer.updateText(
+      timeText,
+      TextRenderer.getCenteredX(this.matrix, timeText, smallFont),
+    );
+  }
+
   render() {
     this.periodRenderer.render();
     this.timeRenderer.render();

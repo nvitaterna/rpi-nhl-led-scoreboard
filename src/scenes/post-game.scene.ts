@@ -26,6 +26,13 @@ export class PostGameScene extends Renderer {
     this.gameStateRenderer = new GameStateRenderer(matrix, uiData);
   }
 
+  update(uiData: UiData) {
+    this.scoreRenderer.update(uiData);
+    this.awayLogoRenderer.updateLogo(uiData.awayTeamLogo);
+    this.homeLogoRenderer.updateLogo(uiData.homeTeamLogo);
+    this.gameStateRenderer.update(uiData);
+  }
+
   render() {
     this.matrix.clear();
     this.awayLogoRenderer.render();

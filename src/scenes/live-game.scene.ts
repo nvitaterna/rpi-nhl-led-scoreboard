@@ -26,6 +26,13 @@ export class LiveGameScene extends Renderer {
     this.scoreRenderer = new ScoreRenderer(matrix, uiData);
   }
 
+  update(uiData: UiData) {
+    this.clockRenderer.update(uiData);
+    this.scoreRenderer.update(uiData);
+    this.awayLogoRenderer.updateLogo(uiData.awayTeamLogo);
+    this.homeLogoRenderer.updateLogo(uiData.homeTeamLogo);
+  }
+
   render() {
     this.matrix.clear();
     this.awayLogoRenderer.render();

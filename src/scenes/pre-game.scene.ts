@@ -15,6 +15,7 @@ export class PreGameScene extends Renderer {
   private awayLogoRenderer: LogoRenderer;
   private day: TextRenderer;
   private time: TextRenderer;
+  private amPm: TextRenderer;
 
   constructor(matrix: LedMatrixInstance, uiData: UiData) {
     super(matrix);
@@ -26,17 +27,10 @@ export class PreGameScene extends Renderer {
       false,
     );
 
-    let dayText = 'TODAY';
-
-    if (
-      differenceInCalendarDays(
-        uiData.boxscore.startTimeUtc,
-        new Date(),
-        uiData.timezone,
-      ) > 0
-    ) {
-      dayText = formatDate(uiData.boxscore.startTimeUtc, 'EEE');
-    }
+    const dayText = this.getDayText(
+      uiData.boxscore.startTimeUtc,
+      uiData.timezone,
+    );
 
     this.day = new TextRenderer(
       matrix,
@@ -46,18 +40,78 @@ export class PreGameScene extends Renderer {
       dayText,
     );
 
-    const time = formatInTimeZone(
+    const timeText = this.getTimeText(
       uiData.boxscore.startTimeUtc,
       uiData.timezone,
-      'h:mma',
     );
 
     this.time = new TextRenderer(
       matrix,
-      TextRenderer.getCenteredX(matrix, time, smallFont),
+      TextRenderer.getCenteredX(matrix, timeText, smallFont),
       smallFont.height() + TEXT_OFFSET,
       smallFont,
-      time,
+      timeText,
+    );
+
+    const amPmText = formatInTimeZone(
+      uiData.boxscore.startTimeUtc,
+      uiData.timezone,
+      'a',
+    );
+
+    this.amPm = new TextRenderer(
+      matrix,
+      TextRenderer.getCenteredX(matrix, amPmText, smallFont),
+      smallFont.height() * 2 + TEXT_OFFSET,
+      smallFont,
+      amPmText,
+    );
+  }
+
+  private getDayText(startTimeUtc: number, timezone: string) {
+    let dayText = 'TODAY';
+
+    if (differenceInCalendarDays(startTimeUtc, new Date(), timezone) > 0) {
+      dayText = formatDate(startTimeUtc, 'EEE');
+    }
+
+    return dayText;
+  }
+
+  private getTimeText(startTimeUtc: number, timezone: string) {
+    return formatInTimeZone(startTimeUtc, timezone, 'h:mma');
+  }
+
+  update(uiData: UiData) {
+    this.awayLogoRenderer.updateLogo(uiData.awayTeamLogo);
+    this.homeLogoRenderer.updateLogo(uiData.homeTeamLogo);
+
+    const dayText = this.getDayText(
+      uiData.boxscore.startTimeUtc,
+      uiData.timezone,
+    );
+    this.day.updateText(
+      dayText,
+      TextRenderer.getCenteredX(this.matrix, dayText, smallFont),
+    );
+
+    const timeText = this.getTimeText(
+      uiData.boxscore.startTimeUtc,
+      uiData.timezone,
+    );
+    this.time.updateText(
+      timeText,
+      TextRenderer.getCenteredX(this.matrix, timeText, smallFont),
+    );
+
+    const amPmText = formatInTimeZone(
+      uiData.boxscore.startTimeUtc,
+      uiData.timezone,
+      'a',
+    );
+    this.amPm.updateText(
+      amPmText,
+      TextRenderer.getCenteredX(this.matrix, amPmText, smallFont),
     );
   }
 

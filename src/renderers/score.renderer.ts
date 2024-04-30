@@ -52,6 +52,15 @@ export class ScoreRenderer extends Renderer {
     );
   }
 
+  update(uiData: UiData) {
+    this.homeScoreRenderer.updateText(
+      (uiData.boxscore.homeScore ?? 0).toString(),
+    );
+    this.awayScoreRenderer.updateText(
+      (uiData.boxscore.awayScore ?? 0).toString(),
+    );
+  }
+
   render() {
     this.homeScoreRenderer.render();
     this.dashRenderer.render();

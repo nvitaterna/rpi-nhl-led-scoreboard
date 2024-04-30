@@ -59,6 +59,15 @@ export class GameStateRenderer extends Renderer {
     return 'REG';
   }
 
+  update(uiData: UiData) {
+    this.periodTextRenderer.updateText(
+      this.getPeriodText(
+        uiData.boxscore.periodType ?? 'REGULAR',
+        uiData.boxscore.period,
+      ),
+    );
+  }
+
   render() {
     this.finalTextRenderer.render();
     this.periodTextRenderer.render();

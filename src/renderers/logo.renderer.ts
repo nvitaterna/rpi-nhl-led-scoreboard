@@ -13,6 +13,10 @@ export class LogoRenderer extends Renderer {
     super(matrix);
   }
 
+  updateLogo(logo: Buffer) {
+    this.logo = logo;
+  }
+
   render() {
     const offset = this.home ? LOGO_SIZE + LOGO_OFFSET : -LOGO_OFFSET;
 

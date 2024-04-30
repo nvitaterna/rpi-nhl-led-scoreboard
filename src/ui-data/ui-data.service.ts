@@ -17,7 +17,7 @@ export class UiDataService {
     if (!this.uiDataCache) {
       this.uiDataCache = await this.uiDataRepository.get();
     }
-    return this.uiDataRepository.get();
+    return this.uiDataCache;
   }
 
   async set(boxscore: BoxscoreData | null) {
@@ -33,12 +33,14 @@ export class UiDataService {
     }
 
     const timezone = await this.prefsService.getTimezone();
+    const brightness = await this.prefsService.getBrightness();
 
     this.uiDataCache = {
       boxscore,
       homeTeamLogo: homeTeamLogo.logo,
       awayTeamLogo: awayTeamLogo.logo,
       timezone,
+      brightness,
     };
 
     this.uiDataRepository.set(this.uiDataCache);

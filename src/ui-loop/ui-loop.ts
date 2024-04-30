@@ -3,15 +3,15 @@ import { LoggerService } from '@/logger/logger.service';
 import { Loopable } from '@/loopable/loopable';
 import { App } from '@/main';
 import { PreGameScene } from '@/scenes/pre-game.scene';
-import { Renderer } from '@/renderers/renderer';
 import { LedMatrixInstance } from '@nvitaterna/rpi-led-matrix';
-import { Logger } from 'pino';
+import { Logger, P } from 'pino';
 import { PostGameScene } from '@/scenes/post-game.scene';
+import { UiData } from '@/ui-data/ui-data.schema';
 
 export class UiLoop extends Loopable {
   private logger: Logger;
 
-  private scene: Renderer | null = null;
+  private scene: LiveGameScene | PostGameScene | PreGameScene | null = null;
 
   constructor(
     private app: App,
@@ -22,6 +22,29 @@ export class UiLoop extends Loopable {
     this.logger = loggerService.child('ui-loop');
   }
 
+  private getScene(uiData: UiData) {
+    switch (uiData.boxscore.status) {
+      case 'LIVE': {
+        if (!(this.scene instanceof LiveGameScene)) {
+          return new LiveGameScene(this.matrix, uiData);
+        }
+        break;
+      }
+      case 'UPCOMING': {
+        if (!(this.scene instanceof PreGameScene)) {
+          return new PreGameScene(this.matrix, uiData);
+        }
+        break;
+      }
+      case 'FINAL': {
+        if (!(this.scene instanceof PostGameScene)) {
+          return new PostGameScene(this.matrix, uiData);
+        }
+        break;
+      }
+    }
+  }
+
   loop() {
     const uiData = this.app.uiDataService.getFromCache();
     if (!uiData) {
@@ -29,20 +52,18 @@ export class UiLoop extends Loopable {
       return;
     }
 
-    // is it "bad" that scenes are recreated every loop?
-    if (uiData.boxscore.status === 'LIVE') {
-      this.scene = new LiveGameScene(this.matrix, uiData);
-    } else if (uiData.boxscore.status === 'UPCOMING') {
-      this.scene = new PreGameScene(this.matrix, uiData);
-    } else if (uiData.boxscore.status === 'FINAL') {
-      this.scene = new PostGameScene(this.matrix, uiData);
-    }
+    this.matrix.brightness(uiData.brightness);
 
-    if (!this.scene) {
-      return;
-    }
+    const newScene = this.getScene(uiData);
 
-    this.scene.render();
+    if (newScene) {
+      this.scene = newScene;
+      this.scene.render();
+    } else if (this.scene) {
+      this.scene?.update(uiData);
+    } else {
+      this.logger.error('No scene found');
+    }
 
     this.matrix.sync();
   }
