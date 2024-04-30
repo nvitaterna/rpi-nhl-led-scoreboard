@@ -1,4 +1,4 @@
-FROM arm64v8/node:20-bookworm
+FROM arm32v7/node:20-bookworm
 
 COPY . /app
 
