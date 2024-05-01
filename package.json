@@ -1,6 +1,6 @@
 {
   "name": "nhl-led-scoreboard-rpi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NHL Led Scoreboard written in typescript",
   "main": "index.js",
   "license": "MIT",

@@ -1,7 +1,7 @@
 import storage from 'node-persist';
 import path from 'path';
 
-const CONFIG_PATH = path.join('__dirname', '../data');
+const CONFIG_PATH = path.join('__dirname', '../data/prefs');
 
 export async function initStorage() {
   await storage.init({

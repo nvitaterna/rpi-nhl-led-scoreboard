@@ -12,7 +12,7 @@ export interface Database {
 }
 
 const dialect = new SqliteDialect({
-  database: new SQLite(path.join(__dirname, '../../data', 'nhl.db')),
+  database: new SQLite(path.join(__dirname, '../../data/db', 'nhl.db')),
 });
 
 export const db = new Kysely<Database>({ dialect });
