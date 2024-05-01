@@ -2,7 +2,7 @@
 
 IMAGE=nvitaterna/rpi-nhl-led-scoreboard
 
-VERSION=0.0.2
+VERSION=0.0.3
 
 docker buildx build --push \
    --platform linux/arm64/v8 \

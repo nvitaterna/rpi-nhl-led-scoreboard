@@ -29,4 +29,4 @@ COPY tsconfig.build.json ./tsconfig.build.json
 
 RUN yarn build
 
-ENTRYPOINT ["node dist/main.js"]
+ENTRYPOINT ["node", "dist/main.js"]
