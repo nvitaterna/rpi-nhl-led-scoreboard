@@ -6,9 +6,18 @@ COPY package.json ./package.json
 
 COPY yarn.lock ./yarn.lock
 
+RUN apk add --no-cache --virtual .gyp \
+  python3 \
+  make \
+  g++
+
 RUN yarn
 
-RUN mkdir ./data
+RUN apk del .gyp
+
+RUN mkdir -p ./data/db
+
+RUN mkdir -p ./data/prefs
 
 COPY assets ./assets
 
