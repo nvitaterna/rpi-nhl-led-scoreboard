@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "NHL API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

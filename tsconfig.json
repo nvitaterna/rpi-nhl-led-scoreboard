@@ -1,11 +1,25 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "lib": [
+      "es2023"
+    ],
+    "module": "node16",
+    "target": "es2022",
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "dist"
-  }
+    "allowSyntheticDefaultImports": false,
+    "moduleResolution": "node16",
+    "outDir": "dist",
+    "verbatimModuleSyntax": true,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "scripts"
+  ]
 }
