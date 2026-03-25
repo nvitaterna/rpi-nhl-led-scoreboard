@@ -1,0 +1,95 @@
+{
+  "id": 2025021094,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-20",
+  "gameCenterLink": "/gamecenter/car-vs-tor/2026/03/20/2025021094",
+  "venue": {
+    "default": "Scotiabank Arena"
+  },
+  "startTimeUTC": "2026-03-20T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 288,
+      "market": "H",
+      "countryCode": "CA",
+      "network": "SNO",
+      "sequenceNumber": 31
+    },
+    {
+      "id": 324,
+      "market": "N",
+      "countryCode": "US",
+      "network": "NHLN",
+      "sequenceNumber": 35
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 120
+    },
+    {
+      "id": 561,
+      "market": "A",
+      "countryCode": "US",
+      "network": "FDSNSO",
+      "sequenceNumber": 202
+    }
+  ],
+  "gameState": "LIVE",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 12,
+    "name": {
+      "default": "Carolina Hurricanes",
+      "fr": "Hurricanes de la Caroline"
+    },
+    "commonName": {
+      "default": "Hurricanes"
+    },
+    "placeNameWithPreposition": {
+      "default": "Carolina",
+      "fr": "de la Caroline"
+    },
+    "abbrev": "CAR",
+    "score": 0,
+    "sog": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+  },
+  "homeTeam": {
+    "id": 10,
+    "name": {
+      "default": "Toronto Maple Leafs",
+      "fr": "Maple Leafs de Toronto"
+    },
+    "commonName": {
+      "default": "Maple Leafs"
+    },
+    "placeNameWithPreposition": {
+      "default": "Toronto",
+      "fr": "de Toronto"
+    },
+    "abbrev": "TOR",
+    "score": 1,
+    "sog": 4,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/100062F7AC9731B8?brand=nhl&wt.mc_id=NHL_LEAGUE_TOR_HORIZONTAL_SCOREBOARD_GM37&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TOR&utm_content=HORIZONTAL_SCOREBOARD_GM37",
+  "ticketsLinkFr": "https://www.ticketmaster.ca/event/100062F7AC9731B8?brand=nhl&wt.mc_id=NHL_LEAGUE_TOR_HORIZONTAL_SCOREBOARD_GM37&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TOR&utm_content=HORIZONTAL_SCOREBOARD_GM37",
+  "period": 1,
+  "periodDescriptor": {
+    "number": 1,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "clock": {
+    "timeRemaining": "07:58",
+    "secondsRemaining": 478,
+    "running": false,
+    "inIntermission": false
+  }
+}

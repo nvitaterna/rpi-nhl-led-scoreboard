@@ -1,0 +1,74 @@
+{
+  "id": 2025020010,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/mtl-vs-det/2025/10/09/2025020010",
+  "venue": {
+    "default": "Little Caesars Arena"
+  },
+  "startTimeUTC": "2025-10-09T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 131,
+      "market": "A",
+      "countryCode": "CA",
+      "network": "TSN2",
+      "sequenceNumber": 112
+    },
+    {
+      "id": 33,
+      "market": "A",
+      "countryCode": "CA",
+      "network": "RDS",
+      "sequenceNumber": 132
+    },
+    {
+      "id": 562,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNDET",
+      "sequenceNumber": 271
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 8,
+    "name": {
+      "default": "Montréal Canadiens",
+      "fr": "Canadiens de Montréal"
+    },
+    "commonName": {
+      "default": "Canadiens"
+    },
+    "placeNameWithPreposition": {
+      "default": "Montréal",
+      "fr": "de Montréal"
+    },
+    "abbrev": "MTL",
+    "record": "40-31-11",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+  },
+  "homeTeam": {
+    "id": 17,
+    "name": {
+      "default": "Detroit Red Wings",
+      "fr": "Red Wings de Detroit"
+    },
+    "commonName": {
+      "default": "Red Wings"
+    },
+    "placeNameWithPreposition": {
+      "default": "Detroit",
+      "fr": "de Detroit"
+    },
+    "abbrev": "DET",
+    "record": "39-35-8",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg?season=20252026"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/080062EAAC092799?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/080062EAAC092799?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}

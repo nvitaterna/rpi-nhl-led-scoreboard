@@ -1,0 +1,74 @@
+{
+  "id": 2025020013,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/nyi-vs-pit/2025/10/09/2025020013",
+  "venue": {
+    "default": "PPG Paints Arena"
+  },
+  "startTimeUTC": "2025-10-09T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 109
+    },
+    {
+      "id": 528,
+      "market": "H",
+      "countryCode": "US",
+      "network": "SN-PIT",
+      "sequenceNumber": 375
+    },
+    {
+      "id": 409,
+      "market": "A",
+      "countryCode": "US",
+      "network": "MSGSN",
+      "sequenceNumber": 402
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 2,
+    "name": {
+      "default": "New York Islanders",
+      "fr": "Islanders de New York"
+    },
+    "commonName": {
+      "default": "Islanders"
+    },
+    "placeNameWithPreposition": {
+      "default": "New York",
+      "fr": "de New York"
+    },
+    "abbrev": "NYI",
+    "record": "35-35-12",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg"
+  },
+  "homeTeam": {
+    "id": 5,
+    "name": {
+      "default": "Pittsburgh Penguins",
+      "fr": "Penguins de Pittsburgh"
+    },
+    "commonName": {
+      "default": "Penguins"
+    },
+    "placeNameWithPreposition": {
+      "default": "Pittsburgh",
+      "fr": "de Pittsburgh"
+    },
+    "abbrev": "PIT",
+    "record": "34-36-12",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg"
+  },
+  "ticketsLink": "https://www.nhl.com/penguins/tickets/",
+  "ticketsLinkFr": "https://www.nhl.com/penguins/tickets/"
+}

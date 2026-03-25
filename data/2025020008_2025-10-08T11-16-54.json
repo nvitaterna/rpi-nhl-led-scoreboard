@@ -1,0 +1,74 @@
+{
+  "id": 2025020008,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/chi-vs-bos/2025/10/09/2025020008",
+  "venue": {
+    "default": "TD Garden"
+  },
+  "startTimeUTC": "2025-10-09T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 282,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN",
+      "sequenceNumber": 21
+    },
+    {
+      "id": 551,
+      "market": "A",
+      "countryCode": "US",
+      "network": "CHSN",
+      "sequenceNumber": 243
+    },
+    {
+      "id": 31,
+      "market": "H",
+      "countryCode": "US",
+      "network": "NESN",
+      "sequenceNumber": 396
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 16,
+    "name": {
+      "default": "Chicago Blackhawks",
+      "fr": "Blackhawks de Chicago"
+    },
+    "commonName": {
+      "default": "Blackhawks"
+    },
+    "placeNameWithPreposition": {
+      "default": "Chicago",
+      "fr": "de Chicago"
+    },
+    "abbrev": "CHI",
+    "record": "25-46-11",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg?season=20252026"
+  },
+  "homeTeam": {
+    "id": 6,
+    "name": {
+      "default": "Boston Bruins",
+      "fr": "Bruins de Boston"
+    },
+    "commonName": {
+      "default": "Bruins"
+    },
+    "placeNameWithPreposition": {
+      "default": "Boston",
+      "fr": "de Boston"
+    },
+    "abbrev": "BOS",
+    "record": "33-39-10",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg?season=20252026"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/010062E9D01C6E02?brand=nhl&wt.mc_id=NHL_LEAGUE_BOS_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BOS&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/010062E9D01C6E02?brand=nhl&wt.mc_id=NHL_LEAGUE_BOS_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BOS&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}

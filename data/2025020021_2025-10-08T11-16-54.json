@@ -1,0 +1,81 @@
+{
+  "id": 2025020021,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/ana-vs-sea/2025/10/09/2025020021",
+  "venue": {
+    "default": "Climate Pledge Arena"
+  },
+  "startTimeUTC": "2025-10-10T02:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 554,
+      "market": "H",
+      "countryCode": "US",
+      "network": "KHN",
+      "sequenceNumber": 339
+    },
+    {
+      "id": 552,
+      "market": "H",
+      "countryCode": "US",
+      "network": "KING 5",
+      "sequenceNumber": 340
+    },
+    {
+      "id": 553,
+      "market": "A",
+      "countryCode": "US",
+      "network": "Victory+",
+      "sequenceNumber": 373
+    },
+    {
+      "id": 388,
+      "market": "H",
+      "countryCode": "US",
+      "network": "KONG",
+      "sequenceNumber": 654
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 24,
+    "name": {
+      "default": "Anaheim Ducks",
+      "fr": "Ducks d'Anaheim"
+    },
+    "commonName": {
+      "default": "Ducks"
+    },
+    "placeNameWithPreposition": {
+      "default": "Anaheim",
+      "fr": "d'Anaheim"
+    },
+    "abbrev": "ANA",
+    "record": "35-37-10",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg"
+  },
+  "homeTeam": {
+    "id": 55,
+    "name": {
+      "default": "Seattle Kraken",
+      "fr": "Kraken de Seattle"
+    },
+    "commonName": {
+      "default": "Kraken"
+    },
+    "placeNameWithPreposition": {
+      "default": "Seattle",
+      "fr": "de Seattle"
+    },
+    "abbrev": "SEA",
+    "record": "35-41-6",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/0F0062B584EF1EFC?brand=nhl&wt.mc_id=NHL_LEAGUE_SEA_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SEA&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/0F0062B584EF1EFC?brand=nhl&wt.mc_id=NHL_LEAGUE_SEA_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SEA&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}

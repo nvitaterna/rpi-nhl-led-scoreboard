@@ -1,0 +1,74 @@
+{
+  "id": 2025020015,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/min-vs-stl/2025/10/09/2025020015",
+  "venue": {
+    "default": "Enterprise Center"
+  },
+  "startTimeUTC": "2025-10-10T00:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 566,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNMW",
+      "sequenceNumber": 273
+    },
+    {
+      "id": 567,
+      "market": "A",
+      "countryCode": "US",
+      "network": "FDSNNO",
+      "sequenceNumber": 274
+    },
+    {
+      "id": 570,
+      "market": "A",
+      "countryCode": "US",
+      "network": "FDSNWIX",
+      "sequenceNumber": 411
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 30,
+    "name": {
+      "default": "Minnesota Wild",
+      "fr": "Wild du Minnesota"
+    },
+    "commonName": {
+      "default": "Wild"
+    },
+    "placeNameWithPreposition": {
+      "default": "Minnesota",
+      "fr": "du Minnesota"
+    },
+    "abbrev": "MIN",
+    "record": "45-30-7",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg"
+  },
+  "homeTeam": {
+    "id": 19,
+    "name": {
+      "default": "St. Louis Blues",
+      "fr": "Blues de St. Louis"
+    },
+    "commonName": {
+      "default": "Blues"
+    },
+    "placeNameWithPreposition": {
+      "default": "St. Louis",
+      "fr": "de St. Louis"
+    },
+    "abbrev": "STL",
+    "record": "44-30-8",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg?season=20252026"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/060062F0B84E3702?brand=blues&artistid=806025&wt.mc_id=NHL_TEAM_STL_SGT_PG_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_STL&utm_content=SGT_PG_GM1&camefrom=CFC_NHLBLUES_WEB_TICKETS_SGT-CAROUSEL",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/060062F0B84E3702?brand=blues&artistid=806025&wt.mc_id=NHL_TEAM_STL_SGT_PG_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_STL&utm_content=SGT_PG_GM1&camefrom=CFC_NHLBLUES_WEB_TICKETS_SGT-CAROUSEL"
+}

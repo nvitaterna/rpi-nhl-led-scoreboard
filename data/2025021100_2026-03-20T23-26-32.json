@@ -1,0 +1,81 @@
+{
+  "id": 2025021100,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-21",
+  "gameCenterLink": "/gamecenter/vgk-vs-nsh/2026/03/21/2025021100",
+  "venue": {
+    "default": "Bridgestone Arena"
+  },
+  "startTimeUTC": "2026-03-21T18:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 284,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN1",
+      "sequenceNumber": 113
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 120
+    },
+    {
+      "id": 561,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNSO",
+      "sequenceNumber": 202
+    },
+    {
+      "id": 521,
+      "market": "A",
+      "countryCode": "US",
+      "network": "SCRIPPS",
+      "sequenceNumber": 657
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 54,
+    "name": {
+      "default": "Vegas Golden Knights",
+      "fr": "Golden Knights de Vegas"
+    },
+    "commonName": {
+      "default": "Golden Knights"
+    },
+    "placeNameWithPreposition": {
+      "default": "Vegas",
+      "fr": "de Vegas"
+    },
+    "abbrev": "VGK",
+    "record": "31-24-14",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg"
+  },
+  "homeTeam": {
+    "id": 18,
+    "name": {
+      "default": "Nashville Predators",
+      "fr": "Predators de Nashville"
+    },
+    "commonName": {
+      "default": "Predators"
+    },
+    "placeNameWithPreposition": {
+      "default": "Nashville",
+      "fr": "de Nashville"
+    },
+    "abbrev": "NSH",
+    "record": "31-28-9",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/1B006314D82F6E04?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/1B006314D82F6E04?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM35"
+}

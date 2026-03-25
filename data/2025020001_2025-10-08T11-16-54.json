@@ -1,0 +1,82 @@
+{
+  "id": 2025020001,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-07",
+  "gameCenterLink": "/gamecenter/chi-vs-fla/2025/10/07/2025020001",
+  "venue": {
+    "default": "Amerant Bank Arena"
+  },
+  "startTimeUTC": "2025-10-07T21:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 309,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ESPN",
+      "sequenceNumber": 10
+    },
+    {
+      "id": 284,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN1",
+      "sequenceNumber": 102
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 109
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 16,
+    "name": {
+      "default": "Chicago Blackhawks",
+      "fr": "Blackhawks de Chicago"
+    },
+    "commonName": {
+      "default": "Blackhawks"
+    },
+    "placeNameWithPreposition": {
+      "default": "Chicago",
+      "fr": "de Chicago"
+    },
+    "abbrev": "CHI",
+    "score": 2,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg?season=20252026"
+  },
+  "homeTeam": {
+    "id": 13,
+    "name": {
+      "default": "Florida Panthers",
+      "fr": "Panthers de la Floride"
+    },
+    "commonName": {
+      "default": "Panthers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Florida",
+      "fr": "de la Floride"
+    },
+    "abbrev": "FLA",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+  },
+  "ticketsLink": "https://www.nhl.com/panthers/tickets/",
+  "ticketsLinkFr": "https://www.nhl.com/panthers/tickets/",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/chi-at-fla-recap-6382227954112",
+  "threeMinRecapFr": "/fr/video/chi-vs-fla-07-10-2025-resume-6382227858112"
+}

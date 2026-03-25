@@ -1,0 +1,81 @@
+{
+  "id": 2025020004,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-08",
+  "gameCenterLink": "/gamecenter/mtl-vs-tor/2025/10/08/2025020004",
+  "venue": {
+    "default": "Scotiabank Arena"
+  },
+  "startTimeUTC": "2025-10-08T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 284,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN1",
+      "sequenceNumber": 102
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 109
+    }
+  ],
+  "gameState": "LIVE",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 8,
+    "name": {
+      "default": "Montréal Canadiens",
+      "fr": "Canadiens de Montréal"
+    },
+    "commonName": {
+      "default": "Canadiens"
+    },
+    "placeNameWithPreposition": {
+      "default": "Montréal",
+      "fr": "de Montréal"
+    },
+    "abbrev": "MTL",
+    "score": 2,
+    "sog": 22,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+  },
+  "homeTeam": {
+    "id": 10,
+    "name": {
+      "default": "Toronto Maple Leafs",
+      "fr": "Maple Leafs de Toronto"
+    },
+    "commonName": {
+      "default": "Maple Leafs"
+    },
+    "placeNameWithPreposition": {
+      "default": "Toronto",
+      "fr": "de Toronto"
+    },
+    "abbrev": "TOR",
+    "score": 2,
+    "sog": 19,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/100062F7ACAA3227?brand=nhl&wt.mc_id=NHL_LEAGUE_TOR_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TOR&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.ca/event/100062F7ACAA3227?brand=nhl&wt.mc_id=NHL_LEAGUE_TOR_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TOR&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "clock": {
+    "timeRemaining": "19:55",
+    "secondsRemaining": 1195,
+    "running": true,
+    "inIntermission": false
+  }
+}

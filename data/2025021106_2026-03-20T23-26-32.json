@@ -1,0 +1,75 @@
+{
+  "id": 2025021106,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-21",
+  "gameCenterLink": "/gamecenter/tor-vs-ott/2026/03/21/2025021106",
+  "venue": {
+    "default": "Canadian Tire Centre"
+  },
+  "startTimeUTC": "2026-03-21T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 282,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN",
+      "sequenceNumber": 21
+    },
+    {
+      "id": 4,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "CBC",
+      "sequenceNumber": 101
+    },
+    {
+      "id": 291,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS2",
+      "sequenceNumber": 121
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 10,
+    "name": {
+      "default": "Toronto Maple Leafs",
+      "fr": "Maple Leafs de Toronto"
+    },
+    "commonName": {
+      "default": "Maple Leafs"
+    },
+    "placeNameWithPreposition": {
+      "default": "Toronto",
+      "fr": "de Toronto"
+    },
+    "abbrev": "TOR",
+    "record": "29-28-12",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+  },
+  "homeTeam": {
+    "id": 9,
+    "name": {
+      "default": "Ottawa Senators",
+      "fr": "Sénateurs d'Ottawa"
+    },
+    "commonName": {
+      "default": "Senators",
+      "fr": "Sénateurs"
+    },
+    "placeNameWithPreposition": {
+      "default": "Ottawa",
+      "fr": "d'Ottawa"
+    },
+    "abbrev": "OTT",
+    "record": "35-24-9",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/31006305ACC628E1?brand=ottawasenators&artistid=805997&landing=s&wt.mc_id=NHL_TEAM_OTT_SGT_PG_GM34&&utm_source=sens_website&utm_medium=schedule&utm_campaign=03212026_tor",
+  "ticketsLinkFr": "https://www.nhl.com/fr/senators/tickets/"
+}

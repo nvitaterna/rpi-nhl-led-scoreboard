@@ -1,0 +1,75 @@
+{
+  "id": 2025020005,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-08",
+  "gameCenterLink": "/gamecenter/bos-vs-wsh/2025/10/08/2025020005",
+  "venue": {
+    "default": "Capital One Arena"
+  },
+  "startTimeUTC": "2025-10-08T23:30:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 385,
+      "market": "N",
+      "countryCode": "US",
+      "network": "TNT",
+      "sequenceNumber": 11
+    },
+    {
+      "id": 578,
+      "market": "N",
+      "countryCode": "US",
+      "network": "HBO MAX",
+      "sequenceNumber": 19
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 6,
+    "name": {
+      "default": "Boston Bruins",
+      "fr": "Bruins de Boston"
+    },
+    "commonName": {
+      "default": "Bruins"
+    },
+    "placeNameWithPreposition": {
+      "default": "Boston",
+      "fr": "de Boston"
+    },
+    "abbrev": "BOS",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg?season=20252026"
+  },
+  "homeTeam": {
+    "id": 15,
+    "name": {
+      "default": "Washington Capitals",
+      "fr": "Capitals de Washington"
+    },
+    "commonName": {
+      "default": "Capitals"
+    },
+    "placeNameWithPreposition": {
+      "default": "Washington",
+      "fr": "de Washington"
+    },
+    "abbrev": "WSH",
+    "score": 1,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/150062F0F0525F9C?brand=nhl&wt.mc_id=NHL_LEAGUE_WAS_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_WAS&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/150062F0F0525F9C?brand=nhl&wt.mc_id=NHL_LEAGUE_WAS_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_WAS&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/bos-at-wsh-recap-6382425204112",
+  "threeMinRecapFr": "/fr/video/bos-vs-wsh-08-10-2025-resume-6382426560112"
+}

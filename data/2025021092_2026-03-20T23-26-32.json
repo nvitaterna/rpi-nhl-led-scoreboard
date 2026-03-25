@@ -1,0 +1,75 @@
+{
+  "id": 2025021092,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/buf-vs-sjs/2026/03/19/2025021092",
+  "venue": {
+    "default": "SAP Center at San Jose"
+  },
+  "startTimeUTC": "2026-03-20T02:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 28,
+      "market": "A",
+      "countryCode": "US",
+      "network": "MSG-B",
+      "sequenceNumber": 392
+    },
+    {
+      "id": 314,
+      "market": "H",
+      "countryCode": "US",
+      "network": "NBCSCA",
+      "sequenceNumber": 393
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 7,
+    "name": {
+      "default": "Buffalo Sabres",
+      "fr": "Sabres de Buffalo"
+    },
+    "commonName": {
+      "default": "Sabres"
+    },
+    "placeNameWithPreposition": {
+      "default": "Buffalo",
+      "fr": "de Buffalo"
+    },
+    "abbrev": "BUF",
+    "score": 5,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
+  },
+  "homeTeam": {
+    "id": 28,
+    "name": {
+      "default": "San Jose Sharks",
+      "fr": "Sharks de San Jose"
+    },
+    "commonName": {
+      "default": "Sharks"
+    },
+    "placeNameWithPreposition": {
+      "default": "San Jose",
+      "fr": "de San Jose"
+    },
+    "abbrev": "SJS",
+    "score": 0,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/1C0062DEEE08723D?brand=nhl&wt.mc_id=NHL_LEAGUE_SJS_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SJS&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/1C0062DEEE08723D?brand=nhl&wt.mc_id=NHL_LEAGUE_SJS_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SJS&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/buf-at-sjs-recap-6391232141112",
+  "threeMinRecapFr": "/fr/video/buf-vs-sjs-19-03-2026-resume-6391232038112"
+}

@@ -1,6 +1,9 @@
 import type { Logger } from '@/lib/logger/logger.js';
 import type { NhlApi } from '@/lib/nhl-api/nhl-api.js';
-import { GameType } from '@/lib/nhl-api/schedule/schedule.schemas.js';
+import {
+  GameType,
+  type GameTeam,
+} from '@/lib/nhl-api/schedule/schedule.schemas.js';
 
 import { type GameState, gameStateMapper } from './games.utils.js';
 
@@ -9,8 +12,8 @@ export type Game = {
   gameType: GameType;
   gameStart: Date;
   gameState: GameState;
-  homeTeamAbbrev: string;
-  awayTeamAbbrev: string;
+  homeTeam: GameTeam;
+  awayTeam: GameTeam;
 };
 
 export class GamesService {
@@ -31,8 +34,14 @@ export class GamesService {
       gameType: game.gameType,
       gameStart: new Date(game.startTimeUTC),
       gameState: gameStateMapper(game.gameState),
-      homeTeamAbbrev: game.homeTeam.abbrev,
-      awayTeamAbbrev: game.awayTeam.abbrev,
+      homeTeam: {
+        id: game.homeTeam.id,
+        abbrev: game.homeTeam.abbrev,
+      },
+      awayTeam: {
+        id: game.awayTeam.id,
+        abbrev: game.awayTeam.abbrev,
+      },
     }));
 
     return this.games;

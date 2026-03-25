@@ -1,0 +1,74 @@
+{
+  "id": 2025021096,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-20",
+  "gameCenterLink": "/gamecenter/col-vs-chi/2026/03/20/2025021096",
+  "venue": {
+    "default": "United Center"
+  },
+  "startTimeUTC": "2026-03-21T00:30:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 551,
+      "market": "H",
+      "countryCode": "US",
+      "network": "CHSN",
+      "sequenceNumber": 254
+    },
+    {
+      "id": 2,
+      "market": "A",
+      "countryCode": "US",
+      "network": "ALT",
+      "sequenceNumber": 385
+    },
+    {
+      "id": 336,
+      "market": "A",
+      "countryCode": "US",
+      "network": "KTVD",
+      "sequenceNumber": 623
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 21,
+    "name": {
+      "default": "Colorado Avalanche",
+      "fr": "Avalanche du Colorado"
+    },
+    "commonName": {
+      "default": "Avalanche"
+    },
+    "placeNameWithPreposition": {
+      "default": "Colorado",
+      "fr": "du Colorado"
+    },
+    "abbrev": "COL",
+    "record": "44-13-10",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg"
+  },
+  "homeTeam": {
+    "id": 16,
+    "name": {
+      "default": "Chicago Blackhawks",
+      "fr": "Blackhawks de Chicago"
+    },
+    "commonName": {
+      "default": "Blackhawks"
+    },
+    "placeNameWithPreposition": {
+      "default": "Chicago",
+      "fr": "de Chicago"
+    },
+    "abbrev": "CHI",
+    "record": "26-30-12",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg?season=20252026"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/040062F0F4B538CC?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/040062F0F4B538CC?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=HORIZONTAL_SCOREBOARD_GM35"
+}

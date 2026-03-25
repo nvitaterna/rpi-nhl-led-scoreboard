@@ -1,0 +1,89 @@
+{
+  "id": 2025021087,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/sea-vs-nsh/2026/03/19/2025021087",
+  "venue": {
+    "default": "Bridgestone Arena"
+  },
+  "startTimeUTC": "2026-03-20T00:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 561,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNSO",
+      "sequenceNumber": 202
+    },
+    {
+      "id": 554,
+      "market": "A",
+      "countryCode": "US",
+      "network": "KHN/Prime",
+      "sequenceNumber": 348
+    },
+    {
+      "id": 552,
+      "market": "A",
+      "countryCode": "US",
+      "network": "KING 5",
+      "sequenceNumber": 349
+    },
+    {
+      "id": 388,
+      "market": "A",
+      "countryCode": "US",
+      "network": "KONG",
+      "sequenceNumber": 654
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 55,
+    "name": {
+      "default": "Seattle Kraken",
+      "fr": "Kraken de Seattle"
+    },
+    "commonName": {
+      "default": "Kraken"
+    },
+    "placeNameWithPreposition": {
+      "default": "Seattle",
+      "fr": "de Seattle"
+    },
+    "abbrev": "SEA",
+    "score": 1,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg"
+  },
+  "homeTeam": {
+    "id": 18,
+    "name": {
+      "default": "Nashville Predators",
+      "fr": "Predators de Nashville"
+    },
+    "commonName": {
+      "default": "Predators"
+    },
+    "placeNameWithPreposition": {
+      "default": "Nashville",
+      "fr": "de Nashville"
+    },
+    "abbrev": "NSH",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/1B006314D82C6E01?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/1B006314D82C6E01?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/sea-at-nsh-recap-6391225897112",
+  "threeMinRecapFr": "/fr/video/sea-vs-nsh-19-03-2026-resume-6391225234112"
+}

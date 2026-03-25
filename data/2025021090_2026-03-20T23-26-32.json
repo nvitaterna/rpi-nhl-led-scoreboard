@@ -1,0 +1,75 @@
+{
+  "id": 2025021090,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/tbl-vs-van/2026/03/19/2025021090",
+  "venue": {
+    "default": "Rogers Arena"
+  },
+  "startTimeUTC": "2026-03-20T02:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 290,
+      "market": "H",
+      "countryCode": "CA",
+      "network": "SNP",
+      "sequenceNumber": 33
+    },
+    {
+      "id": 581,
+      "market": "A",
+      "countryCode": "US",
+      "network": "The Spot",
+      "sequenceNumber": 211
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 14,
+    "name": {
+      "default": "Tampa Bay Lightning",
+      "fr": "Lightning de Tampa Bay"
+    },
+    "commonName": {
+      "default": "Lightning"
+    },
+    "placeNameWithPreposition": {
+      "default": "Tampa Bay",
+      "fr": "de Tampa Bay"
+    },
+    "abbrev": "TBL",
+    "score": 6,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+  },
+  "homeTeam": {
+    "id": 23,
+    "name": {
+      "default": "Vancouver Canucks",
+      "fr": "Canucks de Vancouver"
+    },
+    "commonName": {
+      "default": "Canucks"
+    },
+    "placeNameWithPreposition": {
+      "default": "Vancouver",
+      "fr": "de Vancouver"
+    },
+    "abbrev": "VAN",
+    "score": 2,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/110062EBD7CB4C58?brand=nhl&wt.mc_id=NHL_LEAGUE_VAN_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_VAN&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+  "ticketsLinkFr": "https://www.ticketmaster.ca/event/110062EBD7CB4C58?brand=nhl&wt.mc_id=NHL_LEAGUE_VAN_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_VAN&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/tbl-at-van-recap-6391233751112",
+  "threeMinRecapFr": "/fr/video/tbl-vs-van-19-03-2026-resume-6391232578112"
+}

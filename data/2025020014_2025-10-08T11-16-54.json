@@ -1,0 +1,67 @@
+{
+  "id": 2025020014,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/njd-vs-car/2025/10/09/2025020014",
+  "venue": {
+    "default": "Lenovo Center"
+  },
+  "startTimeUTC": "2025-10-09T23:30:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 329,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ESPN+",
+      "sequenceNumber": 16
+    },
+    {
+      "id": 391,
+      "market": "N",
+      "countryCode": "US",
+      "network": "HULU",
+      "sequenceNumber": 17
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 1,
+    "name": {
+      "default": "New Jersey Devils",
+      "fr": "Devils du New Jersey"
+    },
+    "commonName": {
+      "default": "Devils"
+    },
+    "placeNameWithPreposition": {
+      "default": "New Jersey",
+      "fr": "du New Jersey"
+    },
+    "abbrev": "NJD",
+    "record": "42-33-7",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg"
+  },
+  "homeTeam": {
+    "id": 12,
+    "name": {
+      "default": "Carolina Hurricanes",
+      "fr": "Hurricanes de la Caroline"
+    },
+    "commonName": {
+      "default": "Hurricanes"
+    },
+    "placeNameWithPreposition": {
+      "default": "Carolina",
+      "fr": "de la Caroline"
+    },
+    "abbrev": "CAR",
+    "record": "47-30-5",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/2D0062F0B904946F?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/2D0062F0B904946F?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}

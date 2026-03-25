@@ -1,0 +1,67 @@
+{
+  "id": 2025020017,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/dal-vs-wpg/2025/10/09/2025020017",
+  "venue": {
+    "default": "Canada Life Centre"
+  },
+  "startTimeUTC": "2025-10-10T00:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 292,
+      "market": "H",
+      "countryCode": "CA",
+      "network": "TSN3",
+      "sequenceNumber": 134
+    },
+    {
+      "id": 553,
+      "market": "A",
+      "countryCode": "US",
+      "network": "Victory+",
+      "sequenceNumber": 373
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 25,
+    "name": {
+      "default": "Dallas Stars",
+      "fr": "Stars de Dallas"
+    },
+    "commonName": {
+      "default": "Stars"
+    },
+    "placeNameWithPreposition": {
+      "default": "Dallas",
+      "fr": "de Dallas"
+    },
+    "abbrev": "DAL",
+    "record": "50-26-6",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg"
+  },
+  "homeTeam": {
+    "id": 52,
+    "name": {
+      "default": "Winnipeg Jets",
+      "fr": "Jets de Winnipeg"
+    },
+    "commonName": {
+      "default": "Jets"
+    },
+    "placeNameWithPreposition": {
+      "default": "Winnipeg",
+      "fr": "de Winnipeg"
+    },
+    "abbrev": "WPG",
+    "record": "56-22-4",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/110062F98B6729DC?brand=nhl&wt.mc_id=NHL_LEAGUE_WPG_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_WPG&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.ca/event/110062F98B6729DC?brand=nhl&wt.mc_id=NHL_LEAGUE_WPG_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_WPG&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}

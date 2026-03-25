@@ -9,6 +9,7 @@
     "dev": "tsx --env-file=.env src/index.ts",
     "dev:watch": "tsx --env-file=.env --watch src/index.ts",
     "boxscore": "tsx --env-file=.env src/boxscore-fetch.ts",
+    "possible-values": "tsx --env-file=.env src/get-possible-values.ts",
     "test": "vitest",
     "lint": "eslint src --fix",
     "format": "prettier --write src"

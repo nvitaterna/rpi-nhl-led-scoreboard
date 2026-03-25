@@ -1,0 +1,83 @@
+{
+  "id": 2025021084,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/nyi-vs-ott/2026/03/19/2025021084",
+  "venue": {
+    "default": "Canadian Tire Centre"
+  },
+  "startTimeUTC": "2026-03-19T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 294,
+      "market": "H",
+      "countryCode": "CA",
+      "network": "TSN5",
+      "sequenceNumber": 135
+    },
+    {
+      "id": 230,
+      "market": "H",
+      "countryCode": "CA",
+      "network": "RDS2",
+      "sequenceNumber": 146
+    },
+    {
+      "id": 409,
+      "market": "A",
+      "countryCode": "US",
+      "network": "MSGSN",
+      "sequenceNumber": 411
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 2,
+    "name": {
+      "default": "New York Islanders",
+      "fr": "Islanders de New York"
+    },
+    "commonName": {
+      "default": "Islanders"
+    },
+    "placeNameWithPreposition": {
+      "default": "New York",
+      "fr": "de New York"
+    },
+    "abbrev": "NYI",
+    "score": 2,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg"
+  },
+  "homeTeam": {
+    "id": 9,
+    "name": {
+      "default": "Ottawa Senators",
+      "fr": "Sénateurs d'Ottawa"
+    },
+    "commonName": {
+      "default": "Senators",
+      "fr": "Sénateurs"
+    },
+    "placeNameWithPreposition": {
+      "default": "Ottawa",
+      "fr": "d'Ottawa"
+    },
+    "abbrev": "OTT",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/310063059DAC2013?brand=ottawasenators&artistid=805997&landing=s&wt.mc_id=NHL_TEAM_OTT_SGT_PG_GM33&&utm_source=sens_website&utm_medium=schedule&utm_campaign=03192026_nyi",
+  "ticketsLinkFr": "https://www.nhl.com/fr/senators/tickets/",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/nyi-at-ott-recap-6391220680112",
+  "threeMinRecapFr": "/fr/video/nyi-vs-ott-19-03-2026-resume-6391223039112"
+}

@@ -1,0 +1,73 @@
+{
+  "id": 2025020007,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-08",
+  "gameCenterLink": "/gamecenter/lak-vs-vgk/2025/10/08/2025020007",
+  "venue": {
+    "default": "T-Mobile Arena"
+  },
+  "startTimeUTC": "2025-10-09T02:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 385,
+      "market": "N",
+      "countryCode": "US",
+      "network": "TNT",
+      "sequenceNumber": 11
+    },
+    {
+      "id": 578,
+      "market": "N",
+      "countryCode": "US",
+      "network": "HBO MAX",
+      "sequenceNumber": 19
+    }
+  ],
+  "gameState": "FINAL",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 26,
+    "name": {
+      "default": "Los Angeles Kings",
+      "fr": "Kings de Los Angeles"
+    },
+    "commonName": {
+      "default": "Kings"
+    },
+    "placeNameWithPreposition": {
+      "default": "Los Angeles",
+      "fr": "de Los Angeles"
+    },
+    "abbrev": "LAK",
+    "score": 6,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+  },
+  "homeTeam": {
+    "id": 54,
+    "name": {
+      "default": "Vegas Golden Knights",
+      "fr": "Golden Knights de Vegas"
+    },
+    "commonName": {
+      "default": "Golden Knights"
+    },
+    "placeNameWithPreposition": {
+      "default": "Vegas",
+      "fr": "de Vegas"
+    },
+    "abbrev": "VGK",
+    "score": 5,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg"
+  },
+  "ticketsLink": "https://www.nhl.com/goldenknights/tickets/",
+  "ticketsLinkFr": "https://www.nhl.com/goldenknights/tickets/",
+  "period": 5,
+  "periodDescriptor": {
+    "number": 5,
+    "periodType": "SO",
+    "maxRegulationPeriods": 3
+  }
+}

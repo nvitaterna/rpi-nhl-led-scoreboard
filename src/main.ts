@@ -5,6 +5,7 @@ import { app } from './app.js';
 import { getLogger } from './lib/logger/logger.js';
 import { setupNhlApi } from './lib/nhl-api/nhl-api.js';
 import { ActiveTeamModule } from './modules/active-team/active-team.module.js';
+import { ClockSimulatorService } from './modules/clock-simulator/clock-simulator.service.js';
 import { DataLoopModule } from './modules/data-loop/data-loop,module.js';
 import { GamesModule } from './modules/games/games.module.js';
 import { LogosModule } from './modules/logos/logos.module.js';
@@ -36,19 +37,29 @@ export const main = async () => {
     activeTeamModule,
   );
 
-  dataLoopModule.dataLoopService.startLoop();
+  // dataLoopModule.dataLoopService.startLoop();
+
+  const clockLogger = getLogger('ClockSimulatorService');
+
+  const clockSimulator = new ClockSimulatorService(
+    clockLogger,
+    nhlApi,
+    2022020897,
+  );
+
+  await clockSimulator.startClock();
 
   server.on('request', app);
 
   logger.info(`Server running at http://localhost:${config.port}/`);
 
   app.get('/', (req, res) => {
-    // send simple html page that auto refreshes every second with dataLoopModule.dataLoopService.boxscore displayed
+    // send simple html page that auto refreshes every 500ms
     res.send(`
       <html>
         <head>
           <title>RPI NHL LED Scoreboard</title>
-          <meta http-equiv="refresh" content="1">
+          <meta http-equiv="refresh" content="0.5">
           <style>
             body {
               font-family: Arial, sans-serif;
@@ -74,6 +85,8 @@ export const main = async () => {
           <pre>${JSON.stringify(config, null, 2)}</pre>
           <h2>Current Boxscore Data:</h2>
           <pre>${JSON.stringify(dataLoopModule.dataLoopService.boxscore, null, 2)}</pre>
+          <h2>Clock:</h2>
+          <pre>${JSON.stringify(clockSimulator.getClock(), null, 2)}</pre>
         </body>
       </html>
     `);

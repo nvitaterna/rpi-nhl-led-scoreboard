@@ -7,6 +7,7 @@ export enum GameType {
 }
 
 const gameTeamSchema = z.object({
+  id: z.number(),
   abbrev: z.string(),
 });
 
@@ -27,3 +28,5 @@ export const scheduleResponseSchema = z.object({
 export type ScheduledGame = z.infer<typeof scheduledGameSchema>;
 
 export type ScheduleResponse = z.infer<typeof scheduleResponseSchema>;
+
+export type GameTeam = z.infer<typeof gameTeamSchema>;

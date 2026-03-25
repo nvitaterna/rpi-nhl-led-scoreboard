@@ -1,0 +1,82 @@
+{
+  "id": 2025021085,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/mtl-vs-det/2026/03/19/2025021085",
+  "venue": {
+    "default": "Little Caesars Arena"
+  },
+  "startTimeUTC": "2026-03-19T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 131,
+      "market": "A",
+      "countryCode": "CA",
+      "network": "TSN2",
+      "sequenceNumber": 112
+    },
+    {
+      "id": 33,
+      "market": "A",
+      "countryCode": "CA",
+      "network": "RDS",
+      "sequenceNumber": 145
+    },
+    {
+      "id": 562,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNDET",
+      "sequenceNumber": 282
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 8,
+    "name": {
+      "default": "Montréal Canadiens",
+      "fr": "Canadiens de Montréal"
+    },
+    "commonName": {
+      "default": "Canadiens"
+    },
+    "placeNameWithPreposition": {
+      "default": "Montréal",
+      "fr": "de Montréal"
+    },
+    "abbrev": "MTL",
+    "score": 1,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+  },
+  "homeTeam": {
+    "id": 17,
+    "name": {
+      "default": "Detroit Red Wings",
+      "fr": "Red Wings de Detroit"
+    },
+    "commonName": {
+      "default": "Red Wings"
+    },
+    "placeNameWithPreposition": {
+      "default": "Detroit",
+      "fr": "de Detroit"
+    },
+    "abbrev": "DET",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg?season=20252026"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/080062EAAC6F2C58?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/080062EAAC6F2C58?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/mtl-at-det-recap-6391222104112",
+  "threeMinRecapFr": "/fr/video/mtl-vs-det-19-03-2026-resume-6391222501112"
+}

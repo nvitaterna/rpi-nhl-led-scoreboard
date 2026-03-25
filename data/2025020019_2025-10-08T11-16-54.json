@@ -1,0 +1,74 @@
+{
+  "id": 2025020019,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/cgy-vs-van/2025/10/09/2025020019",
+  "venue": {
+    "default": "Rogers Arena"
+  },
+  "startTimeUTC": "2025-10-10T02:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 290,
+      "market": "H",
+      "countryCode": "CA",
+      "network": "SNP",
+      "sequenceNumber": 33
+    },
+    {
+      "id": 289,
+      "market": "A",
+      "countryCode": "CA",
+      "network": "SNW",
+      "sequenceNumber": 34
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 109
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 20,
+    "name": {
+      "default": "Calgary Flames",
+      "fr": "Flames de Calgary"
+    },
+    "commonName": {
+      "default": "Flames"
+    },
+    "placeNameWithPreposition": {
+      "default": "Calgary",
+      "fr": "de Calgary"
+    },
+    "abbrev": "CGY",
+    "record": "41-27-14",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg"
+  },
+  "homeTeam": {
+    "id": 23,
+    "name": {
+      "default": "Vancouver Canucks",
+      "fr": "Canucks de Vancouver"
+    },
+    "commonName": {
+      "default": "Canucks"
+    },
+    "placeNameWithPreposition": {
+      "default": "Vancouver",
+      "fr": "de Vancouver"
+    },
+    "abbrev": "VAN",
+    "record": "38-30-14",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg"
+  },
+  "ticketsLink": "https://www.nhl.com/canucks/tickets/",
+  "ticketsLinkFr": "https://www.nhl.com/canucks/tickets/"
+}

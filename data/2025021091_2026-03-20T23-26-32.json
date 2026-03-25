@@ -1,0 +1,75 @@
+{
+  "id": 2025021091,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/uta-vs-vgk/2026/03/19/2025021091",
+  "venue": {
+    "default": "T-Mobile Arena"
+  },
+  "startTimeUTC": "2026-03-20T02:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 329,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ESPN+",
+      "sequenceNumber": 16
+    },
+    {
+      "id": 391,
+      "market": "N",
+      "countryCode": "US",
+      "network": "HULU",
+      "sequenceNumber": 17
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 68,
+    "name": {
+      "default": "Utah Mammoth",
+      "fr": "Mammoth de l'Utah"
+    },
+    "commonName": {
+      "default": "Mammoth"
+    },
+    "placeNameWithPreposition": {
+      "default": "Utah",
+      "fr": "de l'Utah"
+    },
+    "abbrev": "UTA",
+    "score": 4,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg?season=20252026"
+  },
+  "homeTeam": {
+    "id": 54,
+    "name": {
+      "default": "Vegas Golden Knights",
+      "fr": "Golden Knights de Vegas"
+    },
+    "commonName": {
+      "default": "Golden Knights"
+    },
+    "placeNameWithPreposition": {
+      "default": "Vegas",
+      "fr": "de Vegas"
+    },
+    "abbrev": "VGK",
+    "score": 0,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg"
+  },
+  "ticketsLink": "https://www.nhl.com/goldenknights/tickets/",
+  "ticketsLinkFr": "https://www.nhl.com/goldenknights/tickets/",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/uta-at-vgk-recap-6391233582112",
+  "threeMinRecapFr": "/fr/video/uta-vs-vgk-19-03-2026-resume-6391233968112"
+}

@@ -1,0 +1,82 @@
+{
+  "id": 2025020003,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-07",
+  "gameCenterLink": "/gamecenter/col-vs-lak/2025/10/07/2025020003",
+  "venue": {
+    "default": "Crypto.com Arena"
+  },
+  "startTimeUTC": "2025-10-08T02:30:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 309,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ESPN",
+      "sequenceNumber": 10
+    },
+    {
+      "id": 284,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN1",
+      "sequenceNumber": 102
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 109
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 21,
+    "name": {
+      "default": "Colorado Avalanche",
+      "fr": "Avalanche du Colorado"
+    },
+    "commonName": {
+      "default": "Avalanche"
+    },
+    "placeNameWithPreposition": {
+      "default": "Colorado",
+      "fr": "du Colorado"
+    },
+    "abbrev": "COL",
+    "score": 4,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg"
+  },
+  "homeTeam": {
+    "id": 26,
+    "name": {
+      "default": "Los Angeles Kings",
+      "fr": "Kings de Los Angeles"
+    },
+    "commonName": {
+      "default": "Kings"
+    },
+    "placeNameWithPreposition": {
+      "default": "Los Angeles",
+      "fr": "de Los Angeles"
+    },
+    "abbrev": "LAK",
+    "score": 1,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+  },
+  "ticketsLink": "https://www.nhl.com/kings/tickets/single-game-tickets",
+  "ticketsLinkFr": "https://www.nhl.com/kings/tickets/single-game-tickets",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/col-at-lak-recap-6382249040112",
+  "threeMinRecapFr": "/fr/video/col-vs-lak-07-10-2025-resume-6382248342112"
+}

@@ -1,0 +1,67 @@
+{
+  "id": 2025020012,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/phi-vs-fla/2025/10/09/2025020012",
+  "venue": {
+    "default": "Amerant Bank Arena"
+  },
+  "startTimeUTC": "2025-10-09T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 322,
+      "market": "A",
+      "countryCode": "US",
+      "network": "NBCSP",
+      "sequenceNumber": 380
+    },
+    {
+      "id": 521,
+      "market": "H",
+      "countryCode": "US",
+      "network": "SCRIPPS",
+      "sequenceNumber": 657
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 4,
+    "name": {
+      "default": "Philadelphia Flyers",
+      "fr": "Flyers de Philadelphie"
+    },
+    "commonName": {
+      "default": "Flyers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Philadelphia",
+      "fr": "de Philadelphie"
+    },
+    "abbrev": "PHI",
+    "record": "33-39-10",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
+  },
+  "homeTeam": {
+    "id": 13,
+    "name": {
+      "default": "Florida Panthers",
+      "fr": "Panthers de la Floride"
+    },
+    "commonName": {
+      "default": "Panthers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Florida",
+      "fr": "de la Floride"
+    },
+    "abbrev": "FLA",
+    "record": "47-31-4",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+  },
+  "ticketsLink": "https://www.nhl.com/panthers/tickets/",
+  "ticketsLinkFr": "https://www.nhl.com/panthers/tickets/"
+}

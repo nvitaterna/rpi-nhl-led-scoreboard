@@ -1,0 +1,82 @@
+{
+  "id": 2025021089,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/fla-vs-edm/2026/03/19/2025021089",
+  "venue": {
+    "default": "Rogers Place"
+  },
+  "startTimeUTC": "2026-03-20T01:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-06:00",
+  "tvBroadcasts": [
+    {
+      "id": 282,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN",
+      "sequenceNumber": 21
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 120
+    },
+    {
+      "id": 521,
+      "market": "A",
+      "countryCode": "US",
+      "network": "SCRIPPS",
+      "sequenceNumber": 657
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 13,
+    "name": {
+      "default": "Florida Panthers",
+      "fr": "Panthers de la Floride"
+    },
+    "commonName": {
+      "default": "Panthers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Florida",
+      "fr": "de la Floride"
+    },
+    "abbrev": "FLA",
+    "score": 4,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+  },
+  "homeTeam": {
+    "id": 22,
+    "name": {
+      "default": "Edmonton Oilers",
+      "fr": "Oilers d'Edmonton"
+    },
+    "commonName": {
+      "default": "Oilers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Edmonton",
+      "fr": "d'Edmonton"
+    },
+    "abbrev": "EDM",
+    "score": 0,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/1100630EB47A47D5?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "ticketsLinkFr": "https://www.ticketmaster.ca/event/1100630EB47A47D5?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/fla-at-edm-recap-6391228734112",
+  "threeMinRecapFr": "/fr/video/fla-vs-edm-19-03-2026-resume-6391229106112"
+}

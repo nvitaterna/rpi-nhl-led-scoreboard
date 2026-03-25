@@ -1,0 +1,75 @@
+{
+  "id": 2025021093,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/phi-vs-lak/2026/03/19/2025021093",
+  "venue": {
+    "default": "Crypto.com Arena"
+  },
+  "startTimeUTC": "2026-03-20T02:30:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 564,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNW",
+      "sequenceNumber": 288
+    },
+    {
+      "id": 322,
+      "market": "A",
+      "countryCode": "US",
+      "network": "NBCSP",
+      "sequenceNumber": 389
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 4,
+    "name": {
+      "default": "Philadelphia Flyers",
+      "fr": "Flyers de Philadelphie"
+    },
+    "commonName": {
+      "default": "Flyers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Philadelphia",
+      "fr": "de Philadelphie"
+    },
+    "abbrev": "PHI",
+    "score": 4,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
+  },
+  "homeTeam": {
+    "id": 26,
+    "name": {
+      "default": "Los Angeles Kings",
+      "fr": "Kings de Los Angeles"
+    },
+    "commonName": {
+      "default": "Kings"
+    },
+    "placeNameWithPreposition": {
+      "default": "Los Angeles",
+      "fr": "de Los Angeles"
+    },
+    "abbrev": "LAK",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+  },
+  "ticketsLink": "https://www.nhl.com/kings/tickets/single-game-tickets",
+  "ticketsLinkFr": "https://www.nhl.com/kings/tickets/single-game-tickets",
+  "period": 5,
+  "periodDescriptor": {
+    "number": 5,
+    "periodType": "SO",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/phi-at-lak-recap-6391234874112",
+  "threeMinRecapFr": "/fr/video/phi-vs-lak-19-03-2026-resume-6391234672112"
+}

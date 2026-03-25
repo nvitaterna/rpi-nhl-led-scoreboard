@@ -1,0 +1,75 @@
+{
+  "id": 2025020011,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/ott-vs-tbl/2025/10/09/2025020011",
+  "venue": {
+    "default": "Benchmark International Arena"
+  },
+  "startTimeUTC": "2025-10-09T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 581,
+      "market": "H",
+      "countryCode": "US",
+      "network": "The Spot",
+      "sequenceNumber": 1
+    },
+    {
+      "id": 294,
+      "market": "A",
+      "countryCode": "CA",
+      "network": "TSN5",
+      "sequenceNumber": 135
+    },
+    {
+      "id": 242,
+      "market": "A",
+      "countryCode": "CA",
+      "network": "RDSI",
+      "sequenceNumber": 136
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 9,
+    "name": {
+      "default": "Ottawa Senators",
+      "fr": "Sénateurs d'Ottawa"
+    },
+    "commonName": {
+      "default": "Senators",
+      "fr": "Sénateurs"
+    },
+    "placeNameWithPreposition": {
+      "default": "Ottawa",
+      "fr": "d'Ottawa"
+    },
+    "abbrev": "OTT",
+    "record": "45-30-7",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg"
+  },
+  "homeTeam": {
+    "id": 14,
+    "name": {
+      "default": "Tampa Bay Lightning",
+      "fr": "Lightning de Tampa Bay"
+    },
+    "commonName": {
+      "default": "Lightning"
+    },
+    "placeNameWithPreposition": {
+      "default": "Tampa Bay",
+      "fr": "de Tampa Bay"
+    },
+    "abbrev": "TBL",
+    "record": "47-27-8",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/0D0062FEF8284675?brand=nhl&wt.mc_id=NHL_LEAGUE_TBL_HORIZONTAL_SCOREBOARD_GM3&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TBL&utm_content=HORIZONTAL_SCOREBOARD_GM3",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/0D0062FEF8284675?brand=nhl&wt.mc_id=NHL_LEAGUE_TBL_HORIZONTAL_SCOREBOARD_GM3&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TBL&utm_content=HORIZONTAL_SCOREBOARD_GM3"
+}

@@ -1,0 +1,75 @@
+{
+  "id": 2025021086,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/nyr-vs-cbj/2026/03/19/2025021086",
+  "venue": {
+    "default": "Nationwide Arena"
+  },
+  "startTimeUTC": "2026-03-19T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 565,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNOH",
+      "sequenceNumber": 286
+    },
+    {
+      "id": 27,
+      "market": "A",
+      "countryCode": "US",
+      "network": "MSG",
+      "sequenceNumber": 417
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 3,
+    "name": {
+      "default": "New York Rangers",
+      "fr": "Rangers de New York"
+    },
+    "commonName": {
+      "default": "Rangers"
+    },
+    "placeNameWithPreposition": {
+      "default": "New York",
+      "fr": "de New York"
+    },
+    "abbrev": "NYR",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+  },
+  "homeTeam": {
+    "id": 29,
+    "name": {
+      "default": "Columbus Blue Jackets",
+      "fr": "Blue Jackets de Columbus"
+    },
+    "commonName": {
+      "default": "Blue Jackets"
+    },
+    "placeNameWithPreposition": {
+      "default": "Columbus",
+      "fr": "de Columbus"
+    },
+    "abbrev": "CBJ",
+    "score": 6,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/050062EFCABB4014?brand=nhl&wt.mc_id=NHL_LEAGUE_CBJ_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CBJ&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/050062EFCABB4014?brand=nhl&wt.mc_id=NHL_LEAGUE_CBJ_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CBJ&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/nyr-at-cbj-recap-6391223650112",
+  "threeMinRecapFr": "/fr/video/nyr-vs-cbj-19-03-2026-resume-6391223653112"
+}

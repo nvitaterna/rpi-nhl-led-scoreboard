@@ -34,7 +34,7 @@ export class PlayByPlayApi {
     this.logger.debug(`Fetching play-by-play for game ${gameId} from NHL API.`);
 
     const response = await this.nhlWebApi
-      .get(`v1/gamecenter/${gameId}/playByPlay`)
+      .get(`v1/gamecenter/${gameId}/play-by-play`)
       .json()
       .then((data) => {
         return playByPlayResponseSchema.parse(data);

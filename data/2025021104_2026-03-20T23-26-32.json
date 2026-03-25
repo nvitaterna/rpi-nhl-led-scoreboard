@@ -1,0 +1,74 @@
+{
+  "id": 2025021104,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-21",
+  "gameCenterLink": "/gamecenter/sea-vs-cbj/2026/03/21/2025021104",
+  "venue": {
+    "default": "Nationwide Arena"
+  },
+  "startTimeUTC": "2026-03-21T21:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 565,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNOH",
+      "sequenceNumber": 286
+    },
+    {
+      "id": 554,
+      "market": "A",
+      "countryCode": "US",
+      "network": "KHN/Prime",
+      "sequenceNumber": 348
+    },
+    {
+      "id": 388,
+      "market": "A",
+      "countryCode": "US",
+      "network": "KONG",
+      "sequenceNumber": 654
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 55,
+    "name": {
+      "default": "Seattle Kraken",
+      "fr": "Kraken de Seattle"
+    },
+    "commonName": {
+      "default": "Kraken"
+    },
+    "placeNameWithPreposition": {
+      "default": "Seattle",
+      "fr": "de Seattle"
+    },
+    "abbrev": "SEA",
+    "record": "31-28-9",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg"
+  },
+  "homeTeam": {
+    "id": 29,
+    "name": {
+      "default": "Columbus Blue Jackets",
+      "fr": "Blue Jackets de Columbus"
+    },
+    "commonName": {
+      "default": "Blue Jackets"
+    },
+    "placeNameWithPreposition": {
+      "default": "Columbus",
+      "fr": "de Columbus"
+    },
+    "abbrev": "CBJ",
+    "record": "36-21-11",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/050062EFCA783F9E?brand=nhl&wt.mc_id=NHL_LEAGUE_CBJ_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CBJ&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/050062EFCA783F9E?brand=nhl&wt.mc_id=NHL_LEAGUE_CBJ_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CBJ&utm_content=HORIZONTAL_SCOREBOARD_GM35"
+}

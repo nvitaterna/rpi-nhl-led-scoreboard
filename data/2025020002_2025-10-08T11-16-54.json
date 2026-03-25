@@ -1,0 +1,82 @@
+{
+  "id": 2025020002,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-07",
+  "gameCenterLink": "/gamecenter/pit-vs-nyr/2025/10/07/2025020002",
+  "venue": {
+    "default": "Madison Square Garden"
+  },
+  "startTimeUTC": "2025-10-08T00:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 309,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ESPN",
+      "sequenceNumber": 10
+    },
+    {
+      "id": 284,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN1",
+      "sequenceNumber": 102
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 109
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 5,
+    "name": {
+      "default": "Pittsburgh Penguins",
+      "fr": "Penguins de Pittsburgh"
+    },
+    "commonName": {
+      "default": "Penguins"
+    },
+    "placeNameWithPreposition": {
+      "default": "Pittsburgh",
+      "fr": "de Pittsburgh"
+    },
+    "abbrev": "PIT",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg"
+  },
+  "homeTeam": {
+    "id": 3,
+    "name": {
+      "default": "New York Rangers",
+      "fr": "Rangers de New York"
+    },
+    "commonName": {
+      "default": "Rangers"
+    },
+    "placeNameWithPreposition": {
+      "default": "New York",
+      "fr": "de New York"
+    },
+    "abbrev": "NYR",
+    "score": 0,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/3B0062F0AC18161C?brand=nhl&wt.mc_id=NHL_LEAGUE_NYR_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYR&utm_content=HORIZONTAL_SCOREBOARD_GM1&CAMEFROM=CFC_RANGERS_WEB_NHL_HP-SCOREBOX_250825",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/3B0062F0AC18161C?brand=nhl&wt.mc_id=NHL_LEAGUE_NYR_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYR&utm_content=HORIZONTAL_SCOREBOARD_GM1&CAMEFROM=CFC_RANGERS_WEB_NHL_HP-SCOREBOX_250825",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/pit-at-nyr-recap-6382236256112",
+  "threeMinRecapFr": "/fr/video/pit-vs-nyr-07-10-2025-resume-6382237526112"
+}

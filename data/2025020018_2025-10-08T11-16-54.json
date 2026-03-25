@@ -1,0 +1,67 @@
+{
+  "id": 2025020018,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/uta-vs-col/2025/10/09/2025020018",
+  "venue": {
+    "default": "Ball Arena"
+  },
+  "startTimeUTC": "2025-10-10T01:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-06:00",
+  "tvBroadcasts": [
+    {
+      "id": 558,
+      "market": "A",
+      "countryCode": "US",
+      "network": "Utah16",
+      "sequenceNumber": 372
+    },
+    {
+      "id": 2,
+      "market": "H",
+      "countryCode": "US",
+      "network": "ALT",
+      "sequenceNumber": 376
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 68,
+    "name": {
+      "default": "Utah Mammoth",
+      "fr": "Mammoth de l'Utah"
+    },
+    "commonName": {
+      "default": "Mammoth"
+    },
+    "placeNameWithPreposition": {
+      "default": "Utah",
+      "fr": "de l'Utah"
+    },
+    "abbrev": "UTA",
+    "record": "38-31-13",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg?season=20252026"
+  },
+  "homeTeam": {
+    "id": 21,
+    "name": {
+      "default": "Colorado Avalanche",
+      "fr": "Avalanche du Colorado"
+    },
+    "commonName": {
+      "default": "Avalanche"
+    },
+    "placeNameWithPreposition": {
+      "default": "Colorado",
+      "fr": "du Colorado"
+    },
+    "abbrev": "COL",
+    "record": "49-29-4",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/1E0062EF9E653320?brand=nhl&wt.mc_id=NHL_LEAGUE_COL_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_COL&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/1E0062EF9E653320?brand=nhl&wt.mc_id=NHL_LEAGUE_COL_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_COL&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}

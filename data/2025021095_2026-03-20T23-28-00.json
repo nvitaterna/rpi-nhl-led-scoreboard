@@ -1,0 +1,88 @@
+{
+  "id": 2025021095,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-20",
+  "gameCenterLink": "/gamecenter/njd-vs-wsh/2026/03/20/2025021095",
+  "venue": {
+    "default": "Capital One Arena"
+  },
+  "startTimeUTC": "2026-03-20T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 282,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN",
+      "sequenceNumber": 21
+    },
+    {
+      "id": 517,
+      "market": "H",
+      "countryCode": "US",
+      "network": "MNMT",
+      "sequenceNumber": 396
+    },
+    {
+      "id": 409,
+      "market": "A",
+      "countryCode": "US",
+      "network": "MSGSN",
+      "sequenceNumber": 411
+    }
+  ],
+  "gameState": "LIVE",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 1,
+    "name": {
+      "default": "New Jersey Devils",
+      "fr": "Devils du New Jersey"
+    },
+    "commonName": {
+      "default": "Devils"
+    },
+    "placeNameWithPreposition": {
+      "default": "New Jersey",
+      "fr": "du New Jersey"
+    },
+    "abbrev": "NJD",
+    "score": 0,
+    "sog": 4,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg"
+  },
+  "homeTeam": {
+    "id": 15,
+    "name": {
+      "default": "Washington Capitals",
+      "fr": "Capitals de Washington"
+    },
+    "commonName": {
+      "default": "Capitals"
+    },
+    "placeNameWithPreposition": {
+      "default": "Washington",
+      "fr": "de Washington"
+    },
+    "abbrev": "WSH",
+    "score": 1,
+    "sog": 5,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/150062F0F36A6137?brand=nhl&wt.mc_id=NHL_LEAGUE_WAS_HORIZONTAL_SCOREBOARD_GM37&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_WAS&utm_content=HORIZONTAL_SCOREBOARD_GM37",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/150062F0F36A6137?brand=nhl&wt.mc_id=NHL_LEAGUE_WAS_HORIZONTAL_SCOREBOARD_GM37&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_WAS&utm_content=HORIZONTAL_SCOREBOARD_GM37",
+  "period": 1,
+  "periodDescriptor": {
+    "number": 1,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "clock": {
+    "timeRemaining": "07:24",
+    "secondsRemaining": 444,
+    "running": false,
+    "inIntermission": false
+  }
+}

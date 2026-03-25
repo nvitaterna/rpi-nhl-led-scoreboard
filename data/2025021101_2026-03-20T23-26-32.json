@@ -1,0 +1,74 @@
+{
+  "id": 2025021101,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-21",
+  "gameCenterLink": "/gamecenter/dal-vs-min/2026/03/21/2025021101",
+  "venue": {
+    "default": "Grand Casino Arena"
+  },
+  "startTimeUTC": "2026-03-21T20:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 567,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNNO",
+      "sequenceNumber": 284
+    },
+    {
+      "id": 553,
+      "market": "A",
+      "countryCode": "US",
+      "network": "Victory+",
+      "sequenceNumber": 382
+    },
+    {
+      "id": 569,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNWI",
+      "sequenceNumber": 419
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 25,
+    "name": {
+      "default": "Dallas Stars",
+      "fr": "Stars de Dallas"
+    },
+    "commonName": {
+      "default": "Stars"
+    },
+    "placeNameWithPreposition": {
+      "default": "Dallas",
+      "fr": "de Dallas"
+    },
+    "abbrev": "DAL",
+    "record": "43-15-10",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg"
+  },
+  "homeTeam": {
+    "id": 30,
+    "name": {
+      "default": "Minnesota Wild",
+      "fr": "Wild du Minnesota"
+    },
+    "commonName": {
+      "default": "Wild"
+    },
+    "placeNameWithPreposition": {
+      "default": "Minnesota",
+      "fr": "du Minnesota"
+    },
+    "abbrev": "MIN",
+    "record": "39-19-12",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/060062F1D619553E?brand=nhl&wt.mc_id=NHL_LEAGUE_MIN_HORIZONTAL_SCOREBOARD_GM38&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MIN&utm_content=HORIZONTAL_SCOREBOARD_GM38",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/060062F1D619553E?brand=nhl&wt.mc_id=NHL_LEAGUE_MIN_HORIZONTAL_SCOREBOARD_GM38&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MIN&utm_content=HORIZONTAL_SCOREBOARD_GM38"
+}

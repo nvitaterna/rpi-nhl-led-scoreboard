@@ -31,4 +31,6 @@ export const boxscoreResponseSchema = z.object({
   gameOutcome: gameOutcomeSchema.optional(),
 });
 
+export type PeriodDescriptor = z.infer<typeof periodDescriptorSchema>;
+
 export type BoxscoreResponse = z.infer<typeof boxscoreResponseSchema>;

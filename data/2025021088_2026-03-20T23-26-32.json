@@ -1,0 +1,75 @@
+{
+  "id": 2025021088,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-19",
+  "gameCenterLink": "/gamecenter/chi-vs-min/2026/03/19/2025021088",
+  "venue": {
+    "default": "Grand Casino Arena"
+  },
+  "startTimeUTC": "2026-03-19T23:30:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 329,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ESPN+",
+      "sequenceNumber": 16
+    },
+    {
+      "id": 391,
+      "market": "N",
+      "countryCode": "US",
+      "network": "HULU",
+      "sequenceNumber": 17
+    }
+  ],
+  "gameState": "OFF",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 16,
+    "name": {
+      "default": "Chicago Blackhawks",
+      "fr": "Blackhawks de Chicago"
+    },
+    "commonName": {
+      "default": "Blackhawks"
+    },
+    "placeNameWithPreposition": {
+      "default": "Chicago",
+      "fr": "de Chicago"
+    },
+    "abbrev": "CHI",
+    "score": 2,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg?season=20252026"
+  },
+  "homeTeam": {
+    "id": 30,
+    "name": {
+      "default": "Minnesota Wild",
+      "fr": "Wild du Minnesota"
+    },
+    "commonName": {
+      "default": "Wild"
+    },
+    "placeNameWithPreposition": {
+      "default": "Minnesota",
+      "fr": "du Minnesota"
+    },
+    "abbrev": "MIN",
+    "score": 1,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/060062F1D615553C?brand=nhl&wt.mc_id=NHL_LEAGUE_MIN_HORIZONTAL_SCOREBOARD_GM37&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MIN&utm_content=HORIZONTAL_SCOREBOARD_GM37",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/060062F1D615553C?brand=nhl&wt.mc_id=NHL_LEAGUE_MIN_HORIZONTAL_SCOREBOARD_GM37&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MIN&utm_content=HORIZONTAL_SCOREBOARD_GM37",
+  "period": 3,
+  "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "threeMinRecap": "/video/chi-at-min-recap-6391225847112",
+  "threeMinRecapFr": "/fr/video/chi-vs-min-19-03-2026-resume-6391225369112"
+}

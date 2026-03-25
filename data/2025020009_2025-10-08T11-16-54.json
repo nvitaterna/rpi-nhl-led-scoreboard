@@ -1,0 +1,67 @@
+{
+  "id": 2025020009,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/nyr-vs-buf/2025/10/09/2025020009",
+  "venue": {
+    "default": "KeyBank Center"
+  },
+  "startTimeUTC": "2025-10-09T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 28,
+      "market": "H",
+      "countryCode": "US",
+      "network": "MSG-B",
+      "sequenceNumber": 383
+    },
+    {
+      "id": 27,
+      "market": "A",
+      "countryCode": "US",
+      "network": "MSG",
+      "sequenceNumber": 408
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 3,
+    "name": {
+      "default": "New York Rangers",
+      "fr": "Rangers de New York"
+    },
+    "commonName": {
+      "default": "Rangers"
+    },
+    "placeNameWithPreposition": {
+      "default": "New York",
+      "fr": "de New York"
+    },
+    "abbrev": "NYR",
+    "record": "39-36-7",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+  },
+  "homeTeam": {
+    "id": 7,
+    "name": {
+      "default": "Buffalo Sabres",
+      "fr": "Sabres de Buffalo"
+    },
+    "commonName": {
+      "default": "Sabres"
+    },
+    "placeNameWithPreposition": {
+      "default": "Buffalo",
+      "fr": "de Buffalo"
+    },
+    "abbrev": "BUF",
+    "record": "36-39-7",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/000062EFBCD05099?brand=nhl&wt.mc_id=NHL_LEAGUE_BUF_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BUF&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/000062EFBCD05099?brand=nhl&wt.mc_id=NHL_LEAGUE_BUF_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BUF&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}

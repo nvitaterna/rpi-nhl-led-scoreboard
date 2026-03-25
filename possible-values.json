@@ -1,0 +1,683 @@
+{
+  "id": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "2025021106",
+      "2025021107",
+      "2025021108",
+      "2025021109"
+    ]
+  },
+  "season": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "20252026"
+    ]
+  },
+  "gameType": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "2"
+    ]
+  },
+  "gameDate": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "2025-10-07",
+      "2025-10-08",
+      "2025-10-09",
+      "2026-03-19",
+      "2026-03-20",
+      "2026-03-21"
+    ]
+  },
+  "gameCenterLink": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "/gamecenter/tor-vs-ott/2026/03/21/2025021106",
+      "/gamecenter/stl-vs-van/2026/03/21/2025021107",
+      "/gamecenter/bos-vs-det/2026/03/21/2025021108",
+      "/gamecenter/tbl-vs-edm/2026/03/21/2025021109"
+    ]
+  },
+  "venue": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "venue.default": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Canadian Tire Centre",
+      "Rogers Arena",
+      "Little Caesars Arena",
+      "Rogers Place"
+    ]
+  },
+  "startTimeUTC": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "2026-03-21T17:00:00Z",
+      "2026-03-21T18:00:00Z",
+      "2026-03-21T20:00:00Z",
+      "2026-03-21T21:00:00Z",
+      "2026-03-21T23:00:00Z",
+      "2026-03-22T00:00:00Z",
+      "2026-03-22T02:00:00Z"
+    ]
+  },
+  "easternUTCOffset": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "-04:00"
+    ]
+  },
+  "venueUTCOffset": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "-04:00",
+      "-07:00",
+      "-06:00",
+      "-05:00"
+    ]
+  },
+  "tvBroadcasts": {
+    "type": "array",
+    "canBeUndefined": false,
+    "arrayElementTypes": [
+      "object"
+    ],
+    "arrayElementValues": {}
+  },
+  "tvBroadcasts[].id": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "4",
+      "282",
+      "291",
+      "286",
+      "581"
+    ]
+  },
+  "tvBroadcasts[].market": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "N",
+      "A",
+      "H"
+    ]
+  },
+  "tvBroadcasts[].countryCode": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "US",
+      "CA"
+    ]
+  },
+  "tvBroadcasts[].network": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "CBC",
+      "SN",
+      "TVAS2",
+      "CITY",
+      "The Spot"
+    ]
+  },
+  "tvBroadcasts[].sequenceNumber": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "1",
+      "101",
+      "107",
+      "121",
+      "137",
+      "211"
+    ]
+  },
+  "gameState": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "OFF",
+      "FUT",
+      "PRE",
+      "LIVE",
+      "CRIT",
+      "FINAL"
+    ]
+  },
+  "gameScheduleState": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "OK"
+    ]
+  },
+  "awayTeam": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "awayTeam.id": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "19",
+      "6",
+      "14"
+    ]
+  },
+  "awayTeam.name": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "awayTeam.name.default": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "St. Louis Blues",
+      "Boston Bruins",
+      "Tampa Bay Lightning"
+    ]
+  },
+  "awayTeam.name.fr": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Blues de St. Louis",
+      "Bruins de Boston",
+      "Lightning de Tampa Bay"
+    ]
+  },
+  "awayTeam.commonName": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "awayTeam.commonName.default": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Blues",
+      "Bruins",
+      "Lightning"
+    ]
+  },
+  "awayTeam.placeNameWithPreposition": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "awayTeam.placeNameWithPreposition.default": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "St. Louis",
+      "Boston",
+      "Tampa Bay"
+    ]
+  },
+  "awayTeam.placeNameWithPreposition.fr": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "de St. Louis",
+      "de Boston",
+      "de Tampa Bay"
+    ]
+  },
+  "awayTeam.abbrev": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "STL",
+      "BOS",
+      "TBL"
+    ]
+  },
+  "awayTeam.score": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "2",
+      "3",
+      "4",
+      "0",
+      "1",
+      "5",
+      "6"
+    ]
+  },
+  "awayTeam.logo": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "https://assets.nhle.com/logos/nhl/svg/STL_light.svg?season=20252026",
+      "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg?season=20252026",
+      "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+    ]
+  },
+  "homeTeam": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "homeTeam.id": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "9",
+      "23",
+      "17",
+      "22"
+    ]
+  },
+  "homeTeam.name": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "homeTeam.name.default": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Ottawa Senators",
+      "Vancouver Canucks",
+      "Detroit Red Wings",
+      "Edmonton Oilers"
+    ]
+  },
+  "homeTeam.name.fr": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Sénateurs d'Ottawa",
+      "Canucks de Vancouver",
+      "Red Wings de Detroit",
+      "Oilers d'Edmonton"
+    ]
+  },
+  "homeTeam.commonName": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "homeTeam.commonName.default": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Senators",
+      "Canucks",
+      "Red Wings",
+      "Oilers"
+    ]
+  },
+  "homeTeam.placeNameWithPreposition": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "homeTeam.placeNameWithPreposition.default": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Ottawa",
+      "Vancouver",
+      "Detroit",
+      "Edmonton"
+    ]
+  },
+  "homeTeam.placeNameWithPreposition.fr": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "d'Ottawa",
+      "de Vancouver",
+      "de Detroit",
+      "d'Edmonton"
+    ]
+  },
+  "homeTeam.abbrev": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "OTT",
+      "VAN",
+      "DET",
+      "EDM"
+    ]
+  },
+  "homeTeam.score": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "3",
+      "0",
+      "1",
+      "2",
+      "5",
+      "6"
+    ]
+  },
+  "homeTeam.logo": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+      "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+      "https://assets.nhle.com/logos/nhl/svg/DET_light.svg?season=20252026",
+      "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+    ]
+  },
+  "ticketsLink": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "https://www.ticketmaster.ca/event/31006305ACC628E1?brand=ottawasenators&artistid=805997&landing=s&wt.mc_id=NHL_TEAM_OTT_SGT_PG_GM34&&utm_source=sens_website&utm_medium=schedule&utm_campaign=03212026_tor",
+      "https://www.ticketmaster.ca/event/110062EBD7CE4C64?brand=nhl&wt.mc_id=NHL_LEAGUE_VAN_HORIZONTAL_SCOREBOARD_GM36&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_VAN&utm_content=HORIZONTAL_SCOREBOARD_GM36",
+      "https://www.ticketmaster.com/event/080062EAAC732C94?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+      "https://www.ticketmaster.ca/event/1100630EB47E47E5?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM35"
+    ]
+  },
+  "ticketsLinkFr": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "https://www.nhl.com/fr/senators/tickets/",
+      "https://www.ticketmaster.ca/event/110062EBD7CE4C64?brand=nhl&wt.mc_id=NHL_LEAGUE_VAN_HORIZONTAL_SCOREBOARD_GM36&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_VAN&utm_content=HORIZONTAL_SCOREBOARD_GM36",
+      "https://www.ticketmaster.com/event/080062EAAC732C94?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+      "https://www.ticketmaster.ca/event/1100630EB47E47E5?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM35"
+    ]
+  },
+  "period": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "3",
+      "1",
+      "2",
+      "4",
+      "5"
+    ]
+  },
+  "periodDescriptor": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "periodDescriptor.number": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "3",
+      "1",
+      "2",
+      "4",
+      "5"
+    ]
+  },
+  "periodDescriptor.periodType": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "REG",
+      "OT",
+      "SO"
+    ]
+  },
+  "periodDescriptor.maxRegulationPeriods": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "3"
+    ]
+  },
+  "threeMinRecap": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "/video/chi-at-min-recap-6391225847112",
+      "/video/fla-at-edm-recap-6391228734112",
+      "/video/tbl-at-van-recap-6391233751112",
+      "/video/uta-at-vgk-recap-6391233582112",
+      "/video/buf-at-sjs-recap-6391232141112",
+      "/video/phi-at-lak-recap-6391234874112"
+    ]
+  },
+  "threeMinRecapFr": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "/fr/video/fla-vs-edm-19-03-2026-resume-6391229106112",
+      "/fr/video/tbl-vs-van-19-03-2026-resume-6391232578112",
+      "/fr/video/uta-vs-vgk-19-03-2026-resume-6391233968112",
+      "/fr/video/buf-vs-sjs-19-03-2026-resume-6391232038112",
+      "/fr/video/phi-vs-lak-19-03-2026-resume-6391234672112"
+    ]
+  },
+  "awayTeam.record": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "31-24-14",
+      "43-15-10",
+      "43-20-6",
+      "33-23-12",
+      "31-28-9",
+      "39-25-5",
+      "29-28-12",
+      "27-30-11",
+      "38-23-8",
+      "42-21-4"
+    ]
+  },
+  "homeTeam.record": {
+    "type": "string",
+    "canBeUndefined": false
+  },
+  "awayTeam.sog": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "22",
+      "0",
+      "10",
+      "16",
+      "21",
+      "23",
+      "26",
+      "3",
+      "4"
+    ]
+  },
+  "homeTeam.sog": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "32",
+      "35",
+      "4",
+      "3",
+      "5"
+    ]
+  },
+  "clock": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "clock.timeRemaining": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "19:52",
+      "04:47",
+      "00:00",
+      "05:00",
+      "04:49",
+      "07:58",
+      "08:56",
+      "07:24"
+    ]
+  },
+  "clock.secondsRemaining": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "1192",
+      "287",
+      "0",
+      "300",
+      "289",
+      "478",
+      "536",
+      "444"
+    ]
+  },
+  "clock.running": {
+    "type": "boolean",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "false",
+      "true"
+    ]
+  },
+  "clock.inIntermission": {
+    "type": "boolean",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "false",
+      "true"
+    ]
+  },
+  "situation": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "situation.homeTeam": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "situation.homeTeam.abbrev": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "WSH",
+      "EDM",
+      "VGK"
+    ]
+  },
+  "situation.homeTeam.situationDescriptions": {
+    "type": "array",
+    "canBeUndefined": false,
+    "arrayElementTypes": [
+      "string"
+    ],
+    "arrayElementValues": {
+      "situation.homeTeam.situationDescriptions[]": {
+        "type": "string",
+        "canBeUndefined": false,
+        "possibleValues": [
+          "PP"
+        ]
+      }
+    }
+  },
+  "situation.homeTeam.strength": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "5",
+      "3",
+      "0",
+      "1"
+    ]
+  },
+  "situation.awayTeam": {
+    "type": "object",
+    "canBeUndefined": false
+  },
+  "situation.awayTeam.abbrev": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "BOS",
+      "CGY",
+      "LAK"
+    ]
+  },
+  "situation.awayTeam.strength": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "4",
+      "1",
+      "0"
+    ]
+  },
+  "situation.situationCode": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "1451",
+      "1431",
+      "0101",
+      "1010"
+    ]
+  },
+  "situation.timeRemaining": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "01:13",
+      "00:59",
+      "00:23",
+      "00:19"
+    ]
+  },
+  "situation.secondsRemaining": {
+    "type": "number",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "73",
+      "59",
+      "23",
+      "19"
+    ]
+  },
+  "situation.awayTeam.situationDescriptions": {
+    "type": "array",
+    "canBeUndefined": false,
+    "arrayElementTypes": [
+      "string"
+    ],
+    "arrayElementValues": {
+      "situation.awayTeam.situationDescriptions[]": {
+        "type": "string",
+        "canBeUndefined": false,
+        "possibleValues": [
+          "PP"
+        ]
+      }
+    }
+  },
+  "awayTeam.commonName.fr": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Sénateurs"
+    ]
+  },
+  "homeTeam.commonName.fr": {
+    "type": "string",
+    "canBeUndefined": false,
+    "possibleValues": [
+      "Sénateurs"
+    ]
+  }
+}

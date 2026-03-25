@@ -1,0 +1,67 @@
+{
+  "id": 2025020016,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/cbj-vs-nsh/2025/10/09/2025020016",
+  "venue": {
+    "default": "Bridgestone Arena"
+  },
+  "startTimeUTC": "2025-10-10T00:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 565,
+      "market": "A",
+      "countryCode": "US",
+      "network": "FDSNOH",
+      "sequenceNumber": 276
+    },
+    {
+      "id": 561,
+      "market": "H",
+      "countryCode": "US",
+      "network": "FDSNSO",
+      "sequenceNumber": 277
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 29,
+    "name": {
+      "default": "Columbus Blue Jackets",
+      "fr": "Blue Jackets de Columbus"
+    },
+    "commonName": {
+      "default": "Blue Jackets"
+    },
+    "placeNameWithPreposition": {
+      "default": "Columbus",
+      "fr": "de Columbus"
+    },
+    "abbrev": "CBJ",
+    "record": "40-33-9",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg"
+  },
+  "homeTeam": {
+    "id": 18,
+    "name": {
+      "default": "Nashville Predators",
+      "fr": "Predators de Nashville"
+    },
+    "commonName": {
+      "default": "Predators"
+    },
+    "placeNameWithPreposition": {
+      "default": "Nashville",
+      "fr": "de Nashville"
+    },
+    "abbrev": "NSH",
+    "record": "30-44-8",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/1B006314D84A6E4B?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/1B006314D84A6E4B?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}

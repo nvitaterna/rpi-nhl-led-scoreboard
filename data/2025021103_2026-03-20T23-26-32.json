@@ -1,0 +1,67 @@
+{
+  "id": 2025021103,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-21",
+  "gameCenterLink": "/gamecenter/phi-vs-sjs/2026/03/21/2025021103",
+  "venue": {
+    "default": "SAP Center at San Jose"
+  },
+  "startTimeUTC": "2026-03-21T20:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 322,
+      "market": "A",
+      "countryCode": "US",
+      "network": "NBCSP",
+      "sequenceNumber": 389
+    },
+    {
+      "id": 314,
+      "market": "H",
+      "countryCode": "US",
+      "network": "NBCSCA",
+      "sequenceNumber": 393
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 4,
+    "name": {
+      "default": "Philadelphia Flyers",
+      "fr": "Flyers de Philadelphie"
+    },
+    "commonName": {
+      "default": "Flyers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Philadelphia",
+      "fr": "de Philadelphie"
+    },
+    "abbrev": "PHI",
+    "record": "33-23-12",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
+  },
+  "homeTeam": {
+    "id": 28,
+    "name": {
+      "default": "San Jose Sharks",
+      "fr": "Sharks de San Jose"
+    },
+    "commonName": {
+      "default": "Sharks"
+    },
+    "placeNameWithPreposition": {
+      "default": "San Jose",
+      "fr": "de San Jose"
+    },
+    "abbrev": "SJS",
+    "record": "32-29-6",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/1C0062DEEE0B7241?brand=nhl&wt.mc_id=NHL_LEAGUE_SJS_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SJS&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/1C0062DEEE0B7241?brand=nhl&wt.mc_id=NHL_LEAGUE_SJS_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SJS&utm_content=HORIZONTAL_SCOREBOARD_GM34"
+}

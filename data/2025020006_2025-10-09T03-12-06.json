@@ -1,0 +1,81 @@
+{
+  "id": 2025020006,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-08",
+  "gameCenterLink": "/gamecenter/cgy-vs-edm/2025/10/08/2025020006",
+  "venue": {
+    "default": "Rogers Place"
+  },
+  "startTimeUTC": "2025-10-09T02:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-06:00",
+  "tvBroadcasts": [
+    {
+      "id": 284,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN1",
+      "sequenceNumber": 102
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 109
+    }
+  ],
+  "gameState": "LIVE",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 20,
+    "name": {
+      "default": "Calgary Flames",
+      "fr": "Flames de Calgary"
+    },
+    "commonName": {
+      "default": "Flames"
+    },
+    "placeNameWithPreposition": {
+      "default": "Calgary",
+      "fr": "de Calgary"
+    },
+    "abbrev": "CGY",
+    "score": 0,
+    "sog": 4,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg"
+  },
+  "homeTeam": {
+    "id": 22,
+    "name": {
+      "default": "Edmonton Oilers",
+      "fr": "Oilers d'Edmonton"
+    },
+    "commonName": {
+      "default": "Oilers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Edmonton",
+      "fr": "d'Edmonton"
+    },
+    "abbrev": "EDM",
+    "score": 2,
+    "sog": 9,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/1100630EB4B04875?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.ca/event/1100630EB4B04875?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "period": 2,
+  "periodDescriptor": {
+    "number": 2,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+  },
+  "clock": {
+    "timeRemaining": "20:00",
+    "secondsRemaining": 1200,
+    "running": false,
+    "inIntermission": false
+  }
+}

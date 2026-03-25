@@ -1,0 +1,67 @@
+{
+  "id": 2025021097,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-20",
+  "gameCenterLink": "/gamecenter/fla-vs-cgy/2026/03/20/2025021097",
+  "venue": {
+    "default": "Scotiabank Saddledome"
+  },
+  "startTimeUTC": "2026-03-21T01:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-06:00",
+  "tvBroadcasts": [
+    {
+      "id": 289,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SNW",
+      "sequenceNumber": 34
+    },
+    {
+      "id": 521,
+      "market": "A",
+      "countryCode": "US",
+      "network": "SCRIPPS",
+      "sequenceNumber": 657
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 13,
+    "name": {
+      "default": "Florida Panthers",
+      "fr": "Panthers de la Floride"
+    },
+    "commonName": {
+      "default": "Panthers"
+    },
+    "placeNameWithPreposition": {
+      "default": "Florida",
+      "fr": "de la Floride"
+    },
+    "abbrev": "FLA",
+    "record": "34-31-3",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+  },
+  "homeTeam": {
+    "id": 20,
+    "name": {
+      "default": "Calgary Flames",
+      "fr": "Flames de Calgary"
+    },
+    "commonName": {
+      "default": "Flames"
+    },
+    "placeNameWithPreposition": {
+      "default": "Calgary",
+      "fr": "de Calgary"
+    },
+    "abbrev": "CGY",
+    "record": "27-34-7",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/110062F6D22A5003?brand=nhl&wt.mc_id=NHL_LEAGUE_CGY_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CGY&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+  "ticketsLinkFr": "https://www.ticketmaster.ca/event/110062F6D22A5003?brand=nhl&wt.mc_id=NHL_LEAGUE_CGY_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CGY&utm_content=HORIZONTAL_SCOREBOARD_GM34"
+}

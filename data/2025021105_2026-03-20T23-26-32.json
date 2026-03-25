@@ -1,0 +1,81 @@
+{
+  "id": 2025021105,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-21",
+  "gameCenterLink": "/gamecenter/nyi-vs-mtl/2026/03/21/2025021105",
+  "venue": {
+    "default": "Centre Bell"
+  },
+  "startTimeUTC": "2026-03-21T23:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 287,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SNE",
+      "sequenceNumber": 30
+    },
+    {
+      "id": 281,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "TVAS",
+      "sequenceNumber": 120
+    },
+    {
+      "id": 286,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "CITY",
+      "sequenceNumber": 137
+    },
+    {
+      "id": 409,
+      "market": "A",
+      "countryCode": "US",
+      "network": "MSGSN",
+      "sequenceNumber": 411
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 2,
+    "name": {
+      "default": "New York Islanders",
+      "fr": "Islanders de New York"
+    },
+    "commonName": {
+      "default": "Islanders"
+    },
+    "placeNameWithPreposition": {
+      "default": "New York",
+      "fr": "de New York"
+    },
+    "abbrev": "NYI",
+    "record": "39-25-5",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg"
+  },
+  "homeTeam": {
+    "id": 8,
+    "name": {
+      "default": "Montréal Canadiens",
+      "fr": "Canadiens de Montréal"
+    },
+    "commonName": {
+      "default": "Canadiens"
+    },
+    "placeNameWithPreposition": {
+      "default": "Montréal",
+      "fr": "de Montréal"
+    },
+    "abbrev": "MTL",
+    "record": "37-21-10",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.ca/event/310062F6867A1851?lang=en-ca&brand=nhl&wt.mc_id=NHL_LEAGUE_MTL_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MTL&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+  "ticketsLinkFr": "https://www.ticketmaster.ca/event/310062F6867A1851?lang=fr-ca&brand=nhl&wt.mc_id=NHL_LEAGUE_MTL_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MTL&utm_content=HORIZONTAL_SCOREBOARD_GM35"
+}

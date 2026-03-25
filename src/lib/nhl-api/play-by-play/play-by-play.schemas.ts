@@ -7,11 +7,21 @@ import {
 import { localizedStringSchema } from '../nhl-api.schemas.js';
 
 export const playByPlayEventTypeSchema = z.enum([
-  'period-start',
-  'period-end',
-  'faceoff', // this means the clock starts running
-  'stoppage',
+  'blocked-shot',
+  'delayed-penalty',
+  'faceoff',
   'game-end',
+  'giveaway',
+  'goal',
+  'hit',
+  'missed-shot',
+  'penalty',
+  'period-end',
+  'period-start',
+  'shootout-complete',
+  'shot-on-goal',
+  'stoppage',
+  'takeaway',
 ]);
 
 export const goalDetailsSchema = z.object({
@@ -23,7 +33,8 @@ export const penaltyDetailsSchema = z.object({
 });
 
 const rawPlayByPlayEventSchema = z.object({
-  eventId: z.number(), // don't think we actually need this
+  eventId: z.number(),
+  sortOrder: z.number(),
   periodDescriptor: periodDescriptorSchema,
   timeRemaining: z.string().regex(/^\d{2}:\d{2}$/),
   typeDescKey: playByPlayEventTypeSchema,
@@ -52,11 +63,23 @@ export const playerSchema = z.object({
   lastName: localizedStringSchema,
 });
 
-export type PlayByPlayEvent = z.infer<typeof playByPlayEventSchema>;
+export const playByPlayTeamSchema = z.object({
+  id: z.number(),
+  abbrev: z.string(),
+  score: z.number().optional(),
+});
 
 export const playByPlayResponseSchema = boxscoreResponseSchema.extend({
   plays: z.array(playByPlayEventSchema),
   rosterSpots: z.array(playerSchema),
 });
+
+export type PlayByPlayEventType = z.infer<typeof playByPlayEventTypeSchema>;
+
+export type PlayByPlayEvent = z.infer<typeof playByPlayEventSchema>;
+
+export type PlayByPlayPlayer = z.infer<typeof playerSchema>;
+
+export type PlayByPlayTeam = z.infer<typeof playByPlayTeamSchema>;
 
 export type PlayByPlayResponse = z.infer<typeof playByPlayResponseSchema>;

@@ -1,6 +1,10 @@
 import type { Logger } from '@/lib/logger/logger.js';
 import type { NhlApi } from '@/lib/nhl-api/nhl-api.js';
 import type { PeriodType } from '@/lib/nhl-api/nhl-api.schemas.js';
+import type {
+  PlayByPlayEvent,
+  PlayByPlayPlayer,
+} from '@/lib/nhl-api/play-by-play/play-by-play.schemas.js';
 import type { GameType } from '@/lib/nhl-api/schedule/schedule.schemas.js';
 
 import type { ActiveTeamService } from '../active-team/active-team.service.js';
@@ -14,15 +18,16 @@ export type GameData = {
   gameType: GameType;
   gameState: GameState;
   homeTeam: {
+    id: number;
     abbrev: string;
     score?: number;
   };
   awayTeam: {
+    id: number;
     abbrev: string;
     score?: number;
   };
   clock: {
-    timeRemaining: string;
     secondsRemaining: number;
     running: boolean;
     inIntermission: boolean;
@@ -32,6 +37,8 @@ export type GameData = {
     type: PeriodType;
   };
   outcome?: PeriodType;
+  events: PlayByPlayEvent[];
+  rosterSpots: PlayByPlayPlayer[];
 };
 
 export class DataLoopService {
@@ -56,7 +63,7 @@ export class DataLoopService {
     this.dataLoop(); // Initial fetch
     this.dataFetchInterval = setInterval(() => {
       this.dataLoop();
-    }, 5000);
+    }, 100);
 
     this.logger.info('Data loop started: data fetch every 5s');
   }
@@ -100,29 +107,40 @@ export class DataLoopService {
       return;
     }
 
-    const boxscore = await this.nhlApi.getBoxScore(activeGame.id);
+    const playByPlay = await this.nhlApi.getPlayByPlay(activeGame.id);
+
+    const homeTeam = {
+      id: activeGame.homeTeam.id,
+      abbrev: activeGame.homeTeam.abbrev,
+      score: playByPlay.homeTeam.score,
+    };
+    const awayTeam = {
+      id: activeGame.awayTeam.id,
+      abbrev: activeGame.awayTeam.abbrev,
+      score: playByPlay.awayTeam.score,
+    };
 
     this.gameData = {
       id: activeGame.id,
       startTime: activeGame.gameStart,
       gameType: activeGame.gameType,
       gameState: activeGame.gameState,
-      homeTeam: {
-        abbrev: activeGame.homeTeamAbbrev,
-        score: boxscore.homeTeam.score,
+      homeTeam,
+      awayTeam,
+      clock: {
+        secondsRemaining: playByPlay.clock.secondsRemaining,
+        running: playByPlay.clock.running,
+        inIntermission: playByPlay.clock.inIntermission,
       },
-      awayTeam: {
-        abbrev: activeGame.awayTeamAbbrev,
-        score: boxscore.awayTeam.score,
-      },
-      clock: boxscore.clock,
-      outcome: boxscore.gameOutcome?.lastPeriodType,
+      outcome: playByPlay.gameOutcome?.lastPeriodType,
+      events: playByPlay.plays,
+      rosterSpots: playByPlay.rosterSpots,
     };
 
-    if (boxscore.periodDescriptor) {
+    if (playByPlay.periodDescriptor) {
       this.gameData.period = {
-        number: boxscore.periodDescriptor.number,
-        type: boxscore.periodDescriptor.periodType,
+        number: playByPlay.periodDescriptor.number,
+        type: playByPlay.periodDescriptor.periodType,
       };
     }
   }

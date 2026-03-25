@@ -1,0 +1,60 @@
+{
+  "id": 2025021108,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2026-03-21",
+  "gameCenterLink": "/gamecenter/bos-vs-det/2026/03/21/2025021108",
+  "venue": {
+    "default": "Little Caesars Arena"
+  },
+  "startTimeUTC": "2026-03-22T00:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-04:00",
+  "tvBroadcasts": [
+    {
+      "id": 384,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ABC",
+      "sequenceNumber": 1
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 6,
+    "name": {
+      "default": "Boston Bruins",
+      "fr": "Bruins de Boston"
+    },
+    "commonName": {
+      "default": "Bruins"
+    },
+    "placeNameWithPreposition": {
+      "default": "Boston",
+      "fr": "de Boston"
+    },
+    "abbrev": "BOS",
+    "record": "38-23-8",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg?season=20252026"
+  },
+  "homeTeam": {
+    "id": 17,
+    "name": {
+      "default": "Detroit Red Wings",
+      "fr": "Red Wings de Detroit"
+    },
+    "commonName": {
+      "default": "Red Wings"
+    },
+    "placeNameWithPreposition": {
+      "default": "Detroit",
+      "fr": "de Detroit"
+    },
+    "abbrev": "DET",
+    "record": "38-23-8",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg?season=20252026"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/080062EAAC732C94?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM35",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/080062EAAC732C94?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM35&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM35"
+}

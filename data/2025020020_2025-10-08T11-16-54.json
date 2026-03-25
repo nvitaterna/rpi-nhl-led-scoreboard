@@ -1,0 +1,74 @@
+{
+  "id": 2025020020,
+  "season": 20252026,
+  "gameType": 2,
+  "gameDate": "2025-10-09",
+  "gameCenterLink": "/gamecenter/vgk-vs-sjs/2025/10/09/2025020020",
+  "venue": {
+    "default": "SAP Center at San Jose"
+  },
+  "startTimeUTC": "2025-10-10T02:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-07:00",
+  "tvBroadcasts": [
+    {
+      "id": 329,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ESPN+",
+      "sequenceNumber": 16
+    },
+    {
+      "id": 391,
+      "market": "N",
+      "countryCode": "US",
+      "network": "HULU",
+      "sequenceNumber": 17
+    },
+    {
+      "id": 283,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN360",
+      "sequenceNumber": 103
+    }
+  ],
+  "gameState": "FUT",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 54,
+    "name": {
+      "default": "Vegas Golden Knights",
+      "fr": "Golden Knights de Vegas"
+    },
+    "commonName": {
+      "default": "Golden Knights"
+    },
+    "placeNameWithPreposition": {
+      "default": "Vegas",
+      "fr": "de Vegas"
+    },
+    "abbrev": "VGK",
+    "record": "50-22-10",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg"
+  },
+  "homeTeam": {
+    "id": 28,
+    "name": {
+      "default": "San Jose Sharks",
+      "fr": "Sharks de San Jose"
+    },
+    "commonName": {
+      "default": "Sharks"
+    },
+    "placeNameWithPreposition": {
+      "default": "San Jose",
+      "fr": "de San Jose"
+    },
+    "abbrev": "SJS",
+    "record": "20-50-12",
+    "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg"
+  },
+  "ticketsLink": "https://www.ticketmaster.com/event/1C0062DEEDA971CD?brand=nhl&wt.mc_id=NHL_LEAGUE_SJS_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SJS&utm_content=HORIZONTAL_SCOREBOARD_GM1",
+  "ticketsLinkFr": "https://www.ticketmaster.com/event/1C0062DEEDA971CD?brand=nhl&wt.mc_id=NHL_LEAGUE_SJS_HORIZONTAL_SCOREBOARD_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SJS&utm_content=HORIZONTAL_SCOREBOARD_GM1"
+}
